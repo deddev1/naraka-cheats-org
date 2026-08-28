@@ -15,7 +15,8 @@ function isBrandStudioPage(pathname: string): boolean {
  */
 export const onRequest = defineMiddleware(async (context, next) => {
 	const redirectPath = resolvePathRedirect(context.url.pathname);
-	if (redirectPath) {
+	// During static build, emit proper RedirectLayout HTML instead of Astro redirect stubs.
+	if (redirectPath && !import.meta.env.SKIP_BUILD_REDIRECTS) {
 		const target = new URL(redirectPath, context.url.origin);
 		return context.redirect(target.toString(), 301);
 	}

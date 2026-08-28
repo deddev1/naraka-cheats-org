@@ -1,5 +1,11 @@
 ---
-import LocalizedPage from '../../components/LocalizedPage.astro';
+import RedirectLayout from '../../layouts/RedirectLayout.astro';
+import { getLocalizedPath } from '../../data/i18n/routing';
 ---
 
-<LocalizedPage locale="en" pageId="unlock-all" />
+<RedirectLayout
+	target={getLocalizedPath('home', 'en')}
+	from="/naraka-unlock-all/"
+	title="naraka-unlock-all | Redirect to Naraka Cheats home"
+	description="Naraka unlock all redirects to the Naraka Cheats homepage."
+/>

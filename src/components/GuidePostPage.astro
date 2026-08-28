@@ -62,10 +62,20 @@ const articleSchema = {
 	articleSection: guide.game,
 };
 
+function guideSiteLabel(guide: ResolvedGuide): string {
+	try {
+		return new URL(guide.externalUrl).hostname.replace(/^www\./, '');
+	} catch {
+		return guide.slug;
+	}
+}
+
 function pageTitle(headline: string): string {
-	const suffix = ' | Guides';
-	if (headline.length + suffix.length <= 60) return `${headline}${suffix}`;
-	return `${headline.slice(0, 57).trim()}…`;
+	const site = guideSiteLabel(guide);
+	const base = `${headline} | ${site}`;
+	if (base.length <= 60) return base;
+	const trimmed = `${headline.slice(0, 40).trim()}… | ${site}`;
+	return trimmed.length <= 60 ? trimmed : `${trimmed.slice(0, 57).trim()}…`;
 }
 ---
 

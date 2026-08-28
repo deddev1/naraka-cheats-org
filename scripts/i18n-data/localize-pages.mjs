@@ -57,7 +57,7 @@ function localizeMeta(enPage, locale, pageKey) {
 	const topicName = TOPIC_NAMES[pageKey]?.[locale] ?? TOPIC_NAMES[pageKey]?.en ?? pageKey;
 
 	return {
-		title: clampTitle(stripZadeyoFromMeta(`${topicName} | ${suffix}`)),
+		title: clampTitle(stripZadeyoFromMeta(`${topicName} | ${suffix}`), locale),
 		description: clampDesc(
 			stripZadeyoFromMeta(
 				`${topicName} for Naraka Bladepoint ranked & Showdown on Windows PC — ${focus}. ${p.delivery}. ${p.undetected}. Official naraka cheats at narakacheats.org.`,

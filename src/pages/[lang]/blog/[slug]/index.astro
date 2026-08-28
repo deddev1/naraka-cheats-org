@@ -1,4 +1,5 @@
 ---
+import RedirectLayout from '../../../../layouts/RedirectLayout.astro';
 import { blogPosts } from '../../../../data/blog/helpers';
 import { defaultLocale, isLocaleCode, localeCodes } from '../../../../data/i18n/locales';
 
@@ -17,11 +18,25 @@ export function getStaticPaths() {
 	return paths;
 }
 
+const lang = Astro.params.lang ?? '';
 const slug = Astro.params.slug ?? '';
-
-if (!isLocaleCode(Astro.params.lang ?? '')) {
-	return Astro.redirect('/blog/', 301);
-}
-
-return Astro.redirect(`/blog/${slug}/`, 301);
+const fromPath = `/${lang}/blog/${slug}/`;
+const target = `/blog/${slug}/`;
+const post = blogPosts.find((entry) => entry.translations.en.slug === slug);
+const postTitle = post?.translations.en.title ?? 'Naraka Cheats blog post';
+const redirectTitle = `${postTitle} (${lang.toUpperCase()}) | Redirect`;
+const redirectDescription = `English-only article — redirecting to ${postTitle} on the Naraka Cheats blog.`;
 ---
+
+{
+	isLocaleCode(lang) ? (
+		<RedirectLayout
+			target={target}
+			from={fromPath}
+			title={redirectTitle}
+			description={redirectDescription}
+		/>
+	) : (
+		<RedirectLayout target="/blog/" from={fromPath} />
+	)
+}

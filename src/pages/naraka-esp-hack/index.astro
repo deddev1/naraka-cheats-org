@@ -1,5 +1,11 @@
 ---
-import LocalizedPage from '../../components/LocalizedPage.astro';
+import RedirectLayout from '../../layouts/RedirectLayout.astro';
+import { getLocalizedPath } from '../../data/i18n/routing';
 ---
 
-<LocalizedPage locale="en" pageId="esp-hack" />
+<RedirectLayout
+	target={getLocalizedPath('naraka-esp', 'en')}
+	from="/naraka-esp-hack/"
+	title="naraka-esp-hack | Redirect to Naraka ESP"
+	description="Naraka ESP hack redirects to the Naraka ESP guide."
+/>

@@ -33,7 +33,7 @@ export function buildHome(locale) {
 	const p = phrases[locale];
 	const m = PAGE_META_HOME[locale];
 	return {
-		title: clampTitle(stripZadeyoFromMeta(m.title)),
+		title: clampTitle(stripZadeyoFromMeta(m.title), locale),
 		description: clampDesc(stripZadeyoFromMeta(m.desc)),
 		h1: m.h1,
 		intro: m.intro,
@@ -225,7 +225,7 @@ function productPage(locale, pageKey, topicName, cta2href) {
 	const suffix = SUFFIX_I18N[locale]?.[pageKey] ?? meta.suffix;
 	const titleBase = `${topicName} | ${suffix}`;
 	return {
-		title: clampTitle(stripZadeyoFromMeta(titleBase)),
+		title: clampTitle(stripZadeyoFromMeta(titleBase), locale),
 		description: clampDesc(
 			stripZadeyoFromMeta(
 				`${topicName} for Naraka Bladepoint ranked & Showdown on Windows PC — ${focus}. ${p.delivery}. ${p.undetected}. Official naraka cheats at narakacheats.org.`,
@@ -307,7 +307,7 @@ export function buildLegal(locale, pageKey, kind) {
 	const pageCopy = L?.[kind] ?? {};
 	const h2 = pageCopy.h2 ?? ['Information we collect', 'How we use data', 'Your rights'];
 	return {
-		title: clampTitle(stripZadeyoFromMeta(`${h1} | Naraka Cheats`)),
+		title: clampTitle(stripZadeyoFromMeta(`${h1} | Naraka Cheats`), locale),
 		description: clampDesc(stripZadeyoFromMeta(`${h1} ${L?.descFor ?? 'for Naraka Cheats — ESP wallhack, Aimbot'}, ${p.win}.`)),
 		h1,
 		intro: p.s1(`${h1} ${L?.introTopic ?? 'for narakacheats.org and Naraka licenses.'}`),

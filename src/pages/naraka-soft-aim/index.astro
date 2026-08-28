@@ -1,5 +1,11 @@
 ---
-import LocalizedPage from '../../components/LocalizedPage.astro';
+import RedirectLayout from '../../layouts/RedirectLayout.astro';
+import { getLocalizedPath } from '../../data/i18n/routing';
 ---
 
-<LocalizedPage locale="en" pageId="soft-aim" />
+<RedirectLayout
+	target={getLocalizedPath('naraka-aimbot', 'en')}
+	from="/naraka-soft-aim/"
+	title="naraka-soft-aim | Redirect to Naraka Aimbot"
+	description="Naraka soft aim redirects to the Naraka aimbot guide."
+/>
