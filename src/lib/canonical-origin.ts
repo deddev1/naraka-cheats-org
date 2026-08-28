@@ -35,6 +35,17 @@ export function rewriteLegacyOriginsInSitemapXml(xml: string): string {
 	return xml.replace(LEGACY_ORIGIN_PATTERN, CANONICAL_ORIGIN);
 }
 
+/** Local dev / preview hosts should not 301 to the production apex. */
+export function isLocalOrPreviewHost(host: string): boolean {
+	return (
+		host === 'localhost' ||
+		host === '127.0.0.1' ||
+		host.endsWith('.workers.dev') ||
+		host.endsWith('.pages.dev') ||
+		host.endsWith('.trycloudflare.com')
+	);
+}
+
 /** Fail CI when built sitemaps still mention a legacy host. */
 export function findLegacyHostsInText(text: string): string[] {
 	const found = new Set<string>();
