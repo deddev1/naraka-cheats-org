@@ -1,6 +1,7 @@
 import { siteConfig } from './site';
 import { pageIds, type PageId } from './i18n/routing';
 import { pageSitemapImageLabels } from './brand-sitemap';
+import { socialImageSrc } from '../lib/responsive-images';
 
 import { screenshotSrc, PRODUCT_SCREENSHOT_COUNT } from './product-images';
 
@@ -63,9 +64,10 @@ export function getPageCrawlImage(pageId: PageId): {
 } {
 	const src = pageImageSrcById[pageId];
 	const labels = pageSitemapImageLabels(pageId);
+	const displaySrc = socialImageSrc(src);
 	return {
 		src,
-		url: absoluteImageUrl(src),
+		url: absoluteImageUrl(displaySrc),
 		title: labels.title,
 		caption: labels.caption,
 	};
@@ -86,9 +88,10 @@ export function crawlPhotoMeta(
 	caption: string,
 ): { src: string; url: string; title: string; caption: string } {
 	const src = pickCrawlPhoto(seed);
+	const displaySrc = socialImageSrc(src);
 	return {
 		src,
-		url: absoluteImageUrl(src),
+		url: absoluteImageUrl(displaySrc),
 		title,
 		caption,
 	};

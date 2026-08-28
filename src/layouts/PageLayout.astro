@@ -12,6 +12,8 @@ import {
 	heroWidth,
 	heroHeight,
 	contentSrcSet,
+	contentDisplaySrc,
+	socialImageSrc,
 	galleryTileSizes,
 } from '../lib/responsive-images';
 import { defaultLocale } from '../data/i18n/locales';
@@ -120,13 +122,13 @@ const useHomeHero =
 	title={title}
 	description={description}
 	canonicalPath={canonicalPath}
-	ogImage={heroImage}
+	ogImage={socialImageSrc(heroImage)}
 	ogImageAlt={resolvedHeroAlt}
 	breadcrumbs={breadcrumbs}
 	locale={locale}
 	pageId={pageId}
 	extraGraph={extraGraph}
-	lcpImage={useHomeHero ? heroPreloadSrc : heroImage.endsWith('.webp') ? heroImage : undefined}
+	lcpImage={useHomeHero ? heroPreloadSrc : heroImage.endsWith('.webp') ? contentDisplaySrc(heroImage) : undefined}
 	lcpImageSrcSet={useHomeHero ? heroSrcSet : contentSrcSet(heroImage)}
 	lcpImageSizes={useHomeHero ? heroSizes : '100vw'}
 >
@@ -153,7 +155,7 @@ const useHomeHero =
 						/>
 					) : (
 						<img
-							src={heroImage}
+							src={contentDisplaySrc(heroImage)}
 							{...(contentSrcSet(heroImage)
 								? { srcset: contentSrcSet(heroImage), sizes: '100vw' }
 								: {})}
@@ -223,7 +225,7 @@ const useHomeHero =
 									<link itemprop="url" href={image.url} />
 									<meta itemprop="contentUrl" content={image.url} />
 									<img
-										src={image.src}
+										src={contentDisplaySrc(image.src, 480)}
 										srcset={contentSrcSet(image.src)}
 										sizes={galleryTileSizes}
 										alt={image.alt}

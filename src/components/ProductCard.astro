@@ -3,7 +3,7 @@ import { narakaImages } from '../data/naraka';
 import { getUi } from '../data/i18n';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, siteConfig } from '../data/site';
-import { contentSrcSet, productMainSizes } from '../lib/responsive-images';
+import { contentSrcSet, contentDisplaySrc, productMainSizes } from '../lib/responsive-images';
 import { getT } from '../i18n/server';
 
 interface Props {
@@ -33,7 +33,7 @@ const monthlyPlan = productInfo.plans.find((plan) => plan.id === 'monthly') ?? p
 <section class="product surface-card" id="product" aria-label={t('common.productDetails')}>
 	<figure class="product__figure media-frame">
 		<img
-			src={mainImage.src}
+			src={contentDisplaySrc(mainImage.src)}
 			srcset={contentSrcSet(mainImage.src)}
 			sizes={productMainSizes}
 			alt={mainAlt}
