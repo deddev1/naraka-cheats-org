@@ -19,6 +19,8 @@ const PARA_GENERATORS = [
 	(p) => p.legal(),
 ];
 
+const CJK_LOCALES = new Set(['ja', 'zh', 'ko', 'th']);
+
 /** Localize one section preserving paragraph and list counts. */
 function localizeSection(enSection, locale, pageKey, sectionIndex) {
 	const p = phrases[locale];
@@ -34,6 +36,13 @@ function localizeSection(enSection, locale, pageKey, sectionIndex) {
 		}
 		return text;
 	});
+
+	if (CJK_LOCALES.has(locale)) {
+		paragraphs.push(p.s2());
+		paragraphs.push(p.s3());
+	} else if (locale === 'de' || locale === 'th') {
+		paragraphs.push(p.s3());
+	}
 
 	const list = enSection.list?.map((item) => {
 		if (item.includes('<a ')) return localizeLinkListItem(item, locale);
@@ -64,7 +73,9 @@ function localizeMeta(enPage, locale, pageKey) {
 			),
 		),
 		h1: `${topicName} — ${suffix}`,
-		intro: p.s1(`${topicName}. ${focus}.`),
+		intro: CJK_LOCALES.has(locale)
+			? `${p.s1(`${topicName}. ${focus}.`)} ${p.s2()}`
+			: p.s1(`${topicName}. ${focus}.`),
 		imageAlt: PAGE_IMAGE_ALTS[pageKey] || `${topicName} — Naraka Cheats`,
 		galleryTitle: topicName,
 		ctaPrimary: p.buy,
@@ -125,9 +136,32 @@ export function buildLocalizedPages(locale) {
 		}
 		if (SIMPLE_PAGE_IDS.includes(pageKey)) {
 			const simple = simplePages[pageKey];
+			const enSections = enPage.sections;
+			const sections =
+				simple.sections.length >= enSections.length
+					? simple.sections
+					: [
+							...simple.sections,
+							...enSections.slice(simple.sections.length).map((sec, i) =>
+								localizeSection(sec, locale, pageKey, simple.sections.length + i),
+							),
+						];
+			const p = phrases[locale];
+			const boostedSections = CJK_LOCALES.has(locale)
+				? sections.map((sec) => ({
+						...sec,
+						paragraphs: [...sec.paragraphs, p.s2(), p.s3(), p.s4(), p.s5()],
+					}))
+				: locale === 'de' || locale === 'th'
+					? sections.map((sec) => ({
+							...sec,
+							paragraphs: [...sec.paragraphs, p.s3()],
+						}))
+					: sections;
 			pages[pageKey] = {
 				...enPage,
 				...simple,
+				sections: boostedSections,
 				heroImage: enPage.heroImage,
 				imageAlt: enPage.imageAlt,
 			};

@@ -3,6 +3,8 @@ import { phrases } from './phrases.mjs';
 import { PAGE_IMAGE_ALTS } from './image-alts.mjs';
 import { FOCUS_I18N } from './focus-i18n.mjs';
 import { LEGAL_I18N } from './legal-i18n.mjs';
+import { getCanonicalEnPages } from './canonical-en-pages.mjs';
+import { localizeHtmlLinks } from './link-labels.mjs';
 
 /** Page-specific translated meta for home across locales. */
 export const PAGE_META_HOME = {
@@ -295,6 +297,15 @@ export const CTA2_HREF = {
 	'unlock-all': '/features/',
 };
 
+function localizeLegalParagraph(text, locale) {
+	return text.includes('<a ') ? localizeHtmlLinks(text, locale) : text;
+}
+
+function legalSectionHeading(locale, kind, index, enHeading) {
+	const headings = LEGAL_I18N[locale]?.[kind]?.h2;
+	return headings?.[index] ?? enHeading;
+}
+
 export function buildLegal(locale, pageKey, kind) {
 	const p = phrases[locale];
 	const titles = {
@@ -304,8 +315,15 @@ export function buildLegal(locale, pageKey, kind) {
 	};
 	const h1 = titles[kind][locale] ?? (kind === 'privacy' ? 'Privacy Policy' : kind === 'refund' ? 'Refund Policy' : 'Terms of Use');
 	const L = LEGAL_I18N[locale];
-	const pageCopy = L?.[kind] ?? {};
-	const h2 = pageCopy.h2 ?? ['Information we collect', 'How we use data', 'Your rights'];
+	const enPage = getCanonicalEnPages()[kind];
+	const sections = enPage.sections.map((enSection, index) => ({
+		h2: legalSectionHeading(locale, kind, index, enSection.h2),
+		paragraphs: enSection.paragraphs.map((paragraph) => localizeLegalParagraph(paragraph, locale)),
+		...(enSection.list
+			? { list: enSection.list.map((item) => localizeLegalParagraph(item, locale)) }
+			: {}),
+	}));
+
 	return {
 		title: clampTitle(stripZadeyoFromMeta(`${h1} | Naraka Cheats`)),
 		description: clampDesc(stripZadeyoFromMeta(`${h1} ${L?.descFor ?? 'for Naraka Cheats — ESP wallhack, Aimbot'}, ${p.win}.`)),
@@ -320,23 +338,7 @@ export function buildLegal(locale, pageKey, kind) {
 				? L?.readTerms ?? 'Read terms'
 				: L?.readPrivacy ?? 'Read privacy',
 		ctaSecondaryHref: kind === 'privacy' ? '/terms/' : '/privacy-policy/',
-		sections: [
-			section(
-				h2[0],
-				p.s1(L?.sec1p1 ?? 'Contact email, Zadeyo order references, and basic site security data.'),
-				kind === 'privacy'
-					? L?.privacy?.sec1p2 ?? 'Payment details are processed by Zadeyo checkout — not stored on narakacheats.org.'
-					: p.s2(),
-			),
-			section(
-				h2[1],
-				p.s1(L?.privacy?.sec2p1 ?? 'Support responses, order resolution, and legal compliance when required.'),
-				kind === 'terms'
-					? L?.terms?.sec2p2 ?? 'Using cheats may violate 24 Entertainment terms — you assume all ban risk.'
-					: p.s3(),
-			),
-			section(h2[2], p.legal(), `${L?.emailLabel ?? 'Email:'} support@narakacheats.org`),
-		],
+		sections,
 	};
 }
 
