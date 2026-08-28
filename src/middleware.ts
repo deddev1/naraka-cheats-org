@@ -30,7 +30,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
 				headers: {
 					'Content-Type': 'text/plain; charset=utf-8',
 					'Cache-Control': 'no-store',
-					'X-Robots-Tag': 'noindex, nofollow',
+					'X-Robots-Tag': 'noindex',
 				},
 			});
 		}
@@ -42,7 +42,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
 	const isHtml = contentType.includes('text/html');
 
 	if (isBrandStudioPage(context.url.pathname)) {
-		headers.set('X-Robots-Tag', 'noindex, nofollow');
+		headers.set('X-Robots-Tag', 'noindex');
 		headers.set('Cache-Control', 'no-store');
 	}
 
