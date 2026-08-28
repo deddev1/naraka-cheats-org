@@ -177,6 +177,7 @@ if (aboutNode) {
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+		<title>{pageTitle}</title>
 		<meta name="color-scheme" content="dark" />
 		<meta name="theme-color" content={brandTheme.bg} />
 		<link
@@ -258,7 +259,6 @@ if (aboutNode) {
 			<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
 		)}
 
-		<title>{pageTitle}</title>
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 		<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />

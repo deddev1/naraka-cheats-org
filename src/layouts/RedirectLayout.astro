@@ -1,0 +1,45 @@
+---
+import { buildCanonicalUrl } from '../data/i18n/routing';
+import { siteConfig } from '../data/site';
+
+interface Props {
+	/** Absolute or site-relative redirect target */
+	target: string;
+	/** Optional source path for the fallback link label */
+	from?: string;
+	title?: string;
+	description?: string;
+}
+
+const {
+	target,
+	from = Astro.url.pathname,
+	title = 'Redirecting…',
+	description = `Redirecting to ${siteConfig.name}.`,
+} = Astro.props;
+
+const targetUrl = new URL(target, siteConfig.url).href;
+const canonicalURL = buildCanonicalUrl(target);
+const robots = 'noindex, nofollow';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<meta name="robots" content={robots} />
+		<meta name="googlebot" content={robots} />
+		<meta http-equiv="refresh" content={`0;url=${targetUrl}`} />
+		<link rel="canonical" href={canonicalURL} />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+	</head>
+	<body>
+		<p>
+			Redirecting from <code>{from}</code> to <a href={targetUrl}>{targetUrl}</a>.
+		</p>
+	</body>
+</html>

@@ -1,5 +1,11 @@
 ---
-import LocalizedPage from '../../components/LocalizedPage.astro';
+import RedirectLayout from '../../layouts/RedirectLayout.astro';
+import { getLocalizedPath } from '../../data/i18n/routing';
 ---
 
-<LocalizedPage locale="en" pageId="cheat-download" />
+<RedirectLayout
+	target={getLocalizedPath('setup', 'en')}
+	from="/naraka-cheat-download/"
+	title="Redirecting to Naraka Cheats setup"
+	description="Naraka cheat download redirects to the setup guide."
+/>

@@ -32,6 +32,9 @@ export default defineConfig({
 	},
 	vite: {
 		plugins: [tailwindcss(), brandStudioPlugin()],
+		define: {
+			'import.meta.env.SKIP_BUILD_REDIRECTS': JSON.stringify(process.env.SKIP_BUILD_REDIRECTS === '1'),
+		},
 		build: {
 			cssMinify: true,
 			minify: 'terser',

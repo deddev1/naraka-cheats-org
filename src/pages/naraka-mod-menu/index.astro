@@ -1,5 +1,11 @@
 ---
-import LocalizedPage from '../../components/LocalizedPage.astro';
+import RedirectLayout from '../../layouts/RedirectLayout.astro';
+import { getLocalizedPath } from '../../data/i18n/routing';
 ---
 
-<LocalizedPage locale="en" pageId="mod-menu" />
+<RedirectLayout
+	target={getLocalizedPath('home', 'en')}
+	from="/naraka-mod-menu/"
+	title="Redirecting to Naraka Cheats home"
+	description="Naraka mod menu redirects to the Naraka Cheats homepage."
+/>
