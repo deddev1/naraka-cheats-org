@@ -2,7 +2,7 @@
 import { narakaImages } from '../data/naraka';
 import { getGalleryUi } from '../data/i18n/gallery-ui';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
-import { contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
+import { contentSrcSet, contentDisplaySrc, galleryTileSizes } from '../lib/responsive-images';
 import { absoluteImageUrl } from '../data/page-images';
 
 interface Props {
@@ -13,8 +13,9 @@ const locale = Astro.props.locale ?? defaultLocale;
 const gallery = getGalleryUi(locale);
 
 const galleryImages = narakaImages.gallery.map((image) => ({
-	src: image.src,
-	url: 'url' in image && image.url ? image.url : absoluteImageUrl(image.src),
+	src: contentDisplaySrc(image.src, 480),
+	baseSrc: image.src,
+	url: 'url' in image && image.url ? image.url : absoluteImageUrl(contentDisplaySrc(image.src, 480)),
 	alt: image.alt,
 }));
 ---
@@ -31,7 +32,7 @@ const galleryImages = narakaImages.gallery.map((image) => ({
 					<meta itemprop="contentUrl" content={image.url} />
 					<img
 						src={image.src}
-						srcset={contentSrcSet(image.src)}
+						srcset={contentSrcSet(image.baseSrc)}
 						sizes={galleryTileSizes}
 						alt={image.alt}
 						itemprop="contentUrl"

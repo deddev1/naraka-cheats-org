@@ -8,7 +8,7 @@ import { seoDescription } from '../../data/brand';
 import { getSelfHreflangAlternates } from '../../data/i18n/routing';
 import { getReviewPath, reviewsBasePath } from '../../data/reviews';
 import { reviewsImageSrc } from '../../data/page-images';
-import { contentSrcSet, productMainSizes } from '../../lib/responsive-images';
+import { contentSrcSet, contentDisplaySrc, productMainSizes } from '../../lib/responsive-images';
 
 const title = seoPageTitle(brandSeo.reviewsTitle);
 const description = seoDescription(brandSeo.reviewsDescription);
@@ -91,7 +91,7 @@ const extraGraph: Record<string, unknown>[] = [
 
 			<figure class="reviews-index__media">
 				<img
-					src={reviewsImageSrc}
+					src={contentDisplaySrc(reviewsImageSrc)}
 					srcset={contentSrcSet(reviewsImageSrc)}
 					sizes={productMainSizes}
 					alt={fillBrandTokens('{brand} — Naraka cheats & Naraka Bladepoint hacks reviews')}

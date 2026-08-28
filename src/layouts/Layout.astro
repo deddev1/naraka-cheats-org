@@ -9,7 +9,7 @@ import InlineBrandEditor from '../components/InlineBrandEditor.astro';
 import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
 import type { PageId } from '../data/i18n/content.generated';
 import { buildCanonicalUrl, type HreflangAlternate } from '../data/i18n/routing';
-import { heroHeight, heroWidth } from '../lib/responsive-images';
+import { heroHeight, heroWidth, socialImageSrc } from '../lib/responsive-images';
 import { seoDescription, seoPageTitle } from '../data/site-core';
 
 interface Crumb {
@@ -61,7 +61,7 @@ const pageTitle = seoPageTitle(title);
 const pageDescription = seoDescription(description);
 
 const canonicalURL = buildCanonicalUrl(canonicalPath);
-const ogImageURL = new URL(ogImage, siteConfig.url).href;
+const ogImageURL = new URL(socialImageSrc(ogImage), siteConfig.url).href;
 const logoURL = new URL(siteConfig.logoRaster, siteConfig.url).href;
 const ogImageIsLogo = ogImage === siteConfig.logo;
 const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';

@@ -17,30 +17,53 @@ function hasWidthSuffix(name: string): boolean {
 	return /-\d+w$/i.test(name);
 }
 
-/**
- * Product screenshots and reviews banner ship with -480w / -960w variants.
- * Other assets (hero banners, feature art) do not — skip srcset for those.
- */
+function parseWebpBase(baseSrc: string): { dir: string; name: string } | undefined {
+	const match = baseSrc.match(/^(.+\/)(.+)\.webp$/i);
+	if (!match || hasWidthSuffix(match[2])) return undefined;
+	return { dir: match[1], name: match[2] };
+}
+
+/** Assets that ship with -480w / -960w variants for srcset. */
 function hasContentVariants(name: string): boolean {
-	return /^(naraka-screenshot-\d{2}|reviews-banner)$/i.test(name);
+	return /^(naraka-screenshot-\d{2}|reviews-banner|naraka-cheats-)/i.test(name);
+}
+
+/** Path for a responsive width variant when it exists. */
+export function contentVariantPath(baseSrc: string, width: (typeof contentWidths)[number]): string | undefined {
+	const parsed = parseWebpBase(baseSrc);
+	if (!parsed || !hasContentVariants(parsed.name)) return undefined;
+	return `${parsed.dir}${parsed.name}-${width}w.webp`;
+}
+
+/**
+ * Default `src` for content images — prefer the largest variant that matches display size.
+ * Crawlers and browsers fall back to `src` when evaluating page weight.
+ */
+export function contentDisplaySrc(
+	baseSrc: string,
+	preferWidth: (typeof contentWidths)[number] = 960,
+): string {
+	return contentVariantPath(baseSrc, preferWidth) ?? baseSrc;
 }
 
 /** Build srcset for content images that have -480w / -960w variants. */
 export function contentSrcSet(baseSrc: string): string | undefined {
-	const match = baseSrc.match(/^(.+\/)(.+)\.webp$/i);
-	if (!match) return undefined;
-
-	const [, dir, name] = match;
-	if (hasWidthSuffix(name) || !hasContentVariants(name)) {
-		return undefined;
-	}
+	const parsed = parseWebpBase(baseSrc);
+	if (!parsed || !hasContentVariants(parsed.name)) return undefined;
 
 	return buildSrcSet(
 		contentWidths.map((width) => ({
-			src: `${dir}${name}-${width}w.webp`,
+			src: `${parsed.dir}${parsed.name}-${width}w.webp`,
 			width,
 		})),
 	);
+}
+
+/**
+ * Social / schema image URL — use the 960w variant when available to stay under size budgets.
+ */
+export function socialImageSrc(baseSrc: string): string {
+	return contentDisplaySrc(baseSrc, 960);
 }
 
 /**

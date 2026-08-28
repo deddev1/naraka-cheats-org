@@ -33,7 +33,7 @@ export const brand = {
 	antiCheat: 'NEAC',
 
 	logo: '/images/naraka-cheats-logo.webp',
-	logoRaster: '/images/naraka-cheats-logo.png',
+	logoRaster: '/images/naraka-cheats-logo.webp',
 	logoRasterWidth: 512,
 	logoRasterHeight: 512,
 	logoAlt: 'Naraka Cheats logo',

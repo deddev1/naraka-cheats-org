@@ -28,7 +28,7 @@ const imagesDir = path.resolve('public/images');
 const tmpDir = path.resolve('tmp/naraka-screenshots/sources');
 
 const CONTENT_WIDTHS = [480, 960];
-const WEBP = { quality: 82, effort: 6, smartSubsample: true };
+const WEBP = { quality: 70, effort: 6, smartSubsample: true };
 
 const LEGACY_MAP = {
 	'naraka-screenshot-01': [

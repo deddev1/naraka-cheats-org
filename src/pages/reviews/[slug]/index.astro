@@ -6,7 +6,7 @@ import { customerReviewStats, customerReviews, productInfo, siteConfig } from '.
 import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
 import { getReviewPath, getReviewCrawlImage, reviewsBasePath } from '../../../data/reviews';
 import type { CustomerReview } from '../../../data/site';
-import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
+import { contentSrcSet, contentDisplaySrc, productMainSizes } from '../../../lib/responsive-images';
 import RelatedPages from '../../../components/RelatedPages.astro';
 import ExternalResources from '../../../components/ExternalResources.astro';
 
@@ -93,7 +93,7 @@ const extraGraph: Record<string, unknown>[] = [
 			<article class="review-detail">
 				<figure class="review-detail__media">
 					<img
-						src={photo.src}
+						src={contentDisplaySrc(photo.src)}
 						{...(contentSrcSet(photo.src)
 							? { srcset: contentSrcSet(photo.src), sizes: productMainSizes }
 							: {})}

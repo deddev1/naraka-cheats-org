@@ -5,7 +5,7 @@ import SiteFooter from '../../../components/SiteFooter.astro';
 import { productInfo, seoFaqs, siteConfig, type FaqItem } from '../../../data/site';
 import { absoluteFaqUrl, faqBasePath, getFaqCrawlImage, getFaqPath, getRelatedFaqs } from '../../../data/faq';
 import { getSelfHreflangAlternates } from '../../../data/i18n/routing';
-import { contentSrcSet, productMainSizes } from '../../../lib/responsive-images';
+import { contentSrcSet, contentDisplaySrc, productMainSizes } from '../../../lib/responsive-images';
 import RelatedPages from '../../../components/RelatedPages.astro';
 import ExternalResources from '../../../components/ExternalResources.astro';
 
@@ -81,7 +81,7 @@ const extraGraph: Record<string, unknown>[] = [
 			<article class="faq-detail">
 				<figure class="faq-detail__media">
 					<img
-						src={photo.src}
+						src={contentDisplaySrc(photo.src)}
 						srcset={contentSrcSet(photo.src)}
 						sizes={productMainSizes}
 						alt={faq.question}

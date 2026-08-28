@@ -1,4 +1,5 @@
 import { siteConfig } from './site';
+import { contentDisplaySrc, socialImageSrc } from '../lib/responsive-images';
 
 /** User-provided Supabase originals — kept for provenance; site serves optimized WebP copies. */
 export const PRODUCT_SCREENSHOT_SOURCES = [
@@ -84,10 +85,11 @@ export function getProductScreenshot(n: number): ProductScreenshotMeta {
 		caption: `Naraka Cheats screenshot ${id} for Naraka on Windows PC`,
 	};
 	const src = screenshotSrc(id);
+	const displaySrc = socialImageSrc(src);
 	return {
 		id,
 		src,
-		url: new URL(src, siteConfig.url).href,
+		url: new URL(displaySrc, siteConfig.url).href,
 		sourceUrl: PRODUCT_SCREENSHOT_SOURCES[id - 1]!,
 		...meta,
 	};
@@ -107,6 +109,6 @@ export function screenshotImageObjects(limit = PRODUCT_SCREENSHOT_COUNT) {
 		contentUrl: shot.url,
 		name: shot.title,
 		description: shot.caption,
-		thumbnailUrl: shot.url,
+		thumbnailUrl: new URL(contentDisplaySrc(shot.src, 480), siteConfig.url).href,
 	}));
 }
