@@ -73,12 +73,46 @@ export type LocaleUi = {
 export type PageId = 'home' | 'naraka-esp' | 'naraka-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'neac' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
+/** Short locale markers keep non-English titles unique after clamping. */
+export const LOCALE_TITLE_MARKERS = {
+	es: 'ES',
+	fr: 'FR',
+	de: 'DE',
+	pt: 'PT',
+	it: 'IT',
+	nl: 'NL',
+	pl: 'PL',
+	ru: 'RU',
+	tr: 'TR',
+	ar: 'AR',
+	ja: 'JP',
+	ko: 'KR',
+	zh: 'CN',
+	hi: 'IN',
+	id: 'ID',
+	th: 'TH',
+	vi: 'VN',
+	uk: 'UA',
+	cs: 'CZ',
+	ro: 'RO',
+	sv: 'SE',
+};
+
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
-export function clampTitle(s) {
-	if (s.length <= 60) return s;
-	const trimmed = s.slice(0, 60);
-	const lastSpace = trimmed.lastIndexOf(' ');
-	return lastSpace > 45 ? trimmed.slice(0, lastSpace) : trimmed.slice(0, 60);
+export function clampTitle(s, locale = 'en') {
+	let text = String(s).trim();
+	const marker = locale && locale !== 'en' ? LOCALE_TITLE_MARKERS[locale] : null;
+	const tag = marker ? ` (${marker})` : '';
+	const max = 60;
+	const budget = max - tag.length;
+
+	if (text.length > budget) {
+		const trimmed = text.slice(0, budget);
+		const lastSpace = trimmed.lastIndexOf(' ');
+		text = lastSpace > budget - 15 ? trimmed.slice(0, lastSpace) : trimmed.slice(0, budget);
+	}
+
+	return tag ? `${text}${tag}` : text;
 }
 
 export function clampDesc(s) {

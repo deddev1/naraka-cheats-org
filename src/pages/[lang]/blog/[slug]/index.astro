@@ -22,6 +22,10 @@ const lang = Astro.params.lang ?? '';
 const slug = Astro.params.slug ?? '';
 const fromPath = `/${lang}/blog/${slug}/`;
 const target = `/blog/${slug}/`;
+const post = blogPosts.find((entry) => entry.translations.en.slug === slug);
+const postTitle = post?.translations.en.title ?? 'Naraka Cheats blog post';
+const redirectTitle = `${postTitle} (${lang.toUpperCase()}) | Redirect`;
+const redirectDescription = `English-only article — redirecting to ${postTitle} on the Naraka Cheats blog.`;
 ---
 
 {
@@ -29,8 +33,8 @@ const target = `/blog/${slug}/`;
 		<RedirectLayout
 			target={target}
 			from={fromPath}
-			title="Redirecting to Naraka Cheats blog post"
-			description="English-only blog — redirecting to the matching Naraka Cheats article."
+			title={redirectTitle}
+			description={redirectDescription}
 		/>
 	) : (
 		<RedirectLayout target="/blog/" from={fromPath} />

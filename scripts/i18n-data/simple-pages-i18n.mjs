@@ -214,7 +214,7 @@ function buildFeatures(locale, u, p) {
 	const content = t[locale];
 	if (!content) {
 		return {
-			title: clampTitle(`${u.features} 2026 | ESP, Aimbot & Radar | Naraka Cheats`),
+			title: clampTitle(`${u.features} 2026 | ESP, Aimbot & Radar | Naraka Cheats`, locale),
 			description: clampDesc(stripZadeyoFromMeta(`${u.features}: ${focus}. ${p.delivery}. ${p.undetected}.`)),
 			h1: modulePageH1('features', locale) ?? u.features,
 			intro: p.s1(`${u.features} für Naraka auf ${p.win}.`),
@@ -231,7 +231,7 @@ function buildFeatures(locale, u, p) {
 	}
 	const en = simplePagesEn.features;
 	return {
-		title: clampTitle(`${u.features} 2026 | ESP, Aimbot & Radar | Naraka Cheats`),
+		title: clampTitle(`${u.features} 2026 | ESP, Aimbot & Radar | Naraka Cheats`, locale),
 		description: clampDesc(stripZadeyoFromMeta(`${u.features}: ${focus}. ${p.delivery}. ${p.undetected}.`)),
 		h1: modulePageH1('features', locale) ?? u.features,
 		intro: p.s1(`${u.features} für Naraka auf ${p.win}.`),
@@ -274,7 +274,7 @@ export function buildSimplePagesForLocale(locale) {
 		const h1 = modulePageH1(pageId, locale) ?? enPage.h1;
 		pages[pageId] = {
 			...enPage,
-			title: clampTitle(simplePageTitle(h1, enPage.title)),
+			title: clampTitle(simplePageTitle(h1, enPage.title), locale),
 			description: clampDesc(
 				stripZadeyoFromMeta(
 					`${h1} for Naraka Bladepoint ranked & Showdown on Windows PC — ${focus}. ${p.delivery}. Official naraka cheats at narakacheats.org.`,
