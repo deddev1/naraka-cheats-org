@@ -880,7 +880,7 @@ export function getNavForLocale(locale: LocaleCode, labels: Record<string, strin
 	{ label: labels.hacks ?? 'Hacks', href: getLocalizedPath('hacks', locale), pageId: 'hacks' },
 		{ label: labels.aimbot, href: getLocalizedPath('naraka-aimbot', locale), pageId: 'naraka-aimbot' },
 		{ label: labels.esp, href: getLocalizedPath('naraka-esp', locale), pageId: 'naraka-esp' },
-		{ label: 'Blog', href: locale === defaultLocale ? '/blog/' : `/${locale}/blog/` },
+		{ label: 'Blog', href: '/blog/' },
 		{ label: labels.features, href: getLocalizedPath('features', locale), pageId: 'features' },
 		{ label: labels.pricing, href: getLocalizedPath('pricing', locale), pageId: 'pricing' },
 		{ label: labels.setup, href: getLocalizedPath('setup', locale), pageId: 'setup' },
