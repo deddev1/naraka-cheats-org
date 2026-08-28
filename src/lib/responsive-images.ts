@@ -22,7 +22,12 @@ function hasWidthSuffix(name: string): boolean {
  * Other assets (hero banners, feature art) do not — skip srcset for those.
  */
 function hasContentVariants(name: string): boolean {
-	return /^(naraka-screenshot-\d{2}|reviews-banner)$/i.test(name);
+	if (/^naraka-screenshot-\d{2}$/i.test(name)) return true;
+	if (/^reviews-banner$/i.test(name)) return true;
+	if (/^naraka-cheats-hero/i.test(name)) return false;
+	if (/logo/i.test(name)) return false;
+	if (/^naraka-(cheats|aimbot|esp|extract|growth|wallhack|verdansk)/i.test(name)) return true;
+	return false;
 }
 
 /** Build srcset for content images that have -480w / -960w variants. */
@@ -60,8 +65,8 @@ export const heroSrc = '/images/naraka-cheats-hero-1199w.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1199px';
 
-/** LCP preload — same compressed WebP. */
-export const heroPreloadSrc = heroSrc;
+/** LCP preload — 640w default; browsers upgrade via imagesrcset on supporting clients. */
+export const heroPreloadSrc = '/images/naraka-cheats-hero-640w.webp';
 export const heroMimeType = 'image/webp';
 
 /** Intrinsic dimensions of the default LCP asset (1199w variant). */
