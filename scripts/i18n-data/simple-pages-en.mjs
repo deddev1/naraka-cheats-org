@@ -347,6 +347,14 @@ export const simplePagesEn = {
 					'<a href="/pricing/">Store</a>',
 				],
 			},
+			{
+				h2: 'Ranked and Showdown use',
+				paragraphs: [
+					'Lower radar range in final circles so the overlay stays readable during third-party fights. Widen range during early rotations to spot teams crossing open terrain between POIs.',
+					'Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href="/updates/">Updates</a> after NEAC patches before you reuse old configs.',
+				],
+				list: ['Tune range per map phase', 'Toggle with ESP hotkeys', 'Confirm status after patches'],
+			},
 		],
 	},
 	setup: {
@@ -413,6 +421,14 @@ export const simplePagesEn = {
 					'Self-service guides often resolve activation issues faster than a new ticket. For patch timing, follow official Naraka channels on Riot and the <a href="https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/" target="_blank" rel="noopener noreferrer">official site</a>.',
 				],
 				list: ['<a href="/faq/">FAQ</a>', '<a href="/updates/">Status</a>', '<a href="/setup/">Setup</a>'],
+			},
+			{
+				h2: 'What to include in your email',
+				paragraphs: [
+					'Send your Zadeyo order ID, the Windows version you use (10 or 11), and whether the issue is delivery, activation, or in-game overlays. Screenshots of any loader error help us route the ticket faster.',
+					'We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href="/refund-policy/">Refund Policy</a> before you open a dispute.',
+				],
+				list: ['Order ID from checkout email', 'Windows version', 'Loader or overlay error text'],
 			},
 		],
 	},

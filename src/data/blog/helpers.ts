@@ -51,8 +51,9 @@ export function getBlogImageSrc(key: BlogImageKey): string {
 	return src;
 }
 
-export function getBlogBasePath(locale: LocaleCode): string {
-	return locale === defaultLocale ? '/blog/' : `/${locale}/blog/`;
+/** English-only blog — always use root /blog/ paths (locale /{lang}/blog/ URLs 301 to EN). */
+export function getBlogBasePath(_locale?: LocaleCode): string {
+	return '/blog/';
 }
 
 export function isBlogPath(pathname: string): boolean {
@@ -69,24 +70,23 @@ export function findPostBySlug(slug: string, locale?: LocaleCode): BlogPostDefin
 	});
 }
 
-/** Target URL for the same blog index or post in another locale. */
-export function getBlogLocaleSwitchHref(pathname: string, targetLocale: LocaleCode): string {
+/** Target URL for the same blog index or post — always English canonical paths. */
+export function getBlogLocaleSwitchHref(pathname: string, _targetLocale: LocaleCode): string {
 	const context = resolvePageContextFromPath(pathname);
 
 	if (context.blogSlug) {
 		const post = findPostBySlug(context.blogSlug, context.locale) ?? findPostBySlug(context.blogSlug);
 		if (post) {
-			const translation = post.translations[targetLocale] ?? post.translations[defaultLocale];
-			return getBlogPostPath(targetLocale, translation.slug);
+			const enSlug = post.translations[defaultLocale].slug;
+			return getBlogPostPath(defaultLocale, enSlug);
 		}
 	}
 
-	return getBlogBasePath(targetLocale);
+	return getBlogBasePath();
 }
 
-export function getBlogPostPath(locale: LocaleCode, slug: string): string {
-	const base = getBlogBasePath(locale);
-	return `${base}${slug}/`;
+export function getBlogPostPath(_locale: LocaleCode, slug: string): string {
+	return `/blog/${slug}/`;
 }
 
 export function absoluteBlogUrl(locale: LocaleCode, slug?: string): string {

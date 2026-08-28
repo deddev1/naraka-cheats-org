@@ -106,6 +106,10 @@ export const phrases = {
 		s1: (topic) => `${KW.product}は${KW.game}向け${phrases.ja.win}用${KW.wallhack}、${KW.radar}、${KW.aimbot}の${phrases.ja.undetected}パッケージです。${topic}`,
 		s2: () => `${KW.checkout} checkoutで${phrases.ja.delivery}。${phrases.ja.monthly}と${phrases.ja.lifetime}プランに${KW.eac}メンテナンス含む。`,
 		s3: () => `${KW.eac}パッチ後はUpdatesページを確認。永久undetectedは保証されません。`,
+		s4: () =>
+			`Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.`,
+		s5: () =>
+			`Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.`,
 		legal: () => 'サポート・法務: support@narakacheats.org',
 	},
 	ko: {
@@ -114,6 +118,10 @@ export const phrases = {
 		s1: (topic) => `${KW.product}는 ${KW.game} ${phrases.ko.win}용 ${KW.wallhack}, ${KW.radar}, ${KW.aimbot} ${phrases.ko.undetected} 패키지입니다. ${topic}`,
 		s2: () => `${KW.checkout} checkout으로 ${phrases.ko.delivery}. ${phrases.ko.monthly} 및 ${phrases.ko.lifetime} 요금제에 ${KW.eac} 유지보수 포함.`,
 		s3: () => `${KW.eac} 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.`,
+		s4: () =>
+			`Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.`,
+		s5: () =>
+			`Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.`,
 		legal: () => '지원 및 법무: support@narakacheats.org',
 	},
 	zh: {
@@ -122,6 +130,10 @@ export const phrases = {
 		s1: (topic) => `${KW.product}为${KW.game}${phrases.zh.win}提供${KW.wallhack}、${KW.radar}和${KW.aimbot}${phrases.zh.undetected}套餐。${topic}`,
 		s2: () => `通过${KW.checkout} checkout${phrases.zh.delivery}。${phrases.zh.monthly}和${phrases.zh.lifetime}含${KW.eac}维护。`,
 		s3: () => `${KW.eac}补丁后请查看Updates页面。无任何作弊保证永久undetected。`,
+		s4: () =>
+			`Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.`,
+		s5: () =>
+			`Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.`,
 		legal: () => '支持与法务：support@narakacheats.org',
 	},
 	hi: {
@@ -146,6 +158,10 @@ export const phrases = {
 		s1: (topic) => `${KW.product} รวม ${KW.wallhack}, ${KW.radar} และ ${KW.aimbot} แบบ ${phrases.th.undetected} สำหรับ ${KW.game} บน ${phrases.th.win} ${topic}`,
 		s2: () => `${phrases.th.delivery} ผ่าน checkout ${KW.checkout} แพ็ก ${phrases.th.monthly} และ ${phrases.th.lifetime} รวมการดูแล ${KW.eac}`,
 		s3: () => `ตรวจ Updates หลังแพตช์ ${KW.eac} ไม่มี cheat รับประกัน undetected ถาวร`,
+		s4: () =>
+			`Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.`,
+		s5: () =>
+			`Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.`,
 		legal: () => 'support@narakacheats.org สำหรับการสนับสนุน',
 	},
 	vi: {

@@ -555,6 +555,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Setup</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Send your Zadeyo order ID, the Windows version you use (10 or 11), and whether the issue is delivery, activation, or in-game overlays. Screenshots of any loader error help us route the ticket faster.",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Refund Policy</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -675,6 +687,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">ESP guide</a>",
 								"<a href=\"/\">Full product</a>",
 								"<a href=\"/pricing/\">Store</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Lower radar range in final circles so the overlay stays readable during third-party fights. Widen range during early rotations to spot teams crossing open terrain between POIs.",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Updates</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -1801,6 +1825,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Guía de instalación</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. ayuda con pedidos y contacto de soporte de licencias",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Política de reembolso</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -1921,6 +1957,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Guía ESP y wallhack</a>",
 								"<a href=\"/\">Producto completo</a>",
 								"<a href=\"/pricing/\">Tienda</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. señales de radar 2D para flancos y rotaciones",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Guía de trucos indetectables</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -2388,22 +2436,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Información que recopilamos",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Correo de contacto, referencias de pedido Zadeyo y datos básicos de seguridad del sitio.",
-								"Los datos de pago se procesan en el checkout de Zadeyo — no se almacenan en narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Cómo usamos los datos",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Respuestas de soporte, resolución de pedidos y cumplimiento legal cuando sea necesario.",
-								"Consulta la página Updates antes de jugar tras parches de NEAC. Ningún cheat garantiza estado indetectable permanente.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Tus derechos",
 							paragraphs: [
-								"Contacta support@narakacheats.org para solicitudes legales o de soporte.",
-								"Correo: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Política de reembolso</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -2423,22 +2497,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Entrega digital",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Correo de contacto, referencias de pedido Zadeyo y datos básicos de seguridad del sitio.",
-								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Aprobación de reembolso",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Respuestas de soporte, resolución de pedidos y cumplimiento legal cuando sea necesario.",
-								"Consulta la página Updates antes de jugar tras parches de NEAC. Ningún cheat garantiza estado indetectable permanente.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Cómo solicitar",
 							paragraphs: [
-								"Contacta support@narakacheats.org para solicitudes legales o de soporte.",
-								"Correo: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Soporte</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Tienda</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -2458,22 +2546,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aceptación de términos",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Correo de contacto, referencias de pedido Zadeyo y datos básicos de seguridad del sitio.",
-								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen mantenimiento NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Aviso de riesgos",
 							paragraphs: [
-								"Naraka Cheats ofrece ESP wallhack, radar hack y Naraka Aimbot indetectables para Naraka en Windows PC. Respuestas de soporte, resolución de pedidos y cumplimiento legal cuando sea necesario.",
-								"Usar cheats puede violar los términos del equipo de Naraka — asumes todo riesgo de ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Resumen Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Cambios de política",
 							paragraphs: [
-								"Contacta support@narakacheats.org para solicitudes legales o de soporte.",
-								"Correo: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Política de reembolso</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -2993,6 +3095,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Guide d'installation</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. aide commande et contact support licence",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Politique de remboursement</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -3113,6 +3227,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Guide ESP et wallhack</a>",
 								"<a href=\"/\">Produit complet</a>",
 								"<a href=\"/pricing/\">Boutique</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. indices radar 2D pour flancs et rotations",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Guide triches indétectables</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -3580,22 +3706,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informations collectées",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. E-mail de contact, références de commande Zadeyo et données de sécurité de base du site.",
-								"Les détails de paiement sont traités par le checkout Zadeyo — non stockés sur narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Utilisation des données",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. Réponses du support, résolution des commandes et conformité légale si requis.",
-								"Consultez Updates après les patchs NEAC. Aucune triche ne garantit un statut indétectable permanent.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Vos droits",
 							paragraphs: [
-								"Contactez support@narakacheats.org pour le support ou les demandes légales.",
-								"E-mail : support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Politique de remboursement</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -3615,22 +3767,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Livraison numérique",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. E-mail de contact, références de commande Zadeyo et données de sécurité de base du site.",
-								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Approbation du remboursement",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. Réponses du support, résolution des commandes et conformité légale si requis.",
-								"Consultez Updates après les patchs NEAC. Aucune triche ne garantit un statut indétectable permanent.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Comment demander",
 							paragraphs: [
-								"Contactez support@narakacheats.org pour le support ou les demandes légales.",
-								"E-mail : support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Boutique</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -3650,22 +3816,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Acceptation des conditions",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. E-mail de contact, références de commande Zadeyo et données de sécurité de base du site.",
-								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Avertissement sur les risques",
 							paragraphs: [
-								"Naraka Cheats combine ESP wallhack, radar hack et Naraka Aimbot indétectables pour Naraka sur PC Windows. Réponses du support, résolution des commandes et conformité légale si requis.",
-								"Utiliser des cheats peut enfreindre les conditions de l'équipe Naraka — vous assumez tout risque de bannissement.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Aperçu Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Modifications",
 							paragraphs: [
-								"Contactez support@narakacheats.org pour le support ou les demandes légales.",
-								"E-mail : support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Politique de remboursement</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -3789,6 +3969,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Boxen, Distanz und Filter für Spieler, Wissenschaftler und Loot.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Spieler-ESP",
@@ -3801,6 +3982,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Monument-Zonen und Loot-Runs klar halten, ohne den Bildschirm zu überladen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Deckkraft anpassen",
@@ -3813,6 +3995,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP inklusive Aimbot und Radar in einem Plan.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/\">Vollständiges Produkt</a>",
@@ -3839,6 +4022,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"FOV, Smoothness und Knochenpriorität before queueing einstellen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Soft-Aim-Stärke",
@@ -3851,6 +4035,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Halte Einstellungen dezent für längere matches. Erhöhe Stärke nur wenn du mehr Risiko akzeptierst.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Legit Soft Aim",
@@ -3863,6 +4048,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Aimbot mit ESP und Radar in einer Lizenz enthalten.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/\">Vollständiges Produkt</a>",
@@ -3889,6 +4075,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Spieler, Wissenschaftler und Loot durch Wände mit Distanzanzeige sehen.",
 								"Filter nutzen, damit das Overlay in Monumenten und PvP-Zonen klar bleibt.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Spielerboxen & Distanz",
@@ -3901,6 +4088,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zielhilfe, die sich natürlich anfühlt.",
 								"FOV, Smoothness und Knochenpriorität pro Waffe before queueing einstellen.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Soft-Aim-Stärke",
@@ -3913,6 +4101,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Einfaches 2D-Radar für Bedrohungen außerhalb des Sichtfelds.",
 								"Flanken bei Monumenten erkennen, ohne den ganzen Bildschirm zu füllen.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Nahe Feind-Hinweise",
@@ -3925,6 +4114,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Die meisten Cheat-Seiten behandeln ESP, Aimbot, Radar, Setup und Status auf separaten Seiten. Nutze diese Guides:",
 								"Jeder Guide deckt einen Teil des match stacks ab, damit du vor dem Checkout vergleichen kannst.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>",
@@ -3943,6 +4133,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Wir bauen nach großen Naraka- oder NEAC-Patches neu.",
 								"Prüfe Status vor dem Spielen nach Patch-Tagen.",
 								"Offizielle Änderungen in Naraka-Patchnotes und Naraka Wiki prüfen, bevor du Overlays anpasst.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Status auf der Status-Seite",
@@ -3969,6 +4160,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Voller Paketzugang für Windows 10 / 11.",
 								"Gleiches ESP, Soft Aim und Radar bei Monats- und Lifetime-Plänen.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"ESP, Aimbot und Radar",
@@ -3981,6 +4173,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Monatlich zum Testen oder Lifetime mit einer Zahlung.",
 								"Beide Pläne schalten nach Checkout dieselben Features frei.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Monatlich — 30 Tage",
@@ -3993,6 +4186,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Lies die Rückerstattungsrichtlinie bei Bedarf. Kontaktiere Support mit deiner Bestell-ID.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">Rückerstattungsrichtlinie</a>",
@@ -4019,6 +4213,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Kaufe zuerst einen Plan. Du erhältst die Lizenz per E-Mail.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Windows 10 / 11 PC",
@@ -4031,6 +4226,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Loader als Admin starten, Lizenz einfügen, dann Naraka starten.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Loader aus der Liefer-E-Mail laden",
@@ -4043,6 +4239,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Status nach Patch prüfen. E-Mail an support@narakacheats.org mit Bestell-ID.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected Cheats Guide</a>",
@@ -4069,6 +4266,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Stand 13. Aug. 2026 ist das Paket für Naraka auf Windows PC online. Wir posten hier eine Notiz, wenn ein Naraka- oder NEAC-Patch einen Rebuild braucht.",
 								"Ist der Status grün, kannst du matchen. Bei Rebuild warte auf die nächste Notiz.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Vor jedem match nach einem Patch diese Seite prüfen",
@@ -4081,6 +4279,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Warte auf unsere Rebuild-Notiz, dann starte. Spiele nach großen Updates nicht mit altem Build.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Lies die neueste Status-Notiz",
@@ -4093,6 +4292,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Kein Cheat ist für immer 100% sicher. Bleib aktuell und nutze sichere Einstellungen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Erst Status, dann spielen",
@@ -4118,6 +4318,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Du erhältst nach Zahlung eine digitale Lizenz per E-Mail.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Sofortige Lieferung nach Checkout",
@@ -4130,6 +4331,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Folge Setup nach Kauf. Prüfe Status nach großen Naraka- oder NEAC-Patches.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/setup/\">Setup-Anleitung</a>",
@@ -4141,6 +4343,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Lies die Rückerstattungsrichtlinie vor dem Kauf, wenn du Details brauchst.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">Rückerstattungsrichtlinie</a>",
@@ -4166,6 +4369,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"E-Mail an support@narakacheats.org. Bestell-ID und kurze Problembeschreibung angeben.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Bestell-ID vom Beleg",
@@ -4178,11 +4382,26 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Prüfe FAQ und Status vor dem Schreiben. Viele Setup-Fragen sind bereits beantwortet.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/faq/\">FAQ</a>",
 								"<a href=\"/updates/\">Undetected Cheats Guide</a>",
 								"<a href=\"/setup/\">Setup-Anleitung</a>",
+							],
+						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Bestellhilfe und Lizenz-Support-Kontakt",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Rückerstattungsrichtlinie</a> before you open a dispute.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
 							],
 						},
 					],
@@ -4205,6 +4424,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Undetected-Wartung nach NEAC Patches",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Anti-cheat technology is documented by <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>; Naraka client updates ship through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Undetected status is an ongoing process tied to those releases.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4213,6 +4433,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"When NEAC or Naraka updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Undetected Cheats Guide</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> for launcher outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/neac-bypass/\">NEAC Wartung</a>. Feature stack: <a href=\"/features/\">Alle Features</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4221,6 +4442,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">Shop</a>.",
 								"New buyers should also read <a href=\"/naraka-cheats-2026/\">naraka cheats 2026</a> and complete <a href=\"/setup/\">Setup-Anleitung</a> after delivery.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4229,6 +4451,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Step one: open <a href=\"/updates/\">Undetected Cheats Guide</a> for the latest build date. Step two: read <a href=\"/neac-bypass/\">NEAC Wartung</a> notes if a patch dropped in the last 72 hours. Step three: tune soft aim and ESP toggles conservatively for ranked.",
 								"Discord-only status shops hide rebuild timing. We publish on-site so you can compare against <a href=\"/compare/\">budget competitors</a> fairly.",
 								"FAQ shortcuts: <a href=\"/faq/are-naraka-cheats-undetected-in-2026/\">undetected in 2026</a> · <a href=\"/faq/naraka-neac-bypass/\">neac bypass</a> · <a href=\"/blog/naraka-cheats-buyers-guide/\">buyers guide</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4251,6 +4474,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Wallhack ESP für Spieler, Kadaver und Entfernung",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"For the broader ESP keyword page see <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>; for combat assist see <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4259,6 +4483,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Wallhack ESP für Spieler, Kadaver und Entfernung",
 								"Season maps and POI changes are announced via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/naraka-radar-hack/\">2D-Radar-Overlay</a> cues for flanks during arena corners and vertical fights.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4267,6 +4492,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP wallhack modules rebuild after NEAC patches. Follow the <a href=\"/updates/\">Undetected Cheats Guide</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-naraka-cheats/\">undetected naraka cheats</a> and <a href=\"/neac-bypass/\">NEAC Wartung</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">Shop</a> or continue to the <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a> landing for alternate search wording.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4288,6 +4514,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Nahe Feind-Hinweise mit einstellbarer Reichweite für Solo-Queue-Spieler.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"Flanken-Bewusstsein",
@@ -4300,11 +4527,26 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Radar für noch unsichtbare Bedrohungen. ESP beim Pushen nutzen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>",
 								"<a href=\"/\">Vollständiges Produkt</a>",
 								"<a href=\"/pricing/\">Shop</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. 2D-Radar-Hinweise für Flanken und Rotationen",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected Cheats Guide</a> after NEAC patches before you reuse old configs.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -4327,6 +4569,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC is 24 Entertainment' anti-cheat for Naraka on PC (see <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Naraka Cheats monitors NEAC patch notes and Naraka seasonal updates from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> to schedule module reviews.",
 								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4335,6 +4578,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Undetected Cheats Guide</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Naraka server status on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid loading in on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4343,6 +4587,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every match.",
 								"Contact <a href=\"/support/\">Support</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">Shop</a> and finish <a href=\"/setup/\">Setup-Anleitung</a> only after <a href=\"/updates/\">Undetected Cheats Guide</a> shows a live build.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4350,6 +4595,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. wie NEAC Updates für Naraka Cheats gehandhabt werden",
 								"If you have a prior HWID ban, no cheat package magically resets Riot’s hardware flags. Treat spoofer claims skeptically and read <a href=\"/faq/naraka-neac-bypass/\">NEAC FAQ</a> before buying anywhere.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
@@ -4359,6 +4605,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. wie NEAC Updates für Naraka Cheats gehandhabt werden",
 								"Patch-day checklist: (1) read <a href=\"/updates/\">Undetected Cheats Guide</a>, (2) confirm NEAC notes on <a href=\"/neac-bypass/\">NEAC Wartung</a>, (3) verify Steam launcher health, (4) load only after rebuild is posted, (5) retune soft aim FOV if weapon balance changed.",
 								"Deep dives: <a href=\"/undetected-naraka-cheats/\">undetected guide</a> · <a href=\"/blog/undetected-naraka-cheats-eac/\">NEAC reality blog</a> · <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4381,6 +4628,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. 2026 naraka cheats Checkliste vor dem Checkout",
 								"Track official season messaging on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>, then use our <a href=\"/updates/\">Undetected Cheats Guide</a> for product rebuild timing.",
 								"Monthly ($35) and lifetime ($150) plans cover ranked and Quick Match match loops — see <a href=\"/pricing/\">Shop</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4388,6 +4636,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. 2026 naraka cheats Checkliste vor dem Checkout",
 								"Deep links: <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>, <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>, <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>, <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>, <a href=\"/naraka-radar-hack/\">2D-Radar-Overlay</a>, <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
@@ -4397,6 +4646,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Read the <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> checklist, <a href=\"/blog/naraka-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@narakacheats.org via the <a href=\"/support/\">Support</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4405,6 +4655,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"2026 ranked play rewards information speed — ESP hero markers, radar flank cues, and soft aim tuned for Vandal/Phantom TTK windows. After each Act, revisit <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a> and ESP toggles.",
 								"Compare against <a href=\"/\">Vollständiges Produkt</a> criteria and <a href=\"/undetected-naraka-cheats/\">undetected maintenance</a> before switching shops mid-season.",
 								"Blog: <a href=\"/blog/naraka-cheats-2026-whats-new/\">what changed in 2026</a> · <a href=\"/blog/naraka-cheats-complete-guide-2026/\">complete guide</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4426,6 +4677,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats sind Drittanbieter-Tools mit Extra-Infos und Kampfhilfe in matches. Die meisten suchen naraka cheats für Spieler-ESP, Loot-Sicht, Off-Screen-Radar oder sanfteres Zielen unter Druck.",
 								"Naraka Cheats bündelt diese Tools in einer Windows-PC-Lizenz — ohne separate Downloads für Wallhack, Radar und Aimbot.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4433,6 +4685,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Eine Lizenz deckt den kompletten Match-Stack ab: Spieler-ESP mit Distanz, Helden-Marker, 2D-Radar für Flanken und konfigurierbare Soft-Aim-Profile pro Waffe.",
 								"Monats- und Lifetime-Pläne enthalten denselben Feature-Stack mit NEAC-Rebuilds.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"ESP / Wallhack mit Distanzanzeige",
@@ -4447,6 +4700,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Jedes Tool hat eine eigene Detailseite, wenn du vor dem Checkout mehr wissen willst.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>",
@@ -4460,6 +4714,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka nutzt NEAC. Kein Cheat bleibt für immer undetected — Wartung nach Patches zählt. Prüfe die Status-Seite nach jedem Naraka- oder NEAC-Update vor dem Spielen.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected Cheats Guide</a>",
@@ -4473,6 +4728,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Wähle monatlich ($35) oder Lifetime ($150) im Shop — gleiche Features. Nach Checkout erhältst du die Lizenz per E-Mail. Folge der Setup-Anleitung und prüfe den Status nach großen Patches.",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 							list: [
 								"<a href=\"/pricing/\">Shop</a>",
@@ -4500,6 +4756,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. digitaler Lizenz-Download nach Zahlung",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">Setup-Anleitung</a> and Support requests.",
 								"If 24 Entertainment services are down, check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> before assuming a download failure.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4508,6 +4765,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. digitaler Lizenz-Download nach Zahlung",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">Shop</a>.",
 								"Feature detail: <a href=\"/features/\">Alle Features</a>. Module pages: <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>, <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4516,6 +4774,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Naraka or NEAC patches ship, check the <a href=\"/updates/\">Undetected Cheats Guide</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> so you know what “download ready” means after a patch.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4538,6 +4797,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. In-Client ESP- und Soft-Aim-Toggles",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Control deep-dives: <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>, <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>, <a href=\"/naraka-radar-hack/\">2D-Radar-Overlay</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4546,6 +4806,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. In-Client ESP- und Soft-Aim-Toggles",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a> profiles before aggressive FOV.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4554,6 +4815,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka mod menu behavior is rebuilt when NEAC or major Naraka updates land. Follow the <a href=\"/updates/\">Undetected Cheats Guide</a> and <a href=\"/neac-bypass/\">NEAC Wartung</a> before loading in on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">Shop</a>.",
 								"Need install steps? Open <a href=\"/setup/\">Setup-Anleitung</a> after your license email arrives.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4576,6 +4838,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. sanfte Soft-Aim-Einstellungen für Windows PC",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Full Aimbot documentation: <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>. Alternate wording: <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4584,6 +4847,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. sanfte Soft-Aim-Einstellungen für Windows PC",
 								"Weapon TTKs shift with <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a> and <a href=\"/naraka-radar-hack/\">2D-Radar-Overlay</a> overlays.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4592,6 +4856,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot modules rebuild after NEAC patches. Check the <a href=\"/updates/\">Undetected Cheats Guide</a> before loading in — responsible settings and maintenance awareness matter for undetected play.",
 								"Monthly and lifetime licenses checkout with digital delivery on Windows PC — <a href=\"/pricing/\">Shop</a>.",
 								"Activation help: <a href=\"/setup/\">Setup-Anleitung</a> · status questions: <a href=\"/support/\">Support</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4614,6 +4879,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. was vor dem Kauf der naraka cheats verglichen werden sollte",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a>, then confirm our <a href=\"/updates/\">Undetected Cheats Guide</a> note before you judge any package “best.”",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4622,6 +4888,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. was vor dem Kauf der naraka cheats verglichen werden sollte",
 								"Review <a href=\"/features/\">Alle Features</a>, <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>, and <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>, <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>, <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4629,6 +4896,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. was vor dem Kauf der naraka cheats verglichen werden sollte",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
@@ -4638,6 +4906,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Budget stores often advertise $7 day keys with Discord-only status. Naraka Cheats ships ESP + radar + soft aim together with public <a href=\"/updates/\">Undetected Cheats Guide</a> and email support.",
 								"Read named comparisons: <a href=\"/blog/naraka-cheats-vs-cheatvault-comparison/\">vs budget ESP shops</a> · <a href=\"/blog/naraka-cheats-vs-ghostware-features-pricing/\">vs minimal ESP tools</a> · hub <a href=\"/compare/\">Compare table</a>.",
 								"Still deciding? <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> · <a href=\"/reviews/\">reviews</a> · <a href=\"/pricing/\">Shop</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4660,6 +4929,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. undetected Aimbot-Hack-Assist für Naraka",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Prefer softer tracking language? See <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>. Full settings: <a href=\"/naraka-aimbot/\">Aimbot und Soft Aim</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4668,6 +4938,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. undetected Aimbot-Hack-Assist für Naraka",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> can change ideal FOV — retune after major weapon balance updates.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4676,6 +4947,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot hack signatures rebuild after NEAC updates. Follow the <a href=\"/updates/\">Undetected Cheats Guide</a> and <a href=\"/neac-bypass/\">NEAC Wartung</a> before loading in after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">Shop</a>.",
 								"Pair with <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a> for the full information + assist loop.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4698,6 +4970,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. ESP-Hack-Boxen, Kadaver-Pins und Entfernung",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Canonical visibility guide: <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>. Wallhack wording: <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4706,6 +4979,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. ESP-Hack-Boxen, Kadaver-Pins und Entfernung",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"POI and loot changes publish through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> — keep categories toggled to what the current map rewards.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4714,6 +4988,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP hack modules rebuild after NEAC and Naraka patches. Check the <a href=\"/updates/\">Undetected Cheats Guide</a> before loading in — pair ESP hack awareness with <a href=\"/naraka-radar-hack/\">2D-Radar-Overlay</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">Shop</a>.",
 								"Install steps: <a href=\"/setup/\">Setup-Anleitung</a>. Status questions: <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4736,6 +5011,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. unlock-all Suchen vs echte ESP- und Aimbot-Tools",
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
 								"Cosmetics and patch cycle progression items are sold through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4744,6 +5020,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. unlock-all Suchen vs echte ESP- und Aimbot-Tools",
 								"For loadout planning during a match, loot and hero markers speed map rotations — see the <a href=\"/naraka-esp/\">ESP- und Wallhack-Guide</a> and <a href=\"/features/\">Alle Features</a> pages for the full tool list.",
 								"Related: <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a> and <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 						{
@@ -4752,6 +5029,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"If you need undetected ESP wallhack, radar hack, and Aimbot for Naraka on Windows PC, compare <a href=\"/pricing/\">Shop</a> and read the <a href=\"/setup/\">Setup-Anleitung</a> before checkout.",
 								"Check the <a href=\"/updates/\">Undetected Cheats Guide</a> after NEAC patches — maintenance rebuilds publish for active licenses.",
 								"Questions? <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">Support</a> cover delivery and configuration — not cosmetic unlocks.",
+								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
 							],
 						},
 					],
@@ -4772,22 +5050,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Erhobene Daten",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Kontakt-E-Mail, Zadeyo-Bestellreferenzen und grundlegende Sicherheitsdaten der Website.",
-								"Zahlungsdaten werden über Zadeyo-Checkout verarbeitet — nicht auf narakacheats.org gespeichert.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Datennutzung",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Support-Antworten, Auftragsabwicklung und rechtliche Compliance bei Bedarf.",
-								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Ihre Rechte",
 							paragraphs: [
-								"support@narakacheats.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Rückerstattungsrichtlinie</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -4807,22 +5111,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digitale Lieferung",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Kontakt-E-Mail, Zadeyo-Bestellreferenzen und grundlegende Sicherheitsdaten der Website.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Rückerstattungsgenehmigung",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Support-Antworten, Auftragsabwicklung und rechtliche Compliance bei Bedarf.",
-								"Updates-Seite nach NEAC-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "So beantragen",
 							paragraphs: [
-								"support@narakacheats.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Shop</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -4842,22 +5160,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Annahme der Bedingungen",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Kontakt-E-Mail, Zadeyo-Bestellreferenzen und grundlegende Sicherheitsdaten der Website.",
-								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. NEAC-Wartung.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Risikohinweis",
 							paragraphs: [
-								"Naraka Cheats bündelt ESP wallhack, radar hack und Naraka Aimbot als undetected Paket für Naraka auf Windows PC. Support-Antworten, Auftragsabwicklung und rechtliche Compliance bei Bedarf.",
-								"Cheats können gegen die Nutzungsbedingungen des Naraka Teams verstoßen — Sie tragen das volle Ban-Risiko.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats Übersicht</a>.",
 							],
 						},
 						{
 							h2: "Richtlinienänderungen",
 							paragraphs: [
-								"support@narakacheats.org für Support und rechtliche Anfragen.",
-								"E-Mail: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Rückerstattungsrichtlinie</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -5376,6 +5708,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Guia de instalação</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. ajuda com pedidos e contato de suporte de licenças",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Política de reembolso</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -5496,6 +5840,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Guia ESP e wallhack</a>",
 								"<a href=\"/\">Produto completo</a>",
 								"<a href=\"/pricing/\">Loja</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. sinais de radar 2D para flancos e rotações",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Guia de cheats indetectáveis</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -5963,22 +6319,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informações que coletamos",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. E-mail de contato, referências de pedido Zadeyo e dados básicos de segurança do site.",
-								"Detalhes de pagamento são processados pelo checkout Zadeyo — não armazenados em narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Como usamos os dados",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. Respostas de suporte, resolução de pedidos e conformidade legal quando necessário.",
-								"Verifique Updates após patches NEAC. Nenhum cheat garante status indetectável permanente.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Seus direitos",
 							paragraphs: [
-								"Contacte support@narakacheats.org para suporte ou questões legais.",
-								"E-mail: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Política de reembolso</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -5998,22 +6380,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Entrega digital",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. E-mail de contato, referências de pedido Zadeyo e dados básicos de segurança do site.",
-								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Aprovação de reembolso",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. Respostas de suporte, resolução de pedidos e conformidade legal quando necessário.",
-								"Verifique Updates após patches NEAC. Nenhum cheat garante status indetectável permanente.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Como solicitar",
 							paragraphs: [
-								"Contacte support@narakacheats.org para suporte ou questões legais.",
-								"E-mail: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Suporte</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Loja</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -6033,22 +6429,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Aceitação dos termos",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. E-mail de contato, referências de pedido Zadeyo e dados básicos de segurança do site.",
-								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Aviso de risco",
 							paragraphs: [
-								"Naraka Cheats reúne ESP wallhack, radar hack e Naraka Aimbot indetectáveis para Naraka no PC Windows. Respostas de suporte, resolução de pedidos e conformidade legal quando necessário.",
-								"Usar cheats pode violar os termos da equipe Naraka — você assume todo risco de ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Visão geral Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Alterações de política",
 							paragraphs: [
-								"Contacte support@narakacheats.org para suporte ou questões legais.",
-								"E-mail: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Política de reembolso</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -6567,6 +6977,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Guida installazione</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. aiuto ordini e contatto supporto licenze",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Politica di rimborso</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -6687,6 +7109,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Guida ESP e wallhack</a>",
 								"<a href=\"/\">Prodotto completo</a>",
 								"<a href=\"/pricing/\">Negozio</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. segnali radar 2D per flanchi e rotazioni",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Guida cheat indetectable</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -7154,22 +7588,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informazioni raccolte",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Email di contatto, riferimenti ordine Zadeyo e dati di sicurezza di base del sito.",
-								"I dati di pagamento sono elaborati dal checkout Zadeyo — non memorizzati su narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Uso dei dati",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Risposte di supporto, risoluzione ordini e conformità legale quando richiesto.",
-								"Controlla Updates dopo patch NEAC. Nessun cheat garantisce stato indetectable permanente.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "I tuoi diritti",
 							paragraphs: [
-								"Contatta support@narakacheats.org per supporto o richieste legali.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Politica di rimborso</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -7189,22 +7649,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Consegna digitale",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Email di contatto, riferimenti ordine Zadeyo e dati di sicurezza di base del sito.",
-								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Approvazione rimborso",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Risposte di supporto, risoluzione ordini e conformità legale quando richiesto.",
-								"Controlla Updates dopo patch NEAC. Nessun cheat garantisce stato indetectable permanente.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Come richiedere",
 							paragraphs: [
-								"Contatta support@narakacheats.org per supporto o richieste legali.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Supporto</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Negozio</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -7224,22 +7698,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Accettazione dei termini",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Email di contatto, riferimenti ordine Zadeyo e dati di sicurezza di base del sito.",
-								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Avviso sui rischi",
 							paragraphs: [
-								"Naraka Cheats unisce ESP wallhack, radar hack e Naraka Aimbot indetectable per Naraka su PC Windows. Risposte di supporto, risoluzione ordini e conformità legale quando richiesto.",
-								"Usare cheat può violare i termini del team Naraka — assumi tutto il rischio di ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Panoramica Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Modifiche alla policy",
 							paragraphs: [
-								"Contatta support@narakacheats.org per supporto o richieste legali.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Politica di rimborso</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -7758,6 +8246,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Installatiegids</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. bestelhulp en licentie support contact",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Restitutiebeleid</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -7878,6 +8378,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">ESP- en wallhack-gids</a>",
 								"<a href=\"/\">Volledig product</a>",
 								"<a href=\"/pricing/\">Winkel</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. 2D radar signalen voor flanks en rotaties",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected cheats gids</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -8345,22 +8857,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informatie die we verzamelen",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Contact-e-mail, Zadeyo-orderreferenties en basisbeveiligingsgegevens van de site.",
-								"Betalingsgegevens worden verwerkt via Zadeyo checkout — niet opgeslagen op narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Hoe we gegevens gebruiken",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Supportreacties, orderafhandeling en wettelijke naleving indien vereist.",
-								"Check Updates na NEAC-patches. Geen cheat garandeert permanent undetected status.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Uw rechten",
 							paragraphs: [
-								"support@narakacheats.org voor support en juridische vragen.",
-								"E-mail: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Restitutiebeleid</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -8380,22 +8918,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digitale levering",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Contact-e-mail, Zadeyo-orderreferenties en basisbeveiligingsgegevens van de site.",
-								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. NEAC-onderhoud.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Restitutiegoedkeuring",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Supportreacties, orderafhandeling en wettelijke naleving indien vereist.",
-								"Check Updates na NEAC-patches. Geen cheat garandeert permanent undetected status.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Hoe aanvragen",
 							paragraphs: [
-								"support@narakacheats.org voor support en juridische vragen.",
-								"E-mail: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Winkel</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -8415,22 +8967,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Acceptatie van voorwaarden",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Contact-e-mail, Zadeyo-orderreferenties en basisbeveiligingsgegevens van de site.",
-								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. NEAC-onderhoud.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Risicowaarschuwing",
 							paragraphs: [
-								"Naraka Cheats bundelt ESP wallhack, radar hack en Naraka Aimbot als undetected pakket voor Naraka op Windows PC. Supportreacties, orderafhandeling en wettelijke naleving indien vereist.",
-								"Cheats gebruiken kan in strijd zijn met de voorwaarden van het 24 Entertainment — u neemt alle ban-risico's op u.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats overzicht</a>.",
 							],
 						},
 						{
 							h2: "Beleidswijzigingen",
 							paragraphs: [
-								"support@narakacheats.org voor support en juridische vragen.",
-								"E-mail: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Restitutiebeleid</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -8949,6 +9515,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Przewodnik instalacji</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. pomoc przy zamówieniu i kontakt wsparcia licencji",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Polityka zwrotów</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -9069,6 +9647,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Przewodnik ESP i wallhack</a>",
 								"<a href=\"/\">Pełny produkt</a>",
 								"<a href=\"/pricing/\">Sklep</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. 2D radar wskazówki dla flank i rotacji",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Przewodnik cheatów undetected</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -9536,22 +10126,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informacje, które zbieramy",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. E-mail kontaktowy, referencje zamówień Zadeyo i podstawowe dane bezpieczeństwa witryny.",
-								"Dane płatności są przetwarzane przez checkout Zadeyo — nie przechowywane na narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Jak wykorzystujemy dane",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. Odpowiedzi wsparcia, rozwiązywanie zamówień i zgodność prawna w razie potrzeby.",
-								"Sprawdź Updates po patchach NEAC. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Twoje prawa",
 							paragraphs: [
-								"support@narakacheats.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Polityka zwrotów</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -9571,22 +10187,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dostawa cyfrowa",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. E-mail kontaktowy, referencje zamówień Zadeyo i podstawowe dane bezpieczeństwa witryny.",
-								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Zatwierdzenie zwrotu",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. Odpowiedzi wsparcia, rozwiązywanie zamówień i zgodność prawna w razie potrzeby.",
-								"Sprawdź Updates po patchach NEAC. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Jak złożyć wniosek",
 							paragraphs: [
-								"support@narakacheats.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Wsparcie</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Sklep</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -9606,22 +10236,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Akceptacja warunków",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. E-mail kontaktowy, referencje zamówień Zadeyo i podstawowe dane bezpieczeństwa witryny.",
-								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Ostrzeżenie o ryzyku",
 							paragraphs: [
-								"Naraka Cheats łączy ESP wallhack, radar hack i Naraka Aimbot jako pakiet undetected dla Naraka na PC Windows. Odpowiedzi wsparcia, rozwiązywanie zamówień i zgodność prawna w razie potrzeby.",
-								"Korzystanie z cheatów może naruszać warunki zespołu Naraka — bierzesz na siebie ryzyko bana.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Przegląd Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Zmiany polityki",
 							paragraphs: [
-								"support@narakacheats.org w sprawach wsparcia i prawnych.",
-								"E-mail: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Polityka zwrotów</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -10140,6 +10784,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Гайд по установке</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. помощь с заказом и контакт поддержки лицензий",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Политика возврата</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -10260,6 +10916,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Гайд ESP и wallhack</a>",
 								"<a href=\"/\">Полный продукт</a>",
 								"<a href=\"/pricing/\">Магазин</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. 2D radar подсказки для флангов и ротаций",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Гайд undetected читов</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -10727,22 +11395,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Информация, которую мы собираем",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Контактный email, ссылки на заказы Zadeyo и базовые данные безопасности сайта.",
-								"Платёжные данные обрабатываются через checkout Zadeyo — не хранятся на narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Как мы используем данные",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Ответы поддержки, решение заказов и соблюдение законодательства при необходимости.",
-								"Проверяйте Updates после патчей NEAC. Ни один чит не гарантирует постоянный undetected статус.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Ваши права",
 							paragraphs: [
-								"support@narakacheats.org для поддержки и юридических вопросов.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Политика возврата</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -10762,22 +11456,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Цифровая доставка",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Контактный email, ссылки на заказы Zadeyo и базовые данные безопасности сайта.",
-								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Одобрение возврата",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Ответы поддержки, решение заказов и соблюдение законодательства при необходимости.",
-								"Проверяйте Updates после патчей NEAC. Ни один чит не гарантирует постоянный undetected статус.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Как запросить",
 							paragraphs: [
-								"support@narakacheats.org для поддержки и юридических вопросов.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Поддержка</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Магазин</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -10797,22 +11505,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Принятие условий",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Контактный email, ссылки на заказы Zadeyo и базовые данные безопасности сайта.",
-								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Предупреждение о рисках",
 							paragraphs: [
-								"Naraka Cheats объединяет ESP wallhack, radar hack и Naraka Aimbot в undetected пакете для Naraka на Windows PC. Ответы поддержки, решение заказов и соблюдение законодательства при необходимости.",
-								"Использование читов может нарушать условия команды Naraka — вы принимаете на себя риск бана.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Обзор Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Изменения политики",
 							paragraphs: [
-								"support@narakacheats.org для поддержки и юридических вопросов.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Политика возврата</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -11331,6 +12053,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Kurulum rehberi</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. sipariş yardımı ve lisans destek iletişimi",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">İade politikası</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -11451,6 +12185,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">ESP ve wallhack rehberi</a>",
 								"<a href=\"/\">Tam ürün</a>",
 								"<a href=\"/pricing/\">Mağaza</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. flank ve rotasyonlar için 2D radar ipuçları",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected hile rehberi</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -11918,22 +12664,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Topladığımız bilgiler",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. İletişim e-postası, Zadeyo sipariş referansları ve temel site güvenlik verileri.",
-								"Ödeme bilgileri Zadeyo checkout ile işlenir — narakacheats.org'da saklanmaz.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Verileri nasıl kullanıyoruz",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. Destek yanıtları, sipariş çözümü ve gerektiğinde yasal uyum.",
-								"NEAC yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Haklarınız",
 							paragraphs: [
-								"Destek ve yasal sorular için support@narakacheats.org.",
-								"E-posta: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">İade politikası</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -11953,22 +12725,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Dijital teslimat",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. İletişim e-postası, Zadeyo sipariş referansları ve temel site güvenlik verileri.",
-								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları NEAC bakımı içerir.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "İade onayı",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. Destek yanıtları, sipariş çözümü ve gerektiğinde yasal uyum.",
-								"NEAC yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Nasıl talep edilir",
 							paragraphs: [
-								"Destek ve yasal sorular için support@narakacheats.org.",
-								"E-posta: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Destek</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Mağaza</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -11988,22 +12774,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Şartların kabulü",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. İletişim e-postası, Zadeyo sipariş referansları ve temel site güvenlik verileri.",
-								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları NEAC bakımı içerir.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Risk uyarısı",
 							paragraphs: [
-								"Naraka Cheats, Naraka için Windows PC üzerinde ESP wallhack, radar hack ve Naraka Aimbot undetected paket sunar. Destek yanıtları, sipariş çözümü ve gerektiğinde yasal uyum.",
-								"Hile kullanmak Naraka ekibi şartlarını ihlal edebilir — tüm ban riskini üstlenirsiniz.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats genel bakış</a>.",
 							],
 						},
 						{
 							h2: "Politika değişiklikleri",
 							paragraphs: [
-								"Destek ve yasal sorular için support@narakacheats.org.",
-								"E-posta: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">İade politikası</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -12522,6 +13322,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">دليل التثبيت</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. مساعدة الطلبات واتصال دعم التراخيص",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">سياسة الاسترداد</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -12642,6 +13454,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">دليل ESP وWallhack</a>",
 								"<a href=\"/\">المنتج الكامل</a>",
 								"<a href=\"/pricing/\">المتجر</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. إشارات radar ثنائية الأبعاد للهجمات الجانبية والتدوير",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">دليل الغش غير المكتشف</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -13109,22 +13933,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "المعلومات التي نجمعها",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. بريد الاتصال ومراجع طلبات Zadeyo وبيانات أمان الموقع الأساسية.",
-								"تُعالَج تفاصيل الدفع عبر checkout Zadeyo — ولا تُخزَّن على narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "كيف نستخدم البيانات",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. ردود الدعم وحل الطلبات والامتثال القانوني عند الحاجة.",
-								"راجع Updates بعد تص patches NEAC. لا يضمن أي غش حالة undetected دائمة.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "حقوقك",
 							paragraphs: [
-								"support@narakacheats.org للدعم والطلبات القانونية.",
-								"البريد: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">سياسة الاسترداد</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -13144,22 +13994,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "التسليم الرقمي",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. بريد الاتصال ومراجع طلبات Zadeyo وبيانات أمان الموقع الأساسية.",
-								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "موافقة الاسترداد",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. ردود الدعم وحل الطلبات والامتثال القانوني عند الحاجة.",
-								"راجع Updates بعد تص patches NEAC. لا يضمن أي غش حالة undetected دائمة.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "كيفية الطلب",
 							paragraphs: [
-								"support@narakacheats.org للدعم والطلبات القانونية.",
-								"البريد: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">الدعم</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">المتجر</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -13179,22 +14043,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "قبول الشروط",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. بريد الاتصال ومراجع طلبات Zadeyo وبيانات أمان الموقع الأساسية.",
-								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "إخلاء المسؤولية عن المخاطر",
 							paragraphs: [
-								"Naraka Cheats يجمع ESP wallhack وradar hack وNaraka Aimbot غير مكتشف لـ Naraka على Windows PC. ردود الدعم وحل الطلبات والامتثال القانوني عند الحاجة.",
-								"استخدام الغش قد ينتهك شروط فريق Naraka — أنت تتحمل كل مخاطر الحظر.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">نظرة عامة على Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "تغييرات السياسة",
 							paragraphs: [
-								"support@narakacheats.org للدعم والطلبات القانونية.",
-								"البريد: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">سياسة الاسترداد</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -13318,6 +14196,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"プレイヤー、科学者、loot向けボックス、距離、フィルター。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"プレイヤーESP",
@@ -13330,6 +14212,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"画面を埋め尽くさずマップとスパイク設置ルートを見やすく。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"透明度を調整",
@@ -13342,6 +14228,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESPはaimbotとradarが1プランに含まれます。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">製品全体</a>",
@@ -13368,6 +14258,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"レイド前にFOV、スムーズさ、ボーン優先度を設定。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"soft aim強度",
@@ -13380,6 +14274,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"長時間レイドは控えめ設定。リスクを受け入れる時だけ強度を上げてください。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"自然なsoft aim",
@@ -13392,6 +14290,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"AimbotはESPとradarが1ライセンスに含まれます。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">製品全体</a>",
@@ -13418,6 +14320,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP、soft aim、radarコントロール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Player boxes & distance",
@@ -13430,6 +14336,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP、soft aim、radarコントロール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Smooth aim strength",
@@ -13442,6 +14352,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP、soft aim、radarコントロール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Nearby enemy cues",
@@ -13454,6 +14368,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP、soft aim、radarコントロール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP & wallhack guide</a>",
@@ -13471,6 +14389,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP、soft aim、radarコントロール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Status on the Status page",
@@ -13497,6 +14419,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Windows 10 / 11向けフルパッケージアクセス。",
 								"月額・lifetimeプランで同じESP、soft aim、radar。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP、aimbot、radar",
@@ -13509,6 +14435,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"まず月額で試すか、lifetimeを一括購入。",
 								"どちらのプランもチェックアウト後に同じ機能が使えます。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"月額 — 30日",
@@ -13521,6 +14451,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"必要なら返金ポリシーを確認。注文IDを添えてサポートへ。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">返金ポリシー</a>",
@@ -13547,6 +14481,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"まずプランを購入。ライセンスはメールで届きます。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Windows 10 / 11 PC",
@@ -13559,6 +14497,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"loaderを管理者実行、ライセンス貼り付け、Naraka起動。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"配信メールからloaderをDL",
@@ -13571,6 +14513,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"パッチ後はステータス確認。注文IDを添えてsupport@narakacheats.orgへ。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetectedチートガイド</a>",
@@ -13597,6 +14543,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"2026年8月13日時点で、Windows PC向けNarakaパッケージはオンラインです。NarakaまたはNEACパッチでリビルドが必要な際はここに投稿します。",
 								"ステータスが緑ならレイド可能。リビルド中は次の投稿を待ってください。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"パッチ後のレイド前に必ずこのページを確認",
@@ -13609,6 +14559,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"リビルド通知を待ってから起動。大規模アップデート後は古いビルドでプレイしないでください。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"最新ステータスを確認",
@@ -13621,6 +14575,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"チートは永久に100%安全ではありません。最新状態を保ち安全な設定を使ってください。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ステータス確認後にプレイ",
@@ -13646,6 +14604,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"支払い後メールでデジタルライセンスを受け取ります。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"チェックアウト後即時配信",
@@ -13658,6 +14620,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"購入後はセットアップに従い、NarakaまたはNEAC大型パッチ後はステータスを確認。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/setup/\">セットアップガイド</a>",
@@ -13669,6 +14635,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"詳細が必要なら購入前に返金ポリシーを確認。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">返金ポリシー</a>",
@@ -13694,6 +14664,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"support@narakacheats.orgへメール。注文IDと問題の概要を記載。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"領収書の注文ID",
@@ -13706,11 +14680,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"連絡前にFAQとステータスを確認。多くのセットアップ質問は既に掲載。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/faq/\">FAQ</a>",
 								"<a href=\"/updates/\">Undetectedチートガイド</a>",
 								"<a href=\"/setup/\">セットアップガイド</a>",
+							],
+						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。注文ヘルプとライセンスサポート連絡先",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">返金ポリシー</a> before you open a dispute.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
 							],
 						},
 					],
@@ -13720,7 +14716,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Undetectedチート | NEAC Safe Status",
 					description: "Undetectedチート for Naraka Bladepoint ranked & Showdown on Windows PC — NEACパッチ後のundetectedメンテナンス. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Undetectedチート — NEAC Safe Status",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Undetectedチート. NEACパッチ後のundetectedメンテナンス.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Undetectedチート. NEACパッチ後のundetectedメンテナンス. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats undetected status overview for Windows PC",
 					galleryTitle: "Undetectedチート",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -13733,6 +14729,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。NEACパッチ後のundetectedメンテナンス",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Anti-cheat technology is documented by <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>; Naraka client updates ship through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Undetected status is an ongoing process tied to those releases.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13741,6 +14739,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"When NEAC or Naraka updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Undetectedチートガイド</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> for launcher outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/neac-bypass/\">NEACメンテナンス</a>. Feature stack: <a href=\"/features/\">全機能</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13749,6 +14749,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">ストア</a>.",
 								"New buyers should also read <a href=\"/naraka-cheats-2026/\">naraka cheats 2026</a> and complete <a href=\"/setup/\">セットアップガイド</a> after delivery.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13757,6 +14759,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Step one: open <a href=\"/updates/\">Undetectedチートガイド</a> for the latest build date. Step two: read <a href=\"/neac-bypass/\">NEACメンテナンス</a> notes if a patch dropped in the last 72 hours. Step three: tune soft aim and ESP toggles conservatively for ranked.",
 								"Discord-only status shops hide rebuild timing. We publish on-site so you can compare against <a href=\"/compare/\">budget competitors</a> fairly.",
 								"FAQ shortcuts: <a href=\"/faq/are-naraka-cheats-undetected-in-2026/\">undetected in 2026</a> · <a href=\"/faq/naraka-neac-bypass/\">neac bypass</a> · <a href=\"/blog/naraka-cheats-buyers-guide/\">buyers guide</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -13766,7 +14770,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Wallhack | ESP Visibility",
 					description: "Naraka Wallhack for Naraka Bladepoint ranked & Showdown on Windows PC — プレイヤー、死体、距離向けwallhack ESP. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Naraka Wallhack — ESP Visibility",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Wallhack. プレイヤー、死体、距離向けwallhack ESP.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Wallhack. プレイヤー、死体、距離向けwallhack ESP. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "naraka wallhack visibility through walls in a match",
 					galleryTitle: "Naraka Wallhack",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -13779,6 +14783,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。プレイヤー、死体、距離向けwallhack ESP",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"For the broader ESP keyword page see <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>; for combat assist see <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13787,6 +14793,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。プレイヤー、死体、距離向けwallhack ESP",
 								"Season maps and POI changes are announced via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/naraka-radar-hack/\">2Dレーダーオーバーレイ</a> cues for flanks during arena corners and vertical fights.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13795,6 +14803,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP wallhack modules rebuild after NEAC patches. Follow the <a href=\"/updates/\">Undetectedチートガイド</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-naraka-cheats/\">undetected naraka cheats</a> and <a href=\"/neac-bypass/\">NEACメンテナンス</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">ストア</a> or continue to the <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a> landing for alternate search wording.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -13816,6 +14826,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ソロファーマー・レイダー向け調整可能範囲の近距離敵表示。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"側面認識",
@@ -13828,11 +14842,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"まだ見えない脅威はradar、押し込み時はESP。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>",
 								"<a href=\"/\">製品全体</a>",
 								"<a href=\"/pricing/\">ストア</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。側面攻撃とローテーション向け2D radarキュー",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetectedチートガイド</a> after NEAC patches before you reuse old configs.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -13842,7 +14878,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "NEAC Bypass | Patch Maintenance",
 					description: "NEAC Bypass for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka cheats向けNEAC更新の対応方法. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "NEAC Bypass — Patch Maintenance",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。NEAC Bypass. Naraka cheats向けNEAC更新の対応方法.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。NEAC Bypass. Naraka cheats向けNEAC更新の対応方法. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats maintenance after a NEAC patch",
 					galleryTitle: "NEAC Bypass",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -13855,6 +14891,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC is 24 Entertainment' anti-cheat for Naraka on PC (see <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Naraka Cheats monitors NEAC patch notes and Naraka seasonal updates from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> to schedule module reviews.",
 								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13863,6 +14901,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Undetectedチートガイド</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Naraka server status on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid loading in on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13871,6 +14911,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every match.",
 								"Contact <a href=\"/support/\">サポート</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">ストア</a> and finish <a href=\"/setup/\">セットアップガイド</a> only after <a href=\"/updates/\">Undetectedチートガイド</a> shows a live build.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13878,6 +14920,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka cheats向けNEAC更新の対応方法",
 								"If you have a prior HWID ban, no cheat package magically resets Riot’s hardware flags. Treat spoofer claims skeptically and read <a href=\"/faq/naraka-neac-bypass/\">NEAC FAQ</a> before buying anywhere.",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
@@ -13887,6 +14931,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka cheats向けNEAC更新の対応方法",
 								"Patch-day checklist: (1) read <a href=\"/updates/\">Undetectedチートガイド</a>, (2) confirm NEAC notes on <a href=\"/neac-bypass/\">NEACメンテナンス</a>, (3) verify Steam launcher health, (4) load only after rebuild is posted, (5) retune soft aim FOV if weapon balance changed.",
 								"Deep dives: <a href=\"/undetected-naraka-cheats/\">undetected guide</a> · <a href=\"/blog/undetected-naraka-cheats-eac/\">NEAC reality blog</a> · <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -13896,7 +14942,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Bladepoint Cheats 2026 | Buyer Guide",
 					description: "Naraka Bladepoint Cheats 2026 for Naraka Bladepoint ranked & Showdown on Windows PC — checkout前の2026 naraka cheatsチェックリスト. 即時デジタル配信. undetected. Official",
 					h1: "Naraka Bladepoint Cheats 2026 — Buyer Guide",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Bladepoint Cheats 2026. checkout前の2026 naraka cheatsチェックリスト.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Bladepoint Cheats 2026. checkout前の2026 naraka cheatsチェックリスト. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats product overview for Naraka",
 					galleryTitle: "Naraka Bladepoint Cheats 2026",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -13909,6 +14955,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。checkout前の2026 naraka cheatsチェックリスト",
 								"Track official season messaging on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>, then use our <a href=\"/updates/\">Undetectedチートガイド</a> for product rebuild timing.",
 								"Monthly ($35) and lifetime ($150) plans cover ranked and Quick Match match loops — see <a href=\"/pricing/\">ストア</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13916,6 +14964,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。checkout前の2026 naraka cheatsチェックリスト",
 								"Deep links: <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>, <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>, <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>, <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>, <a href=\"/naraka-radar-hack/\">2Dレーダーオーバーレイ</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
@@ -13925,6 +14975,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Read the <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> checklist, <a href=\"/blog/naraka-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@narakacheats.org via the <a href=\"/support/\">サポート</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -13933,6 +14985,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"2026 ranked play rewards information speed — ESP hero markers, radar flank cues, and soft aim tuned for Vandal/Phantom TTK windows. After each Act, revisit <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a> and ESP toggles.",
 								"Compare against <a href=\"/\">製品全体</a> criteria and <a href=\"/undetected-naraka-cheats/\">undetected maintenance</a> before switching shops mid-season.",
 								"Blog: <a href=\"/blog/naraka-cheats-2026-whats-new/\">what changed in 2026</a> · <a href=\"/blog/naraka-cheats-complete-guide-2026/\">complete guide</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -13954,6 +15008,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Narakaチートはレイド中に追加情報と戦闘支援を提供するサードパーティツールです。プレイヤーESP、loot、オフスクリーンradar、プレッシャー下でのスムーズなエイム目的でnaraka cheatsを探す人が多いです。",
 								"Naraka Cheatsはwallhack、radar、aimbotをWindows PC向け1ライセンスにまとめます — 個別ダウンロード不要。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 						},
 						{
@@ -13961,6 +15019,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"1ライセンスでフル match stack をカバー: 距離付きプレイヤーESP、ヒーローマーカー、側面用2D radar、武器別soft aimプロファイル。",
 								"月額とライフタイムプランは同じ機能 stack を NEAC rebuilds 付きで含みます。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"距離表示ESP / wallhack",
@@ -13975,6 +15037,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"購入前に詳細が必要なら各ツールに専用ページがあります。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>",
@@ -13988,6 +15054,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"NarakaはNEACを使用。チートは永久にundetectedではありません — パッチ後のメンテナンスが重要です。プレイ前にNarakaまたはNEAC更新後はステータスページを確認してください。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetectedチートガイド</a>",
@@ -14001,6 +15071,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ストアで月額（$35）またはlifetime（$150）を選択 — 機能は同じ。チェックアウト後メールでライセンス。セットアップガイドに従い、大きなパッチ後はステータスを確認。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/pricing/\">ストア</a>",
@@ -14015,7 +15089,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Cheat Download | Instant Access",
 					description: "Naraka Cheat Download for Naraka Bladepoint ranked & Showdown on Windows PC — 支払い後のデジタルライセンスダウンロード. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Naraka Cheat Download — Instant Access",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Cheat Download. 支払い後のデジタルライセンスダウンロード.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Cheat Download. 支払い後のデジタルライセンスダウンロード. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats download and install delivery flow",
 					galleryTitle: "Naraka Cheat Download",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14028,6 +15102,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。支払い後のデジタルライセンスダウンロード",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">セットアップガイド</a> and Support requests.",
 								"If 24 Entertainment services are down, check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> before assuming a download failure.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14036,6 +15112,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。支払い後のデジタルライセンスダウンロード",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">ストア</a>.",
 								"Feature detail: <a href=\"/features/\">全機能</a>. Module pages: <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>, <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14044,6 +15122,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Naraka or NEAC patches ship, check the <a href=\"/updates/\">Undetectedチートガイド</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">サポート</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> so you know what “download ready” means after a patch.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14053,7 +15133,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Mod Menu | In-Game Toggles",
 					description: "Naraka Mod Menu for Naraka Bladepoint ranked & Showdown on Windows PC — クライアント内ESPとsoft aimトグル. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Naraka Mod Menu — In-Game Toggles",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Mod Menu. クライアント内ESPとsoft aimトグル.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Mod Menu. クライアント内ESPとsoft aimトグル. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats in-game menu controls",
 					galleryTitle: "Naraka Mod Menu",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14066,6 +15146,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。クライアント内ESPとsoft aimトグル",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Control deep-dives: <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>, <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>, <a href=\"/naraka-radar-hack/\">2Dレーダーオーバーレイ</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14074,6 +15156,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。クライアント内ESPとsoft aimトグル",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a> profiles before aggressive FOV.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14082,6 +15166,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka mod menu behavior is rebuilt when NEAC or major Naraka updates land. Follow the <a href=\"/updates/\">Undetectedチートガイド</a> and <a href=\"/neac-bypass/\">NEACメンテナンス</a> before loading in on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">ストア</a>.",
 								"Need install steps? Open <a href=\"/setup/\">セットアップガイド</a> after your license email arrives.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14091,7 +15177,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Soft Aim | Smooth Aim Settings",
 					description: "Naraka Soft Aim for Naraka Bladepoint ranked & Showdown on Windows PC — Windows PC向けスムーズなsoft aim設定. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Naraka Soft Aim — Smooth Aim Settings",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Soft Aim. Windows PC向けスムーズなsoft aim設定.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Soft Aim. Windows PC向けスムーズなsoft aim設定. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka soft aim FOV and smoothness settings",
 					galleryTitle: "Naraka Soft Aim",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14104,6 +15190,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Windows PC向けスムーズなsoft aim設定",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Full Aimbot documentation: <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>. Alternate wording: <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14112,6 +15200,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Windows PC向けスムーズなsoft aim設定",
 								"Weapon TTKs shift with <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a> and <a href=\"/naraka-radar-hack/\">2Dレーダーオーバーレイ</a> overlays.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14120,6 +15210,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot modules rebuild after NEAC patches. Check the <a href=\"/updates/\">Undetectedチートガイド</a> before loading in — responsible settings and maintenance awareness matter for undetected play.",
 								"Monthly and lifetime licenses checkout with digital delivery on Windows PC — <a href=\"/pricing/\">ストア</a>.",
 								"Activation help: <a href=\"/setup/\">セットアップガイド</a> · status questions: <a href=\"/support/\">サポート</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14129,7 +15221,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "最強Narakaチート | Buyer Checklist",
 					description: "最強Narakaチート for Naraka Bladepoint ranked & Showdown on Windows PC — naraka cheats購入前に比較すべき点. 即時デジタル配信. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "最強Narakaチート — Buyer Checklist",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。最強Narakaチート. naraka cheats購入前に比較すべき点.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。最強Narakaチート. naraka cheats購入前に比較すべき点. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats overview for Naraka on PC",
 					galleryTitle: "最強Narakaチート",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14142,6 +15234,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。naraka cheats購入前に比較すべき点",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a>, then confirm our <a href=\"/updates/\">Undetectedチートガイド</a> note before you judge any package “best.”",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14150,12 +15244,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。naraka cheats購入前に比較すべき点",
 								"Review <a href=\"/features/\">全機能</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>, and <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>, <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
 							h2: "Buying naraka cheats safely",
 							paragraphs: [
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。naraka cheats購入前に比較すべき点",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
@@ -14166,6 +15264,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Budget stores often advertise $7 day keys with Discord-only status. Naraka Cheats ships ESP + radar + soft aim together with public <a href=\"/updates/\">Undetectedチートガイド</a> and email support.",
 								"Read named comparisons: <a href=\"/blog/naraka-cheats-vs-cheatvault-comparison/\">vs budget ESP shops</a> · <a href=\"/blog/naraka-cheats-vs-ghostware-features-pricing/\">vs minimal ESP tools</a> · hub <a href=\"/compare/\">Compare table</a>.",
 								"Still deciding? <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> · <a href=\"/reviews/\">reviews</a> · <a href=\"/pricing/\">ストア</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14175,7 +15275,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Aimbot Hack | Soft Aim Assist",
 					description: "Naraka Aimbot Hack for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka向けundetected Aimbot hack assist. 即時デジタル配信. undetected. Official naraka cheats",
 					h1: "Naraka Aimbot Hack — Soft Aim Assist",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Aimbot Hack. Naraka向けundetected Aimbot hack assist.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Aimbot Hack. Naraka向けundetected Aimbot hack assist. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Aimbot hack controls and bone priority",
 					galleryTitle: "Naraka Aimbot Hack",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14188,6 +15288,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka向けundetected Aimbot hack assist",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Prefer softer tracking language? See <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>. Full settings: <a href=\"/naraka-aimbot/\">Aimbot・Soft aim</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14196,6 +15298,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka向けundetected Aimbot hack assist",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> can change ideal FOV — retune after major weapon balance updates.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14204,6 +15308,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot hack signatures rebuild after NEAC updates. Follow the <a href=\"/updates/\">Undetectedチートガイド</a> and <a href=\"/neac-bypass/\">NEACメンテナンス</a> before loading in after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">ストア</a>.",
 								"Pair with <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a> for the full information + assist loop.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14213,7 +15319,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka ESP Hack | Boxes & Loot",
 					description: "Naraka ESP Hack for Naraka Bladepoint ranked & Showdown on Windows PC — ESP hackボックス、死体pin、距離. 即時デジタル配信. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka ESP Hack — Boxes & Loot",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka ESP Hack. ESP hackボックス、死体pin、距離.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka ESP Hack. ESP hackボックス、死体pin、距離. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka ESP hack boxes and hero markers",
 					galleryTitle: "Naraka ESP Hack",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14226,6 +15332,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP hackボックス、死体pin、距離",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Canonical visibility guide: <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>. Wallhack wording: <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14234,6 +15342,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。ESP hackボックス、死体pin、距離",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"POI and loot changes publish through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> — keep categories toggled to what the current map rewards.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14242,6 +15352,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP hack modules rebuild after NEAC and Naraka patches. Check the <a href=\"/updates/\">Undetectedチートガイド</a> before loading in — pair ESP hack awareness with <a href=\"/naraka-radar-hack/\">2Dレーダーオーバーレイ</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">ストア</a>.",
 								"Install steps: <a href=\"/setup/\">セットアップガイド</a>. Status questions: <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14251,7 +15363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Unlock All | What It Means",
 					description: "Naraka Unlock All for Naraka Bladepoint ranked & Showdown on Windows PC — unlock-all検索 vs 本物のESPとAimbotツール. 即時デジタル配信. undetected. Official naraka cheats at",
 					h1: "Naraka Unlock All — What It Means",
-					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Unlock All. unlock-all検索 vs 本物のESPとAimbotツール.",
+					intro: "Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。Naraka Unlock All. unlock-all検索 vs 本物のESPとAimbotツール. Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 					imageAlt: "Naraka Cheats license features overview",
 					galleryTitle: "Naraka Unlock All",
 					ctaPrimary: "Naraka Cheatsを購入",
@@ -14264,6 +15376,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。unlock-all検索 vs 本物のESPとAimbotツール",
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
 								"Cosmetics and patch cycle progression items are sold through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14272,6 +15386,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。unlock-all検索 vs 本物のESPとAimbotツール",
 								"For loadout planning during a match, loot and hero markers speed map rotations — see the <a href=\"/naraka-esp/\">ESP・Wallhackガイド</a> and <a href=\"/features/\">全機能</a> pages for the full tool list.",
 								"Related: <a href=\"/naraka-cheats/\">Naraka Cheats概要</a> and <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 						{
@@ -14280,6 +15396,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"If you need undetected ESP wallhack, radar hack, and Aimbot for Naraka on Windows PC, compare <a href=\"/pricing/\">ストア</a> and read the <a href=\"/setup/\">セットアップガイド</a> before checkout.",
 								"Check the <a href=\"/updates/\">Undetectedチートガイド</a> after NEAC patches — maintenance rebuilds publish for active licenses.",
 								"Questions? <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">サポート</a> cover delivery and configuration — not cosmetic unlocks.",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
 							],
 						},
 					],
@@ -14300,22 +15418,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "収集する情報",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。連絡メール、Zadeyo注文参照、基本的なサイトセキュリティデータ。",
-								"支払い情報はZadeyo checkoutで処理され、narakacheats.orgには保存されません。",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "データの利用方法",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。サポート対応、注文処理、必要時の法的遵守。",
-								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "あなたの権利",
 							paragraphs: [
-								"サポート・法務: support@narakacheats.org",
-								"メール: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">返金ポリシー</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -14335,22 +15479,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "デジタル配信",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。連絡メール、Zadeyo注文参照、基本的なサイトセキュリティデータ。",
-								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "返金承認",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。サポート対応、注文処理、必要時の法的遵守。",
-								"NEACパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "申請方法",
 							paragraphs: [
-								"サポート・法務: support@narakacheats.org",
-								"メール: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">サポート</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">ストア</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -14370,22 +15528,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "規約への同意",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。連絡メール、Zadeyo注文参照、基本的なサイトセキュリティデータ。",
-								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにNEACメンテナンス含む。",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "リスク免責",
 							paragraphs: [
-								"Naraka CheatsはNaraka向けWindows PC用ESP wallhack、radar hack、Naraka Aimbotのundetectedパッケージです。サポート対応、注文処理、必要時の法的遵守。",
-								"チートの使用はNarakaチームの利用規約に違反する可能性があり、BANリスクはすべて自己負担です。",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats概要</a>.",
 							],
 						},
 						{
 							h2: "ポリシー変更",
 							paragraphs: [
-								"サポート・法務: support@narakacheats.org",
-								"メール: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">返金ポリシー</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -14509,6 +15681,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"플레이어, 과학자, loot용 박스, 거리, 필터.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"플레이어 ESP",
@@ -14521,6 +15697,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"화면을 가리지 않고 POI와 grapple routes 구역을 깔끔하게.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"불투명도 조절",
@@ -14533,6 +15713,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP는 aimbot과 radar가 하나의 요금제에 포함됩니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">전체 제품</a>",
@@ -14559,6 +15743,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"레이드 전 FOV, 부드러움, 본 우선순위를 설정하세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"soft aim 강도",
@@ -14571,6 +15759,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"긴 레이드는 미세한 설정 유지. 더 많은 위험을 감수할 때만 강도를 올리세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"자연스러운 soft aim",
@@ -14583,6 +15775,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Aimbot은 ESP와 radar가 하나의 라이선스에 포함됩니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">전체 제품</a>",
@@ -14609,6 +15805,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP, soft aim, radar 컨트롤",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Player boxes & distance",
@@ -14621,6 +15821,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP, soft aim, radar 컨트롤",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Smooth aim strength",
@@ -14633,6 +15837,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP, soft aim, radar 컨트롤",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Nearby enemy cues",
@@ -14645,6 +15853,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP, soft aim, radar 컨트롤",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP & wallhack guide</a>",
@@ -14662,6 +15874,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP, soft aim, radar 컨트롤",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Status on the Status page",
@@ -14688,6 +15904,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Windows 10 / 11용 전체 패키지 액세스.",
 								"월간 및 lifetime 요금제에서 동일한 ESP, soft aim, radar.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP, aimbot, radar",
@@ -14700,6 +15920,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"먼저 월간으로 체험하거나 lifetime를 일시불로.",
 								"두 요금제 모두 결제 후 동일한 기능을 제공합니다.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"월간 — 30일",
@@ -14712,6 +15936,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"필요하면 환불 정책을 읽으세요. 주문 ID와 함께 지원팀에 문의하세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">환불 정책</a>",
@@ -14738,6 +15966,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"먼저 요금제를 구매하세요. 이메일로 라이선스를 받습니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Windows 10 / 11 PC",
@@ -14750,6 +15982,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"loader를 관리자로 실행, 라이선스 붙여넣기, Naraka 실행.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"배송 이메일에서 loader 다운로드",
@@ -14762,6 +15998,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"패치 후 상태 확인. 주문 ID와 함께 support@narakacheats.org.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected 치트 가이드</a>",
@@ -14788,6 +16028,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"2026년 8월 13일 기준 Naraka Windows PC 패키지는 온라인입니다. Naraka 또는 NEAC 패치로 리빌드가 필요하면 여기에 공지합니다.",
 								"상태가 녹색이면 레이드 가능. 리빌드 중에는 다음 공지를 기다리세요.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"패치 후 레이드마다 이 페이지 확인",
@@ -14800,6 +16044,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"리빌드 공지를 기다린 후 실행하세요. 대규모 업데이트 후 구버전으로 플레이하지 마세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"최신 상태 공지 확인",
@@ -14812,6 +16060,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"어떤 치트도 영원히 100% 안전하지 않습니다. 업데이트하고 안전한 설정을 사용하세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"상태 확인 후 플레이",
@@ -14837,6 +16089,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"결제 후 이메일로 디지털 라이선스를 받습니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"결제 후 즉시 배송",
@@ -14849,6 +16105,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"구매 후 설치를 따르고 Naraka 또는 NEAC 대규모 패치 후 상태를 확인하세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/setup/\">설치 가이드</a>",
@@ -14860,6 +16120,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"자세한 내용이 필요하면 구매 전 환불 정책을 읽으세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">환불 정책</a>",
@@ -14885,6 +16149,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"support@narakacheats.org로 이메일. 주문 ID와 문제 요약 포함.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"영수증의 주문 ID",
@@ -14897,11 +16165,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"문의 전 FAQ와 상태 확인. 많은 설치 질문이 이미 다뤄집니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/faq/\">FAQ</a>",
 								"<a href=\"/updates/\">Undetected 치트 가이드</a>",
 								"<a href=\"/setup/\">설치 가이드</a>",
+							],
+						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 주문 도움 및 라이선스 지원 연락처",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">환불 정책</a> before you open a dispute.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
 							],
 						},
 					],
@@ -14911,7 +16201,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Undetected 치트 | NEAC Safe Status",
 					description: "Undetected 치트 for Naraka Bladepoint ranked & Showdown on Windows PC — NEAC 패치 후 undetected 유지보수. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Undetected 치트 — NEAC Safe Status",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Undetected 치트. NEAC 패치 후 undetected 유지보수.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Undetected 치트. NEAC 패치 후 undetected 유지보수. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats undetected status overview for Windows PC",
 					galleryTitle: "Undetected 치트",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -14924,6 +16214,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. NEAC 패치 후 undetected 유지보수",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Anti-cheat technology is documented by <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>; Naraka client updates ship through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Undetected status is an ongoing process tied to those releases.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -14932,6 +16224,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"When NEAC or Naraka updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Undetected 치트 가이드</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> for launcher outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/neac-bypass/\">NEAC 유지보수</a>. Feature stack: <a href=\"/features/\">모든 기능</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -14940,6 +16234,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">스토어</a>.",
 								"New buyers should also read <a href=\"/naraka-cheats-2026/\">naraka cheats 2026</a> and complete <a href=\"/setup/\">설치 가이드</a> after delivery.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -14948,6 +16244,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Step one: open <a href=\"/updates/\">Undetected 치트 가이드</a> for the latest build date. Step two: read <a href=\"/neac-bypass/\">NEAC 유지보수</a> notes if a patch dropped in the last 72 hours. Step three: tune soft aim and ESP toggles conservatively for ranked.",
 								"Discord-only status shops hide rebuild timing. We publish on-site so you can compare against <a href=\"/compare/\">budget competitors</a> fairly.",
 								"FAQ shortcuts: <a href=\"/faq/are-naraka-cheats-undetected-in-2026/\">undetected in 2026</a> · <a href=\"/faq/naraka-neac-bypass/\">neac bypass</a> · <a href=\"/blog/naraka-cheats-buyers-guide/\">buyers guide</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -14957,7 +16255,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Wallhack | ESP Visibility",
 					description: "Naraka Wallhack for Naraka Bladepoint ranked & Showdown on Windows PC — 플레이어, 시체, 거리용 wallhack ESP. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka Wallhack — ESP Visibility",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Wallhack. 플레이어, 시체, 거리용 wallhack ESP.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Wallhack. 플레이어, 시체, 거리용 wallhack ESP. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "naraka wallhack visibility through walls in a match",
 					galleryTitle: "Naraka Wallhack",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -14970,6 +16268,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 플레이어, 시체, 거리용 wallhack ESP",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"For the broader ESP keyword page see <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>; for combat assist see <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -14978,6 +16278,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 플레이어, 시체, 거리용 wallhack ESP",
 								"Season maps and POI changes are announced via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/naraka-radar-hack/\">2D 레이더 오버레이</a> cues for flanks during arena corners and vertical fights.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -14986,6 +16288,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP wallhack modules rebuild after NEAC patches. Follow the <a href=\"/updates/\">Undetected 치트 가이드</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-naraka-cheats/\">undetected naraka cheats</a> and <a href=\"/neac-bypass/\">NEAC 유지보수</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">스토어</a> or continue to the <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a> landing for alternate search wording.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15007,6 +16311,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"솔로 파밍·레이드용 조절 가능 범위의 근처 적 신호.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"측면 인식",
@@ -15019,11 +16327,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"아직 보이지 않는 위협은 radar, 밀고 들어갈 때 ESP.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>",
 								"<a href=\"/\">전체 제품</a>",
 								"<a href=\"/pricing/\">스토어</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 측면 공격과 로테이션용 2D radar 신호",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected 치트 가이드</a> after NEAC patches before you reuse old configs.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -15033,7 +16363,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "NEAC Bypass | Patch Maintenance",
 					description: "NEAC Bypass for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka cheats용 NEAC 업데이트 처리 방법. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "NEAC Bypass — Patch Maintenance",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. NEAC Bypass. Naraka cheats용 NEAC 업데이트 처리 방법.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. NEAC Bypass. Naraka cheats용 NEAC 업데이트 처리 방법. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats maintenance after a NEAC patch",
 					galleryTitle: "NEAC Bypass",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15046,6 +16376,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC is 24 Entertainment' anti-cheat for Naraka on PC (see <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Naraka Cheats monitors NEAC patch notes and Naraka seasonal updates from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> to schedule module reviews.",
 								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15054,6 +16386,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Undetected 치트 가이드</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Naraka server status on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid loading in on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15062,6 +16396,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every match.",
 								"Contact <a href=\"/support/\">지원</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">스토어</a> and finish <a href=\"/setup/\">설치 가이드</a> only after <a href=\"/updates/\">Undetected 치트 가이드</a> shows a live build.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15069,6 +16405,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka cheats용 NEAC 업데이트 처리 방법",
 								"If you have a prior HWID ban, no cheat package magically resets Riot’s hardware flags. Treat spoofer claims skeptically and read <a href=\"/faq/naraka-neac-bypass/\">NEAC FAQ</a> before buying anywhere.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
@@ -15078,6 +16416,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka cheats용 NEAC 업데이트 처리 방법",
 								"Patch-day checklist: (1) read <a href=\"/updates/\">Undetected 치트 가이드</a>, (2) confirm NEAC notes on <a href=\"/neac-bypass/\">NEAC 유지보수</a>, (3) verify Steam launcher health, (4) load only after rebuild is posted, (5) retune soft aim FOV if weapon balance changed.",
 								"Deep dives: <a href=\"/undetected-naraka-cheats/\">undetected guide</a> · <a href=\"/blog/undetected-naraka-cheats-eac/\">NEAC reality blog</a> · <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15087,7 +16427,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Bladepoint Cheats 2026 | Buyer Guide",
 					description: "Naraka Bladepoint Cheats 2026 for Naraka Bladepoint ranked & Showdown on Windows PC — checkout 전 2026 naraka cheats 체크리스트. 즉시 디지털 배송. undetected. Official",
 					h1: "Naraka Bladepoint Cheats 2026 — Buyer Guide",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Bladepoint Cheats 2026. checkout 전 2026 naraka cheats 체크리스트.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Bladepoint Cheats 2026. checkout 전 2026 naraka cheats 체크리스트. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats product overview for Naraka",
 					galleryTitle: "Naraka Bladepoint Cheats 2026",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15100,6 +16440,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. checkout 전 2026 naraka cheats 체크리스트",
 								"Track official season messaging on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>, then use our <a href=\"/updates/\">Undetected 치트 가이드</a> for product rebuild timing.",
 								"Monthly ($35) and lifetime ($150) plans cover ranked and Quick Match match loops — see <a href=\"/pricing/\">스토어</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15107,6 +16449,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. checkout 전 2026 naraka cheats 체크리스트",
 								"Deep links: <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>, <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>, <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>, <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>, <a href=\"/naraka-radar-hack/\">2D 레이더 오버레이</a>, <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
@@ -15116,6 +16460,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Read the <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> checklist, <a href=\"/blog/naraka-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@narakacheats.org via the <a href=\"/support/\">지원</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15124,6 +16470,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"2026 ranked play rewards information speed — ESP hero markers, radar flank cues, and soft aim tuned for Vandal/Phantom TTK windows. After each Act, revisit <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a> and ESP toggles.",
 								"Compare against <a href=\"/\">전체 제품</a> criteria and <a href=\"/undetected-naraka-cheats/\">undetected maintenance</a> before switching shops mid-season.",
 								"Blog: <a href=\"/blog/naraka-cheats-2026-whats-new/\">what changed in 2026</a> · <a href=\"/blog/naraka-cheats-complete-guide-2026/\">complete guide</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15145,6 +16493,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka 치트는 레이드 중 추가 정보와 전투 보조를 제공하는 서드파티 도구입니다. 플레이어 ESP, loot, off-screen radar, 압박 상황에서 부드러운 에임을 위해 naraka cheats를 찾습니다.",
 								"Naraka Cheats는 wallhack, radar, aimbot을 Windows PC 단일 라이선스로 묶습니다 — 별도 다운로드 불필요.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 						},
 						{
@@ -15152,6 +16504,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"하나의 라이선스로 전체 match stack: 거리 표시 플레이어 ESP, 영웅 마커, 측면 2D radar, 무기별 soft aim 프로필.",
 								"월간 및 lifetime 플랜은 NEAC rebuilds가 포함된 동일한 기능 stack을 제공합니다.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"거리 표시 ESP / wallhack",
@@ -15166,6 +16522,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"결제 전 자세한 내용이 필요하면 각 도구별 상세 페이지가 있습니다.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>",
@@ -15179,6 +16539,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka는 NEAC를 사용합니다. 치트는 영원히 undetected가 아닙니다 — 패치 후 유지보수가 중요합니다. 접속 전 Naraka 또는 NEAC 업데이트마다 상태 페이지를 확인하세요.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected 치트 가이드</a>",
@@ -15192,6 +16556,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"스토어에서 월간($35) 또는 lifetime($150) 선택 — 기능 동일. 결제 후 이메일로 라이선스. 설치 가이드를 따르고 주요 패치 후 상태 확인.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/pricing/\">스토어</a>",
@@ -15206,7 +16574,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Cheat Download | Instant Access",
 					description: "Naraka Cheat Download for Naraka Bladepoint ranked & Showdown on Windows PC — 결제 후 디지털 라이선스 다운로드. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka Cheat Download — Instant Access",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Cheat Download. 결제 후 디지털 라이선스 다운로드.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Cheat Download. 결제 후 디지털 라이선스 다운로드. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats download and install delivery flow",
 					galleryTitle: "Naraka Cheat Download",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15219,6 +16587,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 결제 후 디지털 라이선스 다운로드",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">설치 가이드</a> and Support requests.",
 								"If 24 Entertainment services are down, check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> before assuming a download failure.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15227,6 +16597,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 결제 후 디지털 라이선스 다운로드",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">스토어</a>.",
 								"Feature detail: <a href=\"/features/\">모든 기능</a>. Module pages: <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>, <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15235,6 +16607,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Naraka or NEAC patches ship, check the <a href=\"/updates/\">Undetected 치트 가이드</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">지원</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> so you know what “download ready” means after a patch.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15244,7 +16618,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka 모드 메뉴 | In-Game Toggles",
 					description: "Naraka 모드 메뉴 for Naraka Bladepoint ranked & Showdown on Windows PC — 클라이언트 내 ESP 및 soft aim 토글. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka 모드 메뉴 — In-Game Toggles",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka 모드 메뉴. 클라이언트 내 ESP 및 soft aim 토글.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka 모드 메뉴. 클라이언트 내 ESP 및 soft aim 토글. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats in-game menu controls",
 					galleryTitle: "Naraka 모드 메뉴",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15257,6 +16631,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 클라이언트 내 ESP 및 soft aim 토글",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Control deep-dives: <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>, <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>, <a href=\"/naraka-radar-hack/\">2D 레이더 오버레이</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15265,6 +16641,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 클라이언트 내 ESP 및 soft aim 토글",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a> profiles before aggressive FOV.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15273,6 +16651,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka mod menu behavior is rebuilt when NEAC or major Naraka updates land. Follow the <a href=\"/updates/\">Undetected 치트 가이드</a> and <a href=\"/neac-bypass/\">NEAC 유지보수</a> before loading in on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">스토어</a>.",
 								"Need install steps? Open <a href=\"/setup/\">설치 가이드</a> after your license email arrives.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15282,7 +16662,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Soft Aim | Smooth Aim Settings",
 					description: "Naraka Soft Aim for Naraka Bladepoint ranked & Showdown on Windows PC — Windows PC용 부드러운 soft aim 설정. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka Soft Aim — Smooth Aim Settings",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Soft Aim. Windows PC용 부드러운 soft aim 설정.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Soft Aim. Windows PC용 부드러운 soft aim 설정. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka soft aim FOV and smoothness settings",
 					galleryTitle: "Naraka Soft Aim",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15295,6 +16675,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Windows PC용 부드러운 soft aim 설정",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Full Aimbot documentation: <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>. Alternate wording: <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15303,6 +16685,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Windows PC용 부드러운 soft aim 설정",
 								"Weapon TTKs shift with <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a> and <a href=\"/naraka-radar-hack/\">2D 레이더 오버레이</a> overlays.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15311,6 +16695,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot modules rebuild after NEAC patches. Check the <a href=\"/updates/\">Undetected 치트 가이드</a> before loading in — responsible settings and maintenance awareness matter for undetected play.",
 								"Monthly and lifetime licenses checkout with digital delivery on Windows PC — <a href=\"/pricing/\">스토어</a>.",
 								"Activation help: <a href=\"/setup/\">설치 가이드</a> · status questions: <a href=\"/support/\">지원</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15320,7 +16706,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "최고의 Naraka 치트 | Buyer Checklist",
 					description: "최고의 Naraka 치트 for Naraka Bladepoint ranked & Showdown on Windows PC — naraka cheats 구매 전 비교할 항목. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "최고의 Naraka 치트 — Buyer Checklist",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 최고의 Naraka 치트. naraka cheats 구매 전 비교할 항목.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 최고의 Naraka 치트. naraka cheats 구매 전 비교할 항목. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats overview for Naraka on PC",
 					galleryTitle: "최고의 Naraka 치트",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15333,6 +16719,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. naraka cheats 구매 전 비교할 항목",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a>, then confirm our <a href=\"/updates/\">Undetected 치트 가이드</a> note before you judge any package “best.”",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15341,12 +16729,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. naraka cheats 구매 전 비교할 항목",
 								"Review <a href=\"/features/\">모든 기능</a>, <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>, and <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>, <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>, <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
 							h2: "Buying naraka cheats safely",
 							paragraphs: [
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. naraka cheats 구매 전 비교할 항목",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
@@ -15357,6 +16749,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Budget stores often advertise $7 day keys with Discord-only status. Naraka Cheats ships ESP + radar + soft aim together with public <a href=\"/updates/\">Undetected 치트 가이드</a> and email support.",
 								"Read named comparisons: <a href=\"/blog/naraka-cheats-vs-cheatvault-comparison/\">vs budget ESP shops</a> · <a href=\"/blog/naraka-cheats-vs-ghostware-features-pricing/\">vs minimal ESP tools</a> · hub <a href=\"/compare/\">Compare table</a>.",
 								"Still deciding? <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> · <a href=\"/reviews/\">reviews</a> · <a href=\"/pricing/\">스토어</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15366,7 +16760,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka 에임봇 핵 | Soft Aim Assist",
 					description: "Naraka 에임봇 핵 for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka용 undetected Aimbot hack assist. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka 에임봇 핵 — Soft Aim Assist",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka 에임봇 핵. Naraka용 undetected Aimbot hack assist.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka 에임봇 핵. Naraka용 undetected Aimbot hack assist. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Aimbot hack controls and bone priority",
 					galleryTitle: "Naraka 에임봇 핵",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15379,6 +16773,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka용 undetected Aimbot hack assist",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Prefer softer tracking language? See <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>. Full settings: <a href=\"/naraka-aimbot/\">Aimbot 및 soft aim</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15387,6 +16783,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka용 undetected Aimbot hack assist",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> can change ideal FOV — retune after major weapon balance updates.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15395,6 +16793,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot hack signatures rebuild after NEAC updates. Follow the <a href=\"/updates/\">Undetected 치트 가이드</a> and <a href=\"/neac-bypass/\">NEAC 유지보수</a> before loading in after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">스토어</a>.",
 								"Pair with <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a> for the full information + assist loop.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15404,7 +16804,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka ESP 핵 | Boxes & Loot",
 					description: "Naraka ESP 핵 for Naraka Bladepoint ranked & Showdown on Windows PC — ESP hack 박스, 시체 pin, 거리. 즉시 디지털 배송. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka ESP 핵 — Boxes & Loot",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka ESP 핵. ESP hack 박스, 시체 pin, 거리.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka ESP 핵. ESP hack 박스, 시체 pin, 거리. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka ESP hack boxes and hero markers",
 					galleryTitle: "Naraka ESP 핵",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15417,6 +16817,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP hack 박스, 시체 pin, 거리",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Canonical visibility guide: <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>. Wallhack wording: <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15425,6 +16827,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. ESP hack 박스, 시체 pin, 거리",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"POI and loot changes publish through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> — keep categories toggled to what the current map rewards.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15433,6 +16837,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP hack modules rebuild after NEAC and Naraka patches. Check the <a href=\"/updates/\">Undetected 치트 가이드</a> before loading in — pair ESP hack awareness with <a href=\"/naraka-radar-hack/\">2D 레이더 오버레이</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">스토어</a>.",
 								"Install steps: <a href=\"/setup/\">설치 가이드</a>. Status questions: <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15442,7 +16848,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Unlock All | What It Means",
 					description: "Naraka Unlock All for Naraka Bladepoint ranked & Showdown on Windows PC — unlock-all 검색 vs 실제 ESP 및 Aimbot 도구. 즉시 디지털 배송. undetected. Official naraka cheats at",
 					h1: "Naraka Unlock All — What It Means",
-					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Unlock All. unlock-all 검색 vs 실제 ESP 및 Aimbot 도구.",
+					intro: "Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. Naraka Unlock All. unlock-all 검색 vs 실제 ESP 및 Aimbot 도구. Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 					imageAlt: "Naraka Cheats license features overview",
 					galleryTitle: "Naraka Unlock All",
 					ctaPrimary: "Naraka Cheats 구매",
@@ -15455,6 +16861,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. unlock-all 검색 vs 실제 ESP 및 Aimbot 도구",
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
 								"Cosmetics and patch cycle progression items are sold through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15463,6 +16871,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. unlock-all 검색 vs 실제 ESP 및 Aimbot 도구",
 								"For loadout planning during a match, loot and hero markers speed map rotations — see the <a href=\"/naraka-esp/\">ESP 및 wallhack 가이드</a> and <a href=\"/features/\">모든 기능</a> pages for the full tool list.",
 								"Related: <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a> and <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 						{
@@ -15471,6 +16881,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"If you need undetected ESP wallhack, radar hack, and Aimbot for Naraka on Windows PC, compare <a href=\"/pricing/\">스토어</a> and read the <a href=\"/setup/\">설치 가이드</a> before checkout.",
 								"Check the <a href=\"/updates/\">Undetected 치트 가이드</a> after NEAC patches — maintenance rebuilds publish for active licenses.",
 								"Questions? <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">지원</a> cover delivery and configuration — not cosmetic unlocks.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
 							],
 						},
 					],
@@ -15491,22 +16903,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "수집하는 정보",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 연락 이메일, Zadeyo 주문 참조 및 기본 사이트 보안 데이터.",
-								"결제 정보는 Zadeyo checkout에서 처리되며 narakacheats.org에 저장되지 않습니다.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "데이터 사용 방법",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 지원 응답, 주문 해결 및 필요 시 법적 준수.",
-								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "귀하의 권리",
 							paragraphs: [
-								"지원 및 법무: support@narakacheats.org",
-								"이메일: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">환불 정책</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -15526,22 +16964,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "디지털 배송",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 연락 이메일, Zadeyo 주문 참조 및 기본 사이트 보안 데이터.",
-								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "환불 승인",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 지원 응답, 주문 해결 및 필요 시 법적 준수.",
-								"NEAC 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "신청 방법",
 							paragraphs: [
-								"지원 및 법무: support@narakacheats.org",
-								"이메일: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">지원</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">스토어</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -15561,22 +17013,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "약관 동의",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 연락 이메일, Zadeyo 주문 참조 및 기본 사이트 보안 데이터.",
-								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 NEAC 유지보수 포함.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "위험 고지",
 							paragraphs: [
-								"Naraka Cheats는 Naraka Windows PC용 ESP wallhack, radar hack, Naraka Aimbot undetected 패키지입니다. 지원 응답, 주문 해결 및 필요 시 법적 준수.",
-								"치트 사용은 Naraka 팀 약관 위반일 수 있으며 모든 밴 위험은 본인 부담입니다.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats 개요</a>.",
 							],
 						},
 						{
 							h2: "정책 변경",
 							paragraphs: [
-								"지원 및 법무: support@narakacheats.org",
-								"이메일: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">환불 정책</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -15700,6 +17166,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"玩家、科学家和物资的框体、距离和过滤器。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"玩家ESP",
@@ -15712,6 +17182,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"清晰显示 POI 和 loot 路线，不遮挡屏幕。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"调节透明度",
@@ -15724,6 +17198,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP 与 aimbot、radar 包含在同一方案中。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">完整产品</a>",
@@ -15750,6 +17228,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"raid 前设置 FOV、平滑度和骨骼优先级。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"soft aim 强度",
@@ -15762,6 +17244,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"长时间 match 保持低调设置。只在接受更高风险时提高强度。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"低调 soft aim",
@@ -15774,6 +17260,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Aimbot 与 ESP、radar 包含在同一许可证中。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">完整产品</a>",
@@ -15800,6 +17290,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP、soft aim、radar控制",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Player boxes & distance",
@@ -15812,6 +17306,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP、soft aim、radar控制",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Smooth aim strength",
@@ -15824,6 +17322,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP、soft aim、radar控制",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Nearby enemy cues",
@@ -15836,6 +17338,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP、soft aim、radar控制",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP & wallhack guide</a>",
@@ -15853,6 +17359,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP、soft aim、radar控制",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Status on the Status page",
@@ -15879,6 +17389,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Windows 10 / 11 完整套餐访问。",
 								"月付和 lifetime 方案包含相同的 ESP、soft aim 和 radar。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP、aimbot 和 radar",
@@ -15891,6 +17405,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"先选月付试用，或一次性 lifetime。",
 								"两种方案结账后解锁相同功能。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"月付 — 30天",
@@ -15903,6 +17421,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"如需了解请阅读退款政策。携带订单 ID 联系支持。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">退款政策</a>",
@@ -15929,6 +17451,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"先购买方案。许可证通过邮件发送。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Windows 10 / 11 PC",
@@ -15941,6 +17467,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"以管理员身份运行 loader，粘贴许可证，启动 Naraka。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"从交付邮件下载 loader",
@@ -15953,6 +17483,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"补丁后查看状态。携带订单 ID 邮件 support@narakacheats.org。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected作弊指南</a>",
@@ -15979,6 +17513,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"截至2026年8月13日，Naraka Windows PC 套餐已上线。Naraka 或 NEAC 补丁需要重建时我们会在此发布说明。",
 								"状态为绿色即可 match。重建中请等待下一条说明。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"补丁后每次 match 前查看此页",
@@ -15991,6 +17529,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"等待重建说明后再启动。大更新后不要用旧版本游玩。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"阅读最新状态说明",
@@ -16003,6 +17545,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"没有作弊能永远100%安全。保持更新并使用安全设置。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"先查状态再玩",
@@ -16028,6 +17574,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"付款后通过邮件收到数字许可证。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"结账后即时交付",
@@ -16040,6 +17590,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"购买后按安装指南操作。Naraka 或 NEAC 重大补丁后查看状态。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/setup/\">安装指南</a>",
@@ -16051,6 +17605,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"如需详情，购买前请阅读退款政策。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">退款政策</a>",
@@ -16076,6 +17634,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"邮件 support@narakacheats.org，附上订单 ID 和简要问题说明。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"收据中的订单 ID",
@@ -16088,11 +17650,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"写信前先查 FAQ 和状态。许多安装问题已有答案。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/faq/\">常见问题</a>",
 								"<a href=\"/updates/\">Undetected作弊指南</a>",
 								"<a href=\"/setup/\">安装指南</a>",
+							],
+						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。订单帮助和许可证支持联系方式",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">退款政策</a> before you open a dispute.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
 							],
 						},
 					],
@@ -16102,7 +17686,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Undetected作弊 | NEAC Safe Status",
 					description: "Undetected作弊 for Naraka Bladepoint ranked & Showdown on Windows PC — NEAC补丁后的undetected维护. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Undetected作弊 — NEAC Safe Status",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Undetected作弊. NEAC补丁后的undetected维护.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Undetected作弊. NEAC补丁后的undetected维护. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats undetected status overview for Windows PC",
 					galleryTitle: "Undetected作弊",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16115,6 +17699,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。NEAC补丁后的undetected维护",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Anti-cheat technology is documented by <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>; Naraka client updates ship through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Undetected status is an ongoing process tied to those releases.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16123,6 +17709,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"When NEAC or Naraka updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">Undetected作弊指南</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> for launcher outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/neac-bypass/\">NEAC维护</a>. Feature stack: <a href=\"/features/\">所有功能</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16131,6 +17719,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">常见问题</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">商店</a>.",
 								"New buyers should also read <a href=\"/naraka-cheats-2026/\">naraka cheats 2026</a> and complete <a href=\"/setup/\">安装指南</a> after delivery.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16139,6 +17729,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Step one: open <a href=\"/updates/\">Undetected作弊指南</a> for the latest build date. Step two: read <a href=\"/neac-bypass/\">NEAC维护</a> notes if a patch dropped in the last 72 hours. Step three: tune soft aim and ESP toggles conservatively for ranked.",
 								"Discord-only status shops hide rebuild timing. We publish on-site so you can compare against <a href=\"/compare/\">budget competitors</a> fairly.",
 								"FAQ shortcuts: <a href=\"/faq/are-naraka-cheats-undetected-in-2026/\">undetected in 2026</a> · <a href=\"/faq/naraka-neac-bypass/\">neac bypass</a> · <a href=\"/blog/naraka-cheats-buyers-guide/\">buyers guide</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16148,7 +17740,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Wallhack | ESP Visibility",
 					description: "Naraka Wallhack for Naraka Bladepoint ranked & Showdown on Windows PC — 玩家、尸体和距离的wallhack ESP. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka Wallhack — ESP Visibility",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Wallhack. 玩家、尸体和距离的wallhack ESP.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Wallhack. 玩家、尸体和距离的wallhack ESP. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "naraka wallhack visibility through walls in a match",
 					galleryTitle: "Naraka Wallhack",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16161,6 +17753,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。玩家、尸体和距离的wallhack ESP",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"For the broader ESP keyword page see <a href=\"/naraka-esp/\">ESP和透视指南</a>; for combat assist see <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16169,6 +17763,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。玩家、尸体和距离的wallhack ESP",
 								"Season maps and POI changes are announced via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/naraka-radar-hack/\">2D雷达覆盖</a> cues for flanks during arena corners and vertical fights.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16177,6 +17773,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP wallhack modules rebuild after NEAC patches. Follow the <a href=\"/updates/\">Undetected作弊指南</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-naraka-cheats/\">undetected naraka cheats</a> and <a href=\"/neac-bypass/\">NEAC维护</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">商店</a> or continue to the <a href=\"/naraka-esp/\">ESP和透视指南</a> landing for alternate search wording.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16198,6 +17796,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"为独狼玩家和 matcher 提供可调范围的附近敌人提示。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"侧翼感知",
@@ -16210,11 +17812,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"用 radar 发现尚未看到的威胁，推进时用 ESP。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP和透视指南</a>",
 								"<a href=\"/\">完整产品</a>",
 								"<a href=\"/pricing/\">商店</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。侧翼和轮换的2D radar提示",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected作弊指南</a> after NEAC patches before you reuse old configs.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -16224,7 +17848,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "NEAC Bypass | Patch Maintenance",
 					description: "NEAC Bypass for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka cheats的NEAC更新处理方式. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "NEAC Bypass — Patch Maintenance",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。NEAC Bypass. Naraka cheats的NEAC更新处理方式.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。NEAC Bypass. Naraka cheats的NEAC更新处理方式. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats maintenance after a NEAC patch",
 					galleryTitle: "NEAC Bypass",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16237,6 +17861,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC is 24 Entertainment' anti-cheat for Naraka on PC (see <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Naraka Cheats monitors NEAC patch notes and Naraka seasonal updates from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> to schedule module reviews.",
 								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16245,6 +17871,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">Undetected作弊指南</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Naraka server status on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid loading in on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16253,6 +17881,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">常见问题</a>, and Updates log before every match.",
 								"Contact <a href=\"/support/\">支持</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">商店</a> and finish <a href=\"/setup/\">安装指南</a> only after <a href=\"/updates/\">Undetected作弊指南</a> shows a live build.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16260,6 +17890,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka cheats的NEAC更新处理方式",
 								"If you have a prior HWID ban, no cheat package magically resets Riot’s hardware flags. Treat spoofer claims skeptically and read <a href=\"/faq/naraka-neac-bypass/\">NEAC FAQ</a> before buying anywhere.",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
@@ -16269,6 +17901,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka cheats的NEAC更新处理方式",
 								"Patch-day checklist: (1) read <a href=\"/updates/\">Undetected作弊指南</a>, (2) confirm NEAC notes on <a href=\"/neac-bypass/\">NEAC维护</a>, (3) verify Steam launcher health, (4) load only after rebuild is posted, (5) retune soft aim FOV if weapon balance changed.",
 								"Deep dives: <a href=\"/undetected-naraka-cheats/\">undetected guide</a> · <a href=\"/blog/undetected-naraka-cheats-eac/\">NEAC reality blog</a> · <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16278,7 +17912,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka作弊 2026 | Buyer Guide",
 					description: "Naraka作弊 2026 for Naraka Bladepoint ranked & Showdown on Windows PC — checkout前的2026 naraka cheats清单. 即时数字交付. undetected. Official naraka cheats at",
 					h1: "Naraka作弊 2026 — Buyer Guide",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka作弊 2026. checkout前的2026 naraka cheats清单.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka作弊 2026. checkout前的2026 naraka cheats清单. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats product overview for Naraka",
 					galleryTitle: "Naraka作弊 2026",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16291,6 +17925,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。checkout前的2026 naraka cheats清单",
 								"Track official season messaging on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>, then use our <a href=\"/updates/\">Undetected作弊指南</a> for product rebuild timing.",
 								"Monthly ($35) and lifetime ($150) plans cover ranked and Quick Match match loops — see <a href=\"/pricing/\">商店</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16298,6 +17934,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。checkout前的2026 naraka cheats清单",
 								"Deep links: <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>, <a href=\"/naraka-esp/\">ESP和透视指南</a>, <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>, <a href=\"/naraka-esp/\">ESP和透视指南</a>, <a href=\"/naraka-radar-hack/\">2D雷达覆盖</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
@@ -16307,6 +17945,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Read the <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> checklist, <a href=\"/blog/naraka-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">常见问题</a>.",
 								"Support is available at support@narakacheats.org via the <a href=\"/support/\">支持</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16315,6 +17955,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"2026 ranked play rewards information speed — ESP hero markers, radar flank cues, and soft aim tuned for Vandal/Phantom TTK windows. After each Act, revisit <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a> and ESP toggles.",
 								"Compare against <a href=\"/\">完整产品</a> criteria and <a href=\"/undetected-naraka-cheats/\">undetected maintenance</a> before switching shops mid-season.",
 								"Blog: <a href=\"/blog/naraka-cheats-2026-whats-new/\">what changed in 2026</a> · <a href=\"/blog/naraka-cheats-complete-guide-2026/\">complete guide</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16336,6 +17978,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka cheats 是第三方工具，在 match 中提供额外信息和战斗辅助。多数玩家为玩家 ESP、物资可见、屏幕外 radar 或高压下更稳的瞄准而搜索 naraka cheats。",
 								"Naraka Cheats 将这些工具整合为 Windows PC 单一许可证 — 无需分别下载 wallhack、radar 和 aimbot。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 						},
 						{
@@ -16343,6 +17989,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"一份许可证覆盖完整 match 套件：带距离的玩家 ESP、英雄标记、侧翼 2D radar 和按武器可调的 soft aim 配置。",
 								"月付和终身计划包含相同功能 stack，并提供 NEAC rebuilds。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"带距离 ESP / wallhack",
@@ -16357,6 +18007,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"结账前如需详细了解，每个工具都有专题页。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP和透视指南</a>",
@@ -16370,6 +18024,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka 使用 NEAC。没有作弊能永远 undetected — 补丁后维护才是关键。每次 Naraka 或 NEAC 更新后、进游戏前先查状态页。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">Undetected作弊指南</a>",
@@ -16383,6 +18041,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"在商店选择月付（$35）或 lifetime（$150）— 功能相同。结账后邮件收到许可证。按安装指南操作，重大补丁后查看状态。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/pricing/\">商店</a>",
@@ -16397,7 +18059,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka作弊下载 | Instant Access",
 					description: "Naraka作弊下载 for Naraka Bladepoint ranked & Showdown on Windows PC — 付款后的数字许可证下载. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka作弊下载 — Instant Access",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka作弊下载. 付款后的数字许可证下载.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka作弊下载. 付款后的数字许可证下载. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats download and install delivery flow",
 					galleryTitle: "Naraka作弊下载",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16410,6 +18072,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。付款后的数字许可证下载",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">安装指南</a> and Support requests.",
 								"If 24 Entertainment services are down, check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> before assuming a download failure.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16418,6 +18082,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。付款后的数字许可证下载",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">商店</a>.",
 								"Feature detail: <a href=\"/features/\">所有功能</a>. Module pages: <a href=\"/naraka-esp/\">ESP和透视指南</a>, <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16426,6 +18092,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Naraka or NEAC patches ship, check the <a href=\"/updates/\">Undetected作弊指南</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">支持</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> so you know what “download ready” means after a patch.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16435,7 +18103,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka修改菜单 | In-Game Toggles",
 					description: "Naraka修改菜单 for Naraka Bladepoint ranked & Showdown on Windows PC — 客户端内ESP和soft aim开关. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka修改菜单 — In-Game Toggles",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka修改菜单. 客户端内ESP和soft aim开关.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka修改菜单. 客户端内ESP和soft aim开关. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats in-game menu controls",
 					galleryTitle: "Naraka修改菜单",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16448,6 +18116,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。客户端内ESP和soft aim开关",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Control deep-dives: <a href=\"/naraka-esp/\">ESP和透视指南</a>, <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>, <a href=\"/naraka-radar-hack/\">2D雷达覆盖</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16456,6 +18126,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。客户端内ESP和soft aim开关",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a> profiles before aggressive FOV.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16464,6 +18136,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka mod menu behavior is rebuilt when NEAC or major Naraka updates land. Follow the <a href=\"/updates/\">Undetected作弊指南</a> and <a href=\"/neac-bypass/\">NEAC维护</a> before loading in on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">商店</a>.",
 								"Need install steps? Open <a href=\"/setup/\">安装指南</a> after your license email arrives.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16473,7 +18147,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Soft Aim | Smooth Aim Settings",
 					description: "Naraka Soft Aim for Naraka Bladepoint ranked & Showdown on Windows PC — Windows PC的流畅soft aim设置. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka Soft Aim — Smooth Aim Settings",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Soft Aim. Windows PC的流畅soft aim设置.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Soft Aim. Windows PC的流畅soft aim设置. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka soft aim FOV and smoothness settings",
 					galleryTitle: "Naraka Soft Aim",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16486,6 +18160,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Windows PC的流畅soft aim设置",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Full Aimbot documentation: <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>. Alternate wording: <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16494,6 +18170,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Windows PC的流畅soft aim设置",
 								"Weapon TTKs shift with <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/naraka-esp/\">ESP和透视指南</a> and <a href=\"/naraka-radar-hack/\">2D雷达覆盖</a> overlays.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16502,6 +18180,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot modules rebuild after NEAC patches. Check the <a href=\"/updates/\">Undetected作弊指南</a> before loading in — responsible settings and maintenance awareness matter for undetected play.",
 								"Monthly and lifetime licenses checkout with digital delivery on Windows PC — <a href=\"/pricing/\">商店</a>.",
 								"Activation help: <a href=\"/setup/\">安装指南</a> · status questions: <a href=\"/support/\">支持</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16511,7 +18191,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "最佳Naraka作弊 | Buyer Checklist",
 					description: "最佳Naraka作弊 for Naraka Bladepoint ranked & Showdown on Windows PC — 购买naraka cheats前应比较的内容. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "最佳Naraka作弊 — Buyer Checklist",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。最佳Naraka作弊. 购买naraka cheats前应比较的内容.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。最佳Naraka作弊. 购买naraka cheats前应比较的内容. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats overview for Naraka on PC",
 					galleryTitle: "最佳Naraka作弊",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16524,6 +18204,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。购买naraka cheats前应比较的内容",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a>, then confirm our <a href=\"/updates/\">Undetected作弊指南</a> note before you judge any package “best.”",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16532,12 +18214,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。购买naraka cheats前应比较的内容",
 								"Review <a href=\"/features/\">所有功能</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>, and <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/naraka-esp/\">ESP和透视指南</a>, <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>, <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
 							h2: "Buying naraka cheats safely",
 							paragraphs: [
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。购买naraka cheats前应比较的内容",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
@@ -16548,6 +18234,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Budget stores often advertise $7 day keys with Discord-only status. Naraka Cheats ships ESP + radar + soft aim together with public <a href=\"/updates/\">Undetected作弊指南</a> and email support.",
 								"Read named comparisons: <a href=\"/blog/naraka-cheats-vs-cheatvault-comparison/\">vs budget ESP shops</a> · <a href=\"/blog/naraka-cheats-vs-ghostware-features-pricing/\">vs minimal ESP tools</a> · hub <a href=\"/compare/\">Compare table</a>.",
 								"Still deciding? <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> · <a href=\"/reviews/\">reviews</a> · <a href=\"/pricing/\">商店</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16557,7 +18245,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka自瞄外挂 | Soft Aim Assist",
 					description: "Naraka自瞄外挂 for Naraka Bladepoint ranked & Showdown on Windows PC — Naraka的undetected Aimbot hack assist. 即时数字交付. undetected. Official naraka cheats at",
 					h1: "Naraka自瞄外挂 — Soft Aim Assist",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka自瞄外挂. Naraka的undetected Aimbot hack assist.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka自瞄外挂. Naraka的undetected Aimbot hack assist. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Aimbot hack controls and bone priority",
 					galleryTitle: "Naraka自瞄外挂",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16570,6 +18258,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka的undetected Aimbot hack assist",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Prefer softer tracking language? See <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>. Full settings: <a href=\"/naraka-aimbot/\">自瞄和软瞄准</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16578,6 +18268,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka的undetected Aimbot hack assist",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> can change ideal FOV — retune after major weapon balance updates.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16586,6 +18278,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot hack signatures rebuild after NEAC updates. Follow the <a href=\"/updates/\">Undetected作弊指南</a> and <a href=\"/neac-bypass/\">NEAC维护</a> before loading in after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">商店</a>.",
 								"Pair with <a href=\"/naraka-esp/\">ESP和透视指南</a> for the full information + assist loop.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16595,7 +18289,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka ESP外挂 | Boxes & Loot",
 					description: "Naraka ESP外挂 for Naraka Bladepoint ranked & Showdown on Windows PC — ESP hack方框、尸体pin和距离. 即时数字交付. undetected. Official naraka cheats at narakacheats.org.",
 					h1: "Naraka ESP外挂 — Boxes & Loot",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka ESP外挂. ESP hack方框、尸体pin和距离.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka ESP外挂. ESP hack方框、尸体pin和距离. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka ESP hack boxes and hero markers",
 					galleryTitle: "Naraka ESP外挂",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16608,6 +18302,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP hack方框、尸体pin和距离",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Canonical visibility guide: <a href=\"/naraka-esp/\">ESP和透视指南</a>. Wallhack wording: <a href=\"/naraka-esp/\">ESP和透视指南</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16616,6 +18312,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。ESP hack方框、尸体pin和距离",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"POI and loot changes publish through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> — keep categories toggled to what the current map rewards.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16624,6 +18322,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP hack modules rebuild after NEAC and Naraka patches. Check the <a href=\"/updates/\">Undetected作弊指南</a> before loading in — pair ESP hack awareness with <a href=\"/naraka-radar-hack/\">2D雷达覆盖</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">商店</a>.",
 								"Install steps: <a href=\"/setup/\">安装指南</a>. Status questions: <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16633,7 +18333,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Unlock All | What It Means",
 					description: "Naraka Unlock All for Naraka Bladepoint ranked & Showdown on Windows PC — unlock-all搜索 vs 真正的ESP和Aimbot工具. 即时数字交付. undetected. Official naraka cheats at",
 					h1: "Naraka Unlock All — What It Means",
-					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Unlock All. unlock-all搜索 vs 真正的ESP和Aimbot工具.",
+					intro: "Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。Naraka Unlock All. unlock-all搜索 vs 真正的ESP和Aimbot工具. 通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 					imageAlt: "Naraka Cheats license features overview",
 					galleryTitle: "Naraka Unlock All",
 					ctaPrimary: "购买 Naraka Cheats",
@@ -16646,6 +18346,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。unlock-all搜索 vs 真正的ESP和Aimbot工具",
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
 								"Cosmetics and patch cycle progression items are sold through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16654,6 +18356,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。unlock-all搜索 vs 真正的ESP和Aimbot工具",
 								"For loadout planning during a match, loot and hero markers speed map rotations — see the <a href=\"/naraka-esp/\">ESP和透视指南</a> and <a href=\"/features/\">所有功能</a> pages for the full tool list.",
 								"Related: <a href=\"/naraka-cheats/\">Naraka Cheats概览</a> and <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 						{
@@ -16662,6 +18366,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"If you need undetected ESP wallhack, radar hack, and Aimbot for Naraka on Windows PC, compare <a href=\"/pricing/\">商店</a> and read the <a href=\"/setup/\">安装指南</a> before checkout.",
 								"Check the <a href=\"/updates/\">Undetected作弊指南</a> after NEAC patches — maintenance rebuilds publish for active licenses.",
 								"Questions? <a href=\"/faq/\">常见问题</a> and <a href=\"/support/\">支持</a> cover delivery and configuration — not cosmetic unlocks.",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
 							],
 						},
 					],
@@ -16682,22 +18388,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "我们收集的信息",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。联系邮箱、Zadeyo 订单参考及基本网站安全数据。",
-								"支付详情由 Zadeyo checkout 处理 — 不存储在 narakacheats.org。",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "数据使用方式",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。支持回复、订单处理及必要时的法律合规。",
-								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "您的权利",
 							paragraphs: [
-								"支持与法务：support@narakacheats.org",
-								"邮箱: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">退款政策</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -16717,22 +18449,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "数字交付",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。联系邮箱、Zadeyo 订单参考及基本网站安全数据。",
-								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "退款批准",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。支持回复、订单处理及必要时的法律合规。",
-								"NEAC补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "如何申请",
 							paragraphs: [
-								"支持与法务：support@narakacheats.org",
-								"邮箱: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">支持</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">商店</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -16752,22 +18498,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "接受条款",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。联系邮箱、Zadeyo 订单参考及基本网站安全数据。",
-								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含NEAC维护。",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "风险免责声明",
 							paragraphs: [
-								"Naraka Cheats为NarakaWindows PC提供ESP wallhack、radar hack和Naraka Aimbotundetected套餐。支持回复、订单处理及必要时的法律合规。",
-								"使用作弊可能违反 Naraka 团队条款 — 您承担所有封禁风险。",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats概览</a>.",
 							],
 						},
 						{
 							h2: "政策变更",
 							paragraphs: [
-								"支持与法务：support@narakacheats.org",
-								"邮箱: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">退款政策</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -17286,6 +19046,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">सेटअप गाइड</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। order help और license support contact",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">रिफंड नीति</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -17406,6 +19178,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">ESP और wallhack गाइड</a>",
 								"<a href=\"/\">पूरा उत्पाद</a>",
 								"<a href=\"/pricing/\">स्टोर</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। flanks और rotations के लिए 2D radar cues",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected cheats गाइड</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -17873,22 +19657,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "हम जो जानकारी एकत्र करते हैं",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। संपर्क ईमेल, Zadeyo ऑर्डर संदर्भ और बुनियादी साइट सुरक्षा डेटा।",
-								"भुगतान विवरण Zadeyo checkout द्वारा संसाधित — narakacheats.org पर संग्रहीत नहीं।",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "हम डेटा का उपयोग कैसे करते हैं",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। सहायता प्रतिक्रिया, ऑर्डर समाधान और आवश्यकता पर कानूनी अनुपालन।",
-								"NEAC पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "आपके अधिकार",
 							paragraphs: [
-								"सहायता: support@narakacheats.org",
-								"ईमेल: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">रिफंड नीति</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -17908,22 +19718,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "डिजिटल डिलीवरी",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। संपर्क ईमेल, Zadeyo ऑर्डर संदर्भ और बुनियादी साइट सुरक्षा डेटा।",
-								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में NEAC maintenance शामिल।",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "रिफंड स्वीकृति",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। सहायता प्रतिक्रिया, ऑर्डर समाधान और आवश्यकता पर कानूनी अनुपालन।",
-								"NEAC पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "कैसे अनुरोध करें",
 							paragraphs: [
-								"सहायता: support@narakacheats.org",
-								"ईमेल: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">सहायता</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">स्टोर</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -17943,22 +19767,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "शर्तों की स्वीकृति",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। संपर्क ईमेल, Zadeyo ऑर्डर संदर्भ और बुनियादी साइट सुरक्षा डेटा।",
-								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में NEAC maintenance शामिल।",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "जोखिम अस्वीकरण",
 							paragraphs: [
-								"Naraka Cheats Naraka के लिए Windows PC पर ESP wallhack, radar hack और Naraka Aimbot undetected पैकेज देता है। सहायता प्रतिक्रिया, ऑर्डर समाधान और आवश्यकता पर कानूनी अनुपालन।",
-								"cheat का उपयोग Naraka टीम की शर्तों का उल्लंघन हो सकता है — आप सभी ban जोखिम स्वीकार करते हैं।",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats अवलोकन</a>.",
 							],
 						},
 						{
 							h2: "नीति परिवर्तन",
 							paragraphs: [
-								"सहायता: support@narakacheats.org",
-								"ईमेल: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">रिफंड नीति</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -18477,6 +20315,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Panduan setup</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. bantuan pesanan dan kontak dukungan lisensi",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Kebijakan refund</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -18597,6 +20447,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Panduan ESP & wallhack</a>",
 								"<a href=\"/\">Produk lengkap</a>",
 								"<a href=\"/pricing/\">Toko</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. petunjuk radar 2D untuk flanking dan rotasi",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Panduan cheat undetected</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -19064,22 +20926,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informasi yang kami kumpulkan",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Email kontak, referensi pesanan Zadeyo, dan data keamanan situs dasar.",
-								"Detail pembayaran diproses oleh checkout Zadeyo — tidak disimpan di narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Cara kami menggunakan data",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Respons dukungan, penyelesaian pesanan, dan kepatuhan hukum jika diperlukan.",
-								"Periksa Updates setelah patch NEAC. Tidak ada cheat yang menjamin undetected permanen.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Hak Anda",
 							paragraphs: [
-								"support@narakacheats.org untuk dukungan dan legal.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Kebijakan refund</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -19099,22 +20987,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Pengiriman digital",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Email kontak, referensi pesanan Zadeyo, dan data keamanan situs dasar.",
-								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Persetujuan refund",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Respons dukungan, penyelesaian pesanan, dan kepatuhan hukum jika diperlukan.",
-								"Periksa Updates setelah patch NEAC. Tidak ada cheat yang menjamin undetected permanen.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Cara meminta",
 							paragraphs: [
-								"support@narakacheats.org untuk dukungan dan legal.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Dukungan</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Toko</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -19134,22 +21036,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Penerimaan syarat",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Email kontak, referensi pesanan Zadeyo, dan data keamanan situs dasar.",
-								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Penyangkalan risiko",
 							paragraphs: [
-								"Naraka Cheats menyediakan ESP wallhack, radar hack, dan Naraka Aimbot undetected untuk Naraka di PC Windows. Respons dukungan, penyelesaian pesanan, dan kepatuhan hukum jika diperlukan.",
-								"Menggunakan cheat dapat melanggar ketentuan tim Naraka — Anda menanggung semua risiko ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Ringkasan Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Perubahan kebijakan",
 							paragraphs: [
-								"support@narakacheats.org untuk dukungan dan legal.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Kebijakan refund</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -19273,6 +21189,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"กล่อง ระยะ และฟิลเตอร์สำหรับผู้เล่น นักวิทยาศาสตร์ และ loot",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP ผู้เล่น",
@@ -19285,6 +21205,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ทำให้ POI และ grapple routes ชัดเจนโดยไม่เต็มหน้าจอ",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ปรับความโปร่งใส",
@@ -19297,6 +21221,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP รวม aimbot และ radar ในแพ็กเกจเดียว",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">ผลิตภัณฑ์เต็มรูปแบบ</a>",
@@ -19323,6 +21251,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ตั้งค่า FOV ความนุ่มนวล และลำดับกระดูกก่อน match",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ความแรง soft aim",
@@ -19335,6 +21267,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ใช้การตั้งค่าเบาๆ สำหรับ match ยาว เพิ่มความแรงเมื่อยอมรับความเสี่ยงมากขึ้น",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Soft aim แบบ legit",
@@ -19347,6 +21283,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Aimbot รวม ESP และ radar ในใบอนุญาตเดียว",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/\">ผลิตภัณฑ์เต็มรูปแบบ</a>",
@@ -19373,6 +21313,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ESP, soft aim, การควบคุม radar",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Player boxes & distance",
@@ -19385,6 +21329,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ESP, soft aim, การควบคุม radar",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Smooth aim strength",
@@ -19397,6 +21345,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ESP, soft aim, การควบคุม radar",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Nearby enemy cues",
@@ -19409,6 +21361,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ESP, soft aim, การควบคุม radar",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">ESP & wallhack guide</a>",
@@ -19426,6 +21382,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ESP, soft aim, การควบคุม radar",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Status on the Status page",
@@ -19452,6 +21412,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"การเข้าถึงแพ็กเกจเต็มรูปแบบสำหรับ Windows 10 / 11",
 								"ESP, soft aim และ radar เหมือนกันทั้งแพ็กเกจรายเดือนและ lifetime",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP, aimbot และ radar",
@@ -19464,6 +21428,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"เลือกรายเดือนเพื่อทดลอง หรือ lifetime จ่ายครั้งเดียว",
 								"ทั้งสองแพ็กเกจปลดล็อกฟีเจอร์เดียวกันหลังชำระเงิน",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"รายเดือน — 30 วัน",
@@ -19476,6 +21444,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"อ่านนโยบายคืนเงินหากต้องการ ติดต่อฝ่ายสนับสนุนพร้อมรหัสคำสั่งซื้อ",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">นโยบายคืนเงิน</a>",
@@ -19502,6 +21474,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ซื้อแพ็กเกจก่อน ได้ใบอนุญาตทางอีเมล",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"Windows 10 / 11 PC",
@@ -19514,6 +21490,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"รัน loader แบบ admin วางใบอนุญาต แล้วเปิด Naraka",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ดาวน์โหลด loader จากอีเมลจัดส่ง",
@@ -19526,6 +21506,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ตรวจสถานะหลังแพตช์ อีเมล support@narakacheats.org พร้อมรหัสคำสั่งซื้อ",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">คู่มือ cheat undetected</a>",
@@ -19552,6 +21536,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ณ 13 ส.ค. 2026 แพ็กเกจออนไลน์สำหรับ Naraka บน Windows PC เราโพสต์บันทึกเมื่อแพตช์ Naraka หรือ NEAC ต้อง rebuild",
 								"ถ้าสถานะเป็นสีเขียว match ได้ หากกำลัง rebuild รอบันทึกถัดไป",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ตรวจหน้านี้ก่อน match ทุกครั้งหลังแพตช์",
@@ -19564,6 +21552,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"รอบันทึก rebuild แล้วค่อยเปิด อย่าเล่นบน build เก่าหลังอัปเดตใหญ่",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"อ่านบันทึกสถานะล่าสุด",
@@ -19576,6 +21568,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ไม่มี cheat ปลอดภัย 100% ตลอดไป อัปเดตและใช้การตั้งค่าที่ปลอดภัย",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ตรวจสถานะก่อน แล้วค่อยเล่น",
@@ -19601,6 +21597,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ได้รับใบอนุญาตดิจิทัลทางอีเมลหลังชำระเงิน",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"จัดส่งทันทีหลังชำระเงิน",
@@ -19613,6 +21613,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ทำตามการติดตั้งหลังซื้อ ตรวจสถานะหลังแพตช์ใหญ่ของ Naraka หรือ NEAC",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/setup/\">คู่มือติดตั้ง</a>",
@@ -19624,6 +21628,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"อ่านนโยบายคืนเงินก่อนซื้อหากต้องการรายละเอียด",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/refund-policy/\">นโยบายคืนเงิน</a>",
@@ -19649,6 +21657,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"อีเมล support@narakacheats.org พร้อมรหัสคำสั่งซื้อและรายละเอียดปัญหา",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"รหัสคำสั่งซื้อจากใบเสร็จ",
@@ -19661,11 +21673,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ตรวจ FAQ และสถานะก่อนติดต่อ คำถามติดตั้งหลายข้อมีคำตอบแล้ว",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/faq/\">FAQ</a>",
 								"<a href=\"/updates/\">คู่มือ cheat undetected</a>",
 								"<a href=\"/setup/\">คู่มือติดตั้ง</a>",
+							],
+						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ความช่วยเหลือคำสั่งซื้อและติดต่อสนับสนุนใบอนุญาต",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">นโยบายคืนเงิน</a> before you open a dispute.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
 							],
 						},
 					],
@@ -19675,7 +21709,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Cheats undetected | NEAC Safe Status",
 					description: "Cheats undetected for Naraka Bladepoint ranked & Showdown on Windows PC — การบำรุงรักษา undetected หลัง patch NEAC. จัดส่งดิจิทัลทันที. undetected. Official",
 					h1: "Cheats undetected — NEAC Safe Status",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Cheats undetected. การบำรุงรักษา undetected หลัง patch NEAC.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Cheats undetected. การบำรุงรักษา undetected หลัง patch NEAC. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats undetected status overview for Windows PC",
 					galleryTitle: "Cheats undetected",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -19688,6 +21722,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การบำรุงรักษา undetected หลัง patch NEAC",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Anti-cheat technology is documented by <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>; Naraka client updates ship through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Undetected status is an ongoing process tied to those releases.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19696,6 +21732,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"When NEAC or Naraka updates ship, the team assesses ESP, radar, and Aimbot modules, publishes status on the <a href=\"/updates/\">คู่มือ cheat undetected</a>, and delivers rebuilt builds to active licenses.",
 								"On patch mornings, also check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> for launcher outages that can look like product failures.",
 								"Deep technical workflow: <a href=\"/neac-bypass/\">การดูแล NEAC</a>. Feature stack: <a href=\"/features/\">ฟีเจอร์ทั้งหมด</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19704,6 +21742,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">ร้านค้า</a>.",
 								"New buyers should also read <a href=\"/naraka-cheats-2026/\">naraka cheats 2026</a> and complete <a href=\"/setup/\">คู่มือติดตั้ง</a> after delivery.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19712,6 +21752,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Step one: open <a href=\"/updates/\">คู่มือ cheat undetected</a> for the latest build date. Step two: read <a href=\"/neac-bypass/\">การดูแล NEAC</a> notes if a patch dropped in the last 72 hours. Step three: tune soft aim and ESP toggles conservatively for ranked.",
 								"Discord-only status shops hide rebuild timing. We publish on-site so you can compare against <a href=\"/compare/\">budget competitors</a> fairly.",
 								"FAQ shortcuts: <a href=\"/faq/are-naraka-cheats-undetected-in-2026/\">undetected in 2026</a> · <a href=\"/faq/naraka-neac-bypass/\">neac bypass</a> · <a href=\"/blog/naraka-cheats-buyers-guide/\">buyers guide</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -19721,7 +21763,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Wallhack | ESP Visibility",
 					description: "Naraka Wallhack for Naraka Bladepoint ranked & Showdown on Windows PC — wallhack ESP สำหรับผู้เล่น ซาก และระยะทาง. จัดส่งดิจิทัลทันที. undetected. Official",
 					h1: "Naraka Wallhack — ESP Visibility",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Wallhack. wallhack ESP สำหรับผู้เล่น ซาก และระยะทาง.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Wallhack. wallhack ESP สำหรับผู้เล่น ซาก และระยะทาง. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "naraka wallhack visibility through walls in a match",
 					galleryTitle: "Naraka Wallhack",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -19734,6 +21776,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC wallhack ESP สำหรับผู้เล่น ซาก และระยะทาง",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"For the broader ESP keyword page see <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>; for combat assist see <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19742,6 +21786,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC wallhack ESP สำหรับผู้เล่น ซาก และระยะทาง",
 								"Season maps and POI changes are announced via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Wallhack remains useful because it tracks entities, not fixed landmarks alone.",
 								"Pair wallhack awareness with <a href=\"/naraka-radar-hack/\">โอเวอร์เลย์เรดาร์ 2D</a> cues for flanks during arena corners and vertical fights.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19750,6 +21796,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP wallhack modules rebuild after NEAC patches. Follow the <a href=\"/updates/\">คู่มือ cheat undetected</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/undetected-naraka-cheats/\">undetected naraka cheats</a> and <a href=\"/neac-bypass/\">การดูแล NEAC</a>.",
 								"Ready to buy? Compare <a href=\"/pricing/\">ร้านค้า</a> or continue to the <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a> landing for alternate search wording.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -19771,6 +21819,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"สัญญาณศัตรูใกล้พร้อมระยะปรับได้สำหรับ solo farmer และ matcher",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ตระหนัก flank",
@@ -19783,11 +21835,33 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ใช้ radar สำหรับภัยคุกคามที่ยังมองไม่เห็น ใช้ ESP เมื่อดันหน้า",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>",
 								"<a href=\"/\">ผลิตภัณฑ์เต็มรูปแบบ</a>",
 								"<a href=\"/pricing/\">ร้านค้า</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สัญญาณ radar 2D สำหรับการโจมตีด้านข้างและการหมุน",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">คู่มือ cheat undetected</a> after NEAC patches before you reuse old configs.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -19797,7 +21871,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "NEAC Bypass | Patch Maintenance",
 					description: "NEAC Bypass for Naraka Bladepoint ranked & Showdown on Windows PC — วิธีจัดการอัปเดต NEAC สำหรับ Naraka cheats. จัดส่งดิจิทัลทันที. undetected. Official naraka",
 					h1: "NEAC Bypass — Patch Maintenance",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC NEAC Bypass. วิธีจัดการอัปเดต NEAC สำหรับ Naraka cheats.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC NEAC Bypass. วิธีจัดการอัปเดต NEAC สำหรับ Naraka cheats. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats maintenance after a NEAC patch",
 					galleryTitle: "NEAC Bypass",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -19810,6 +21884,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC is 24 Entertainment' anti-cheat for Naraka on PC (see <a href=\"https://www.naraka.com/en/\" target=\"_blank\" rel=\"noopener noreferrer\">NEAC</a>). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.",
 								"Naraka Cheats monitors NEAC patch notes and Naraka seasonal updates from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> to schedule module reviews.",
 								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19818,6 +21894,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"The team tests ESP overlays, radar signatures, and Aimbot profiles against the new build, publishes status on <a href=\"/updates/\">คู่มือ cheat undetected</a>, and ships rebuilt packages to active licenses.",
 								"Confirm Naraka server status on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> if the launcher or matchmaking fails during the same window.",
 								"Avoid loading in on old builds after major patch days until maintenance notes confirm a new release. Related reading: <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19826,6 +21904,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"NEAC bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every match.",
 								"Contact <a href=\"/support/\">ฝ่ายสนับสนุน</a> if activation fails immediately after a posted rebuild.",
 								"Buying for the first time? Compare <a href=\"/pricing/\">ร้านค้า</a> and finish <a href=\"/setup/\">คู่มือติดตั้ง</a> only after <a href=\"/updates/\">คู่มือ cheat undetected</a> shows a live build.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19833,6 +21913,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC วิธีจัดการอัปเดต NEAC สำหรับ Naraka cheats",
 								"If you have a prior HWID ban, no cheat package magically resets Riot’s hardware flags. Treat spoofer claims skeptically and read <a href=\"/faq/naraka-neac-bypass/\">NEAC FAQ</a> before buying anywhere.",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
@@ -19842,6 +21924,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC วิธีจัดการอัปเดต NEAC สำหรับ Naraka cheats",
 								"Patch-day checklist: (1) read <a href=\"/updates/\">คู่มือ cheat undetected</a>, (2) confirm NEAC notes on <a href=\"/neac-bypass/\">การดูแล NEAC</a>, (3) verify Steam launcher health, (4) load only after rebuild is posted, (5) retune soft aim FOV if weapon balance changed.",
 								"Deep dives: <a href=\"/undetected-naraka-cheats/\">undetected guide</a> · <a href=\"/blog/undetected-naraka-cheats-eac/\">NEAC reality blog</a> · <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -19851,7 +21935,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Bladepoint Cheats 2026 | Buyer Guide",
 					description: "Naraka Bladepoint Cheats 2026 for Naraka Bladepoint ranked & Showdown on Windows PC — checklist naraka cheats 2026 ก่อน checkout. จัดส่งดิจิทัลทันที.",
 					h1: "Naraka Bladepoint Cheats 2026 — Buyer Guide",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Bladepoint Cheats 2026. checklist naraka cheats 2026 ก่อน checkout.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Bladepoint Cheats 2026. checklist naraka cheats 2026 ก่อน checkout. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats product overview for Naraka",
 					galleryTitle: "Naraka Bladepoint Cheats 2026",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -19864,6 +21948,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC checklist naraka cheats 2026 ก่อน checkout",
 								"Track official season messaging on <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>, then use our <a href=\"/updates/\">คู่มือ cheat undetected</a> for product rebuild timing.",
 								"Monthly ($35) and lifetime ($150) plans cover ranked and Quick Match match loops — see <a href=\"/pricing/\">ร้านค้า</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19871,6 +21957,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC checklist naraka cheats 2026 ก่อน checkout",
 								"Deep links: <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>, <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>, <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>, <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>, <a href=\"/naraka-radar-hack/\">โอเวอร์เลย์เรดาร์ 2D</a>, <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
@@ -19880,6 +21968,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Read the <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> pillar, Features, Pricing, Setup, and Updates pages. Check undetected status notes after every major patch — responsible use and maintenance awareness matter.",
 								"Also compare the <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> checklist, <a href=\"/blog/naraka-cheats-2026-whats-new/\">2026 blog guide</a>, and <a href=\"/faq/\">FAQ</a>.",
 								"Support is available at support@narakacheats.org via the <a href=\"/support/\">ฝ่ายสนับสนุน</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19888,6 +21978,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"2026 ranked play rewards information speed — ESP hero markers, radar flank cues, and soft aim tuned for Vandal/Phantom TTK windows. After each Act, revisit <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a> and ESP toggles.",
 								"Compare against <a href=\"/\">ผลิตภัณฑ์เต็มรูปแบบ</a> criteria and <a href=\"/undetected-naraka-cheats/\">undetected maintenance</a> before switching shops mid-season.",
 								"Blog: <a href=\"/blog/naraka-cheats-2026-whats-new/\">what changed in 2026</a> · <a href=\"/blog/naraka-cheats-complete-guide-2026/\">complete guide</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -19909,6 +22001,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka cheats เป็นเครื่องมือบุคคลที่สามที่ให้ข้อมูลเพิ่มและช่วยต่อสู้ระหว่าง match ผู้เล่นส่วนใหญ่ค้นหา naraka cheats เพื่อ ESP ผู้เล่น loot radar นอกจอ หรือ aim ที่นุ่มนวลภายใต้ความกดดัน",
 								"Naraka Cheats รวมเครื่องมือเหล่านี้ในใบอนุญาต Windows PC เดียว — ไม่ต้องดาวน์โหลด wallhack radar aimbot แยก",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 						},
 						{
@@ -19916,6 +22012,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ใบอนุญาตเดียวครอบคลุม match stack เต็ม: ESP ผู้เล่นพร้อมระยะ มาร์กเกอร์ฮีโร่ radar 2D สำหรับ flank และโปรไฟล์ soft aim ต่ออาวุธ",
 								"แผนรายเดือนและตลอดชีพรวม feature stack เดียวกันพร้อม NEAC rebuilds",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"ESP / wallhack พร้อมระยะ",
@@ -19930,6 +22030,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"แต่ละเครื่องมือมีหน้ารายละเอียดหากต้องการข้อมูลก่อนชำระเงิน",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>",
@@ -19943,6 +22047,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Naraka ใช้ NEAC ไม่มี cheat undetected ตลอดไป — การดูแลหลังแพตช์สำคัญ ตรวจหน้าสถานะหลังอัปเดต Naraka หรือ NEAC ก่อนเข้าเกม",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/updates/\">คู่มือ cheat undetected</a>",
@@ -19956,6 +22064,10 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"เลือกรายเดือน ($35) หรือ lifetime ($150) ในร้าน — ฟีเจอร์เดียวกัน หลังชำระเงินได้ใบอนุญาตทางอีเมล ทำตามคู่มือติดตั้งและตรวจสถานะหลังแพตช์ใหญ่",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Naraka Bladepoint ranked and Showdown matches on Windows PC use ESP player boxes, loot markers, soft aim profiles, and 2D radar overlays tuned for NEAC maintenance rebuilds.",
+								"Read the Setup guide, check Updates after patches, and email support@narakacheats.org with your Zadeyo order ID for delivery or activation help.",
 							],
 							list: [
 								"<a href=\"/pricing/\">ร้านค้า</a>",
@@ -19970,7 +22082,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "ดาวน์โหลด Naraka Cheats | Instant Access",
 					description: "ดาวน์โหลด Naraka Cheats for Naraka Bladepoint ranked & Showdown on Windows PC — ดาวน์โหลดใบอนุญาตดิจิทัลหลังชำระเงิน. จัดส่งดิจิทัลทันที. undetected. Official",
 					h1: "ดาวน์โหลด Naraka Cheats — Instant Access",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ดาวน์โหลด Naraka Cheats. ดาวน์โหลดใบอนุญาตดิจิทัลหลังชำระเงิน.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ดาวน์โหลด Naraka Cheats. ดาวน์โหลดใบอนุญาตดิจิทัลหลังชำระเงิน. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats download and install delivery flow",
 					galleryTitle: "ดาวน์โหลด Naraka Cheats",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -19983,6 +22095,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ดาวน์โหลดใบอนุญาตดิจิทัลหลังชำระเงิน",
 								"Keep your order confirmation and license email ready for the <a href=\"/setup/\">คู่มือติดตั้ง</a> and Support requests.",
 								"If 24 Entertainment services are down, check <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a> before assuming a download failure.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19991,6 +22105,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC ดาวน์โหลดใบอนุญาตดิจิทัลหลังชำระเงิน",
 								"Monthly ($35) and lifetime ($150) plans share the same feature stack — compare options on the <a href=\"/pricing/\">ร้านค้า</a>.",
 								"Feature detail: <a href=\"/features/\">ฟีเจอร์ทั้งหมด</a>. Module pages: <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>, <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -19999,6 +22115,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Naraka or NEAC patches ship, check the <a href=\"/updates/\">คู่มือ cheat undetected</a> for maintenance rebuilds.",
 								"Contact <a href=\"/support/\">ฝ่ายสนับสนุน</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> so you know what “download ready” means after a patch.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20008,7 +22126,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "เมนูมอด Naraka | In-Game Toggles",
 					description: "เมนูมอด Naraka for Naraka Bladepoint ranked & Showdown on Windows PC — สวิตช์ ESP และ soft aim ในไคลเอนต์. จัดส่งดิจิทัลทันที. undetected. Official naraka",
 					h1: "เมนูมอด Naraka — In-Game Toggles",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC เมนูมอด Naraka. สวิตช์ ESP และ soft aim ในไคลเอนต์.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC เมนูมอด Naraka. สวิตช์ ESP และ soft aim ในไคลเอนต์. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats in-game menu controls",
 					galleryTitle: "เมนูมอด Naraka",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20021,6 +22139,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สวิตช์ ESP และ soft aim ในไคลเอนต์",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Control deep-dives: <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>, <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>, <a href=\"/naraka-radar-hack/\">โอเวอร์เลย์เรดาร์ 2D</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20029,6 +22149,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สวิตช์ ESP และ soft aim ในไคลเอนต์",
 								"Radar hack range and Aimbot smoothness adjust from the same mod menu — useful when <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> seasons change fight distances and mobility.",
 								"Soft tracking players should start with <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a> profiles before aggressive FOV.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20037,6 +22159,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka mod menu behavior is rebuilt when NEAC or major Naraka updates land. Follow the <a href=\"/updates/\">คู่มือ cheat undetected</a> and <a href=\"/neac-bypass/\">การดูแล NEAC</a> before loading in on patch days.",
 								"Checkout with instant digital delivery for monthly and lifetime licenses — see <a href=\"/pricing/\">ร้านค้า</a>.",
 								"Need install steps? Open <a href=\"/setup/\">คู่มือติดตั้ง</a> after your license email arrives.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20046,7 +22170,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Soft Aim | Smooth Aim Settings",
 					description: "Naraka Soft Aim for Naraka Bladepoint ranked & Showdown on Windows PC — การตั้งค่า soft aim ที่ลื่นไหลสำหรับ Windows PC. จัดส่งดิจิทัลทันที. undetected.",
 					h1: "Naraka Soft Aim — Smooth Aim Settings",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Soft Aim. การตั้งค่า soft aim ที่ลื่นไหลสำหรับ Windows PC.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Soft Aim. การตั้งค่า soft aim ที่ลื่นไหลสำหรับ Windows PC. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka soft aim FOV and smoothness settings",
 					galleryTitle: "Naraka Soft Aim",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20059,6 +22183,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การตั้งค่า soft aim ที่ลื่นไหลสำหรับ Windows PC",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Full Aimbot documentation: <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>. Alternate wording: <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20067,6 +22193,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การตั้งค่า soft aim ที่ลื่นไหลสำหรับ Windows PC",
 								"Weapon TTKs shift with <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> balance patches — retune smoothness after major combat updates.",
 								"Soft aim ships alongside <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a> and <a href=\"/naraka-radar-hack/\">โอเวอร์เลย์เรดาร์ 2D</a> overlays.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20075,6 +22203,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot modules rebuild after NEAC patches. Check the <a href=\"/updates/\">คู่มือ cheat undetected</a> before loading in — responsible settings and maintenance awareness matter for undetected play.",
 								"Monthly and lifetime licenses checkout with digital delivery on Windows PC — <a href=\"/pricing/\">ร้านค้า</a>.",
 								"Activation help: <a href=\"/setup/\">คู่มือติดตั้ง</a> · status questions: <a href=\"/support/\">ฝ่ายสนับสนุน</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20084,7 +22214,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Cheat Naraka ที่ดีที่สุด | Buyer Checklist",
 					description: "Cheat Naraka ที่ดีที่สุด for Naraka Bladepoint ranked & Showdown on Windows PC — สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats. จัดส่งดิจิทัลทันที. undetected.",
 					h1: "Cheat Naraka ที่ดีที่สุด — Buyer Checklist",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Cheat Naraka ที่ดีที่สุด. สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Cheat Naraka ที่ดีที่สุด. สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats overview for Naraka on PC",
 					galleryTitle: "Cheat Naraka ที่ดีที่สุด",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20097,6 +22227,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Verify the live game is healthy via <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka on Steam</a>, then confirm our <a href=\"/updates/\">คู่มือ cheat undetected</a> note before you judge any package “best.”",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20105,12 +22237,16 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats",
 								"Review <a href=\"/features/\">ฟีเจอร์ทั้งหมด</a>, <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>, and <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> before checkout — monthly ($35) and lifetime ($150) plans available.",
 								"Module pages worth opening: <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>, <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>, <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
 							h2: "Buying naraka cheats safely",
 							paragraphs: [
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC สิ่งที่ควรเปรียบเทียบก่อนซื้อ naraka cheats",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
@@ -20121,6 +22257,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Budget stores often advertise $7 day keys with Discord-only status. Naraka Cheats ships ESP + radar + soft aim together with public <a href=\"/updates/\">คู่มือ cheat undetected</a> and email support.",
 								"Read named comparisons: <a href=\"/blog/naraka-cheats-vs-cheatvault-comparison/\">vs budget ESP shops</a> · <a href=\"/blog/naraka-cheats-vs-ghostware-features-pricing/\">vs minimal ESP tools</a> · hub <a href=\"/compare/\">Compare table</a>.",
 								"Still deciding? <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> · <a href=\"/reviews/\">reviews</a> · <a href=\"/pricing/\">ร้านค้า</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20130,7 +22268,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Hack Aimbot Naraka | Soft Aim Assist",
 					description: "Hack Aimbot Naraka for Naraka Bladepoint ranked & Showdown on Windows PC — assist hack Aimbot undetected สำหรับ Naraka. จัดส่งดิจิทัลทันที. undetected.",
 					h1: "Hack Aimbot Naraka — Soft Aim Assist",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Hack Aimbot Naraka. assist hack Aimbot undetected สำหรับ Naraka.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Hack Aimbot Naraka. assist hack Aimbot undetected สำหรับ Naraka. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Aimbot hack controls and bone priority",
 					galleryTitle: "Hack Aimbot Naraka",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20143,6 +22281,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC assist hack Aimbot undetected สำหรับ Naraka",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Prefer softer tracking language? See <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>. Full settings: <a href=\"/naraka-aimbot/\">Aimbot และ soft aim</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20151,6 +22291,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC assist hack Aimbot undetected สำหรับ Naraka",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Balance patches from <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> can change ideal FOV — retune after major weapon balance updates.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20159,6 +22301,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Aimbot hack signatures rebuild after NEAC updates. Follow the <a href=\"/updates/\">คู่มือ cheat undetected</a> and <a href=\"/neac-bypass/\">การดูแล NEAC</a> before loading in after patch days.",
 								"Checkout with instant digital delivery for Windows 10 and 11 — <a href=\"/pricing/\">ร้านค้า</a>.",
 								"Pair with <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a> for the full information + assist loop.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20168,7 +22312,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Hack ESP Naraka | Boxes & Loot",
 					description: "Hack ESP Naraka for Naraka Bladepoint ranked & Showdown on Windows PC — กล่อง ESP hack, pin ซาก และระยะทาง. จัดส่งดิจิทัลทันที. undetected. Official naraka",
 					h1: "Hack ESP Naraka — Boxes & Loot",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Hack ESP Naraka. กล่อง ESP hack, pin ซาก และระยะทาง.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Hack ESP Naraka. กล่อง ESP hack, pin ซาก และระยะทาง. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka ESP hack boxes and hero markers",
 					galleryTitle: "Hack ESP Naraka",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20181,6 +22325,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC กล่อง ESP hack, pin ซาก และระยะทาง",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Canonical visibility guide: <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>. Wallhack wording: <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20189,6 +22335,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC กล่อง ESP hack, pin ซาก และระยะทาง",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"POI and loot changes publish through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a> — keep categories toggled to what the current map rewards.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20197,6 +22345,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"ESP hack modules rebuild after NEAC and Naraka patches. Check the <a href=\"/updates/\">คู่มือ cheat undetected</a> before loading in — pair ESP hack awareness with <a href=\"/naraka-radar-hack/\">โอเวอร์เลย์เรดาร์ 2D</a> for flank reads.",
 								"Licenses deliver digitally after checkout on Windows PC — see <a href=\"/pricing/\">ร้านค้า</a>.",
 								"Install steps: <a href=\"/setup/\">คู่มือติดตั้ง</a>. Status questions: <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20206,7 +22356,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					title: "Naraka Unlock All | What It Means",
 					description: "Naraka Unlock All for Naraka Bladepoint ranked & Showdown on Windows PC — การค้นหา unlock-all vs เครื่องมือ ESP และ Aimbot จริง. จัดส่งดิจิทัลทันที.",
 					h1: "Naraka Unlock All — What It Means",
-					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Unlock All. การค้นหา unlock-all vs เครื่องมือ ESP และ Aimbot จริง.",
+					intro: "Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC Naraka Unlock All. การค้นหา unlock-all vs เครื่องมือ ESP และ Aimbot จริง. จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 					imageAlt: "Naraka Cheats license features overview",
 					galleryTitle: "Naraka Unlock All",
 					ctaPrimary: "ซื้อ Naraka Cheats",
@@ -20219,6 +22369,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การค้นหา unlock-all vs เครื่องมือ ESP และ Aimbot จริง",
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
 								"Cosmetics and patch cycle progression items are sold through <a href=\"https://store.steampowered.com/app/1203220/NARAKA_BLADEPOINT/\" target=\"_blank\" rel=\"noopener noreferrer\">Naraka</a>. Be wary of unlock-all downloads that promise free skins — they are often scams.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20227,6 +22379,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การค้นหา unlock-all vs เครื่องมือ ESP และ Aimbot จริง",
 								"For loadout planning during a match, loot and hero markers speed map rotations — see the <a href=\"/naraka-esp/\">คู่มือ ESP และ wallhack</a> and <a href=\"/features/\">ฟีเจอร์ทั้งหมด</a> pages for the full tool list.",
 								"Related: <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a> and <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 						{
@@ -20235,6 +22389,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"If you need undetected ESP wallhack, radar hack, and Aimbot for Naraka on Windows PC, compare <a href=\"/pricing/\">ร้านค้า</a> and read the <a href=\"/setup/\">คู่มือติดตั้ง</a> before checkout.",
 								"Check the <a href=\"/updates/\">คู่มือ cheat undetected</a> after NEAC patches — maintenance rebuilds publish for active licenses.",
 								"Questions? <a href=\"/faq/\">FAQ</a> and <a href=\"/support/\">ฝ่ายสนับสนุน</a> cover delivery and configuration — not cosmetic unlocks.",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
 							],
 						},
 					],
@@ -20255,22 +22411,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "ข้อมูลที่เราเก็บ",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC อีเมลติดต่อ อ้างอิงคำสั่งซื้อ Zadeyo และข้อมูลความปลอดภัยพื้นฐานของเว็บไซต์",
-								"รายละเอียดการชำระเงินประมวลผลผ่าน checkout Zadeyo — ไม่เก็บบน narakacheats.org",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "การใช้ข้อมูล",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การตอบกลับฝ่ายสนับสนุน การแก้ไขคำสั่งซื้อ และการปฏิบัติตามกฎหมายเมื่อจำเป็น",
-								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "สิทธิของคุณ",
 							paragraphs: [
-								"support@narakacheats.org สำหรับการสนับสนุน",
-								"อีเมล: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">นโยบายคืนเงิน</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -20290,22 +22472,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "การจัดส่งดิจิทัล",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC อีเมลติดต่อ อ้างอิงคำสั่งซื้อ Zadeyo และข้อมูลความปลอดภัยพื้นฐานของเว็บไซต์",
-								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "การอนุมัติคืนเงิน",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การตอบกลับฝ่ายสนับสนุน การแก้ไขคำสั่งซื้อ และการปฏิบัติตามกฎหมายเมื่อจำเป็น",
-								"ตรวจ Updates หลังแพตช์ NEAC ไม่มี cheat รับประกัน undetected ถาวร",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "วิธีขอคืนเงิน",
 							paragraphs: [
-								"support@narakacheats.org สำหรับการสนับสนุน",
-								"อีเมล: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">ฝ่ายสนับสนุน</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">ร้านค้า</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -20325,22 +22521,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "การยอมรับข้อกำหนด",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC อีเมลติดต่อ อ้างอิงคำสั่งซื้อ Zadeyo และข้อมูลความปลอดภัยพื้นฐานของเว็บไซต์",
-								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล NEAC",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "ข้อจำกัดความรับผิดชอบด้านความเสี่ยง",
 							paragraphs: [
-								"Naraka Cheats รวม ESP wallhack, radar hack และ Naraka Aimbot แบบ undetected สำหรับ Naraka บน Windows PC การตอบกลับฝ่ายสนับสนุน การแก้ไขคำสั่งซื้อ และการปฏิบัติตามกฎหมายเมื่อจำเป็น",
-								"การใช้ cheat อาจละเมิดข้อกำหนดของทีม Naraka — คุณรับความเสี่ยง ban ทั้งหมด",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">ภาพรวม Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "การเปลี่ยนแปลงนโยบาย",
 							paragraphs: [
-								"support@narakacheats.org สำหรับการสนับสนุน",
-								"อีเมล: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">นโยบายคืนเงิน</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -20859,6 +23069,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Hướng dẫn cài đặt</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. trợ giúp đơn hàng và liên hệ hỗ trợ giấy phép",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Chính sách hoàn tiền</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -20979,6 +23201,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Hướng dẫn ESP & wallhack</a>",
 								"<a href=\"/\">Sản phẩm đầy đủ</a>",
 								"<a href=\"/pricing/\">Cửa hàng</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. tín hiệu radar 2D cho đánh hông và xoay vòng",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Hướng dẫn cheat undetected</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -21446,22 +23680,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Thông tin chúng tôi thu thập",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Email liên hệ, tham chiếu đơn hàng Zadeyo và dữ liệu bảo mật cơ bản của trang.",
-								"Chi tiết thanh toán được xử lý qua checkout Zadeyo — không lưu trên narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Cách chúng tôi sử dụng dữ liệu",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Phản hồi hỗ trợ, giải quyết đơn hàng và tuân thủ pháp lý khi cần.",
-								"Kiểm tra Updates sau bản vá NEAC. Không cheat nào đảm bảo undetected vĩnh viễn.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Quyền của bạn",
 							paragraphs: [
-								"support@narakacheats.org cho hỗ trợ và pháp lý.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Chính sách hoàn tiền</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -21481,22 +23741,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Giao hàng kỹ thuật số",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Email liên hệ, tham chiếu đơn hàng Zadeyo và dữ liệu bảo mật cơ bản của trang.",
-								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Phê duyệt hoàn tiền",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Phản hồi hỗ trợ, giải quyết đơn hàng và tuân thủ pháp lý khi cần.",
-								"Kiểm tra Updates sau bản vá NEAC. Không cheat nào đảm bảo undetected vĩnh viễn.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Cách yêu cầu",
 							paragraphs: [
-								"support@narakacheats.org cho hỗ trợ và pháp lý.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Hỗ trợ</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Cửa hàng</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -21516,22 +23790,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Chấp nhận điều khoản",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Email liên hệ, tham chiếu đơn hàng Zadeyo và dữ liệu bảo mật cơ bản của trang.",
-								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Tuyên bố miễn trừ rủi ro",
 							paragraphs: [
-								"Naraka Cheats cung cấp ESP wallhack, radar hack và Naraka Aimbot undetected cho Naraka trên PC Windows. Phản hồi hỗ trợ, giải quyết đơn hàng và tuân thủ pháp lý khi cần.",
-								"Dùng cheat có thể vi phạm điều khoản của đội Naraka — bạn chịu mọi rủi ro ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Tổng quan Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Thay đổi chính sách",
 							paragraphs: [
-								"support@narakacheats.org cho hỗ trợ và pháp lý.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Chính sách hoàn tiền</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -22050,6 +24338,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Гайд з встановлення</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. допомога з замовленням і контакт підтримки ліцензій",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Політика повернення</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -22170,6 +24470,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Гайд ESP і wallhack</a>",
 								"<a href=\"/\">Повний продукт</a>",
 								"<a href=\"/pricing/\">Магазин</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. 2D radar підказки для флангів і ротацій",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Гайд undetected чітів</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -22637,22 +24949,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Інформація, яку ми збираємо",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Контактний email, посилання на замовлення Zadeyo та базові дані безпеки сайту.",
-								"Платіжні дані обробляються через checkout Zadeyo — не зберігаються на narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Як ми використовуємо дані",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Відповіді підтримки, вирішення замовлень та правова відповідність за потреби.",
-								"Перевіряйте Updates після патчів NEAC. Жоден чит не гарантує постійний undetected статус.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Ваші права",
 							paragraphs: [
-								"support@narakacheats.org для підтримки та правових питань.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Політика повернення</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -22672,22 +25010,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Цифрова доставка",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Контактний email, посилання на замовлення Zadeyo та базові дані безпеки сайту.",
-								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Схвалення повернення",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Відповіді підтримки, вирішення замовлень та правова відповідність за потреби.",
-								"Перевіряйте Updates після патчів NEAC. Жоден чит не гарантує постійний undetected статус.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Як подати запит",
 							paragraphs: [
-								"support@narakacheats.org для підтримки та правових питань.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Підтримка</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Магазин</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -22707,22 +25059,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Прийняття умов",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Контактний email, посилання на замовлення Zadeyo та базові дані безпеки сайту.",
-								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Попередження про ризики",
 							paragraphs: [
-								"Naraka Cheats об'єднує ESP wallhack, radar hack і Naraka Aimbot у undetected пакеті для Naraka на Windows PC. Відповіді підтримки, вирішення замовлень та правова відповідність за потреби.",
-								"Використання читів може порушувати умови команди Naraka — ви приймаєте на себе ризик бану.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Огляд Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Зміни політики",
 							paragraphs: [
-								"support@narakacheats.org для підтримки та правових питань.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Політика повернення</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -23241,6 +25607,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Průvodce instalací</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. pomoc s objednávkou a kontakt podpory licencí",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Zásady vrácení peněz</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -23361,6 +25739,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Průvodce ESP a wallhack</a>",
 								"<a href=\"/\">Kompletní produkt</a>",
 								"<a href=\"/pricing/\">Obchod</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. 2D radar signály pro flanly a rotace",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Průvodce undetected cheaty</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -23828,22 +26218,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informace, které shromažďujeme",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Kontaktní e-mail, reference objednávek Zadeyo a základní bezpečnostní data webu.",
-								"Platební údaje zpracovává checkout Zadeyo — neukládají se na narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Jak používáme data",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Odpovědi podpory, vyřizování objednávek a právní soulad v případě potřeby.",
-								"Po patchích NEAC zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Vaše práva",
 							paragraphs: [
-								"support@narakacheats.org pro podporu a právní dotazy.",
-								"E-mail: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Zásady vrácení peněz</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -23863,22 +26279,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digitální doručení",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Kontaktní e-mail, reference objednávek Zadeyo a základní bezpečnostní data webu.",
-								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Schválení vrácení",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Odpovědi podpory, vyřizování objednávek a právní soulad v případě potřeby.",
-								"Po patchích NEAC zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Jak požádat",
 							paragraphs: [
-								"support@narakacheats.org pro podporu a právní dotazy.",
-								"E-mail: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Podpora</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Obchod</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -23898,22 +26328,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Přijetí podmínek",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Kontaktní e-mail, reference objednávek Zadeyo a základní bezpečnostní data webu.",
-								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Upozornění na rizika",
 							paragraphs: [
-								"Naraka Cheats spojuje ESP wallhack, radar hack a Naraka Aimbot jako undetected balíček pro Naraka na Windows PC. Odpovědi podpory, vyřizování objednávek a právní soulad v případě potřeby.",
-								"Používání cheatů může porušovat podmínky týmu Naraka — nesete veškeré riziko bana.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Přehled Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Změny zásad",
 							paragraphs: [
-								"support@narakacheats.org pro podporu a právní dotazy.",
-								"E-mail: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Zásady vrácení peněz</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -24432,6 +26876,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Ghid de instalare</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. ajutor comenzi și contact suport licențe",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Politica de rambursare</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -24552,6 +27008,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">Ghid ESP și wallhack</a>",
 								"<a href=\"/\">Produs complet</a>",
 								"<a href=\"/pricing/\">Magazin</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. indicii radar 2D pentru flancuri și rotații",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Ghid cheats undetected</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -25019,22 +27487,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Informații pe care le colectăm",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Email de contact, referințe comenzi Zadeyo și date de securitate de bază ale site-ului.",
-								"Detaliile de plată sunt procesate prin checkout Zadeyo — nu sunt stocate pe narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Cum folosim datele",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Răspunsuri suport, rezolvarea comenzilor și conformitate legală când este necesar.",
-								"Verificați Updates după patch-uri NEAC. Niciun cheat nu garantează undetected permanent.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Drepturile tale",
 							paragraphs: [
-								"support@narakacheats.org pentru suport și legal.",
-								"Email: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Politica de rambursare</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -25054,22 +27548,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Livrare digitală",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Email de contact, referințe comenzi Zadeyo și date de securitate de bază ale site-ului.",
-								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță NEAC.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Aprobare rambursare",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Răspunsuri suport, rezolvarea comenzilor și conformitate legală când este necesar.",
-								"Verificați Updates după patch-uri NEAC. Niciun cheat nu garantează undetected permanent.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Cum să soliciți",
 							paragraphs: [
-								"support@narakacheats.org pentru suport și legal.",
-								"Email: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Suport</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Magazin</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -25089,22 +27597,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Acceptarea termenilor",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Email de contact, referințe comenzi Zadeyo și date de securitate de bază ale site-ului.",
-								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță NEAC.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Declinare responsabilitate",
 							paragraphs: [
-								"Naraka Cheats combină ESP wallhack, radar hack și Naraka Aimbot undetected pentru Naraka pe PC Windows. Răspunsuri suport, rezolvarea comenzilor și conformitate legală când este necesar.",
-								"Folosirea cheat-urilor poate încălca termenii echipei Naraka — îți asumi tot riscul de ban.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Prezentare Naraka Cheats</a>.",
 							],
 						},
 						{
 							h2: "Modificări de politică",
 							paragraphs: [
-								"support@narakacheats.org pentru suport și legal.",
-								"Email: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Politica de rambursare</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],
@@ -25623,6 +28145,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/setup/\">Installationsguide</a>",
 							],
 						},
+						{
+							h2: "What to include in your email",
+							paragraphs: [
+								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. orderhjälp och licens support-kontakt",
+								"We do not recover banned Naraka accounts or sell HWID spoofers — support covers Naraka Cheats licenses only. Refund questions should reference the <a href=\"/refund-policy/\">Återbetalningspolicy</a> before you open a dispute.",
+							],
+							list: [
+								"Order ID from checkout email",
+								"Windows version",
+								"Loader or overlay error text",
+							],
+						},
 					],
 					heroImage: "/images/naraka-cheats-session.webp",
 				},
@@ -25743,6 +28277,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"<a href=\"/naraka-esp/\">ESP- och wallhack-guide</a>",
 								"<a href=\"/\">Fullständig produkt</a>",
 								"<a href=\"/pricing/\">Butik</a>",
+							],
+						},
+						{
+							h2: "Ranked and Showdown use",
+							paragraphs: [
+								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. 2D radar-signaler för flanker och rotationer",
+								"Pair radar cues with audio and ESP before you commit — the overlay is for awareness, not auto-aim. Check <a href=\"/updates/\">Undetected cheats-guide</a> after NEAC patches before you reuse old configs.",
+							],
+							list: [
+								"Tune range per map phase",
+								"Toggle with ESP hotkeys",
+								"Confirm status after patches",
 							],
 						},
 					],
@@ -26210,22 +28756,48 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Information vi samlar in",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Kontakt-e-post, Zadeyo-orderreferenser och grundläggande säkerhetsdata för webbplatsen.",
-								"Betalningsuppgifter behandlas via Zadeyo checkout — lagras inte på narakacheats.org.",
+								"We may collect contact details you send by email, order references needed to resolve support requests, and basic technical data used to operate and secure the website.",
+								"We do not sell personal data. Checkout payment details are processed by the checkout provider — review their privacy terms for transaction data.",
+							],
+							list: [
+								"Contact details you send by email",
+								"Order references for support requests",
+								"Basic technical data for site security",
 							],
 						},
 						{
 							h2: "Hur vi använder data",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Supportssvar, orderlösning och juridisk efterlevnad vid behov.",
-								"Kontrollera Updates ruster NEAC-patchar. Ingen cheat garanterar permanent undetected status.",
+								"Information is used to respond to support requests, process order issues, improve site reliability, and meet legal obligations when required.",
+								"Analytics may use aggregated traffic data without identifying individual Naraka Cheats customers.",
 							],
 						},
 						{
 							h2: "Dina rättigheter",
 							paragraphs: [
-								"support@narakacheats.org för support och juridik.",
-								"E-post: support@narakacheats.org",
+								"You may request correction or deletion of support email data by contacting support@narakacheats.org with your request details.",
+								"Policy updates publish on this page. Continued use of narakacheats.org after updates means you accept the revised policy. Also see <a href=\"/terms/\">Terms of Use</a> and <a href=\"/refund-policy/\">Återbetalningspolicy</a>.",
+							],
+						},
+						{
+							h2: "Cookies and similar technologies",
+							paragraphs: [
+								"We use essential cookies to operate the site and, when enabled, privacy-friendly analytics (Google Analytics or Plausible) to understand aggregated traffic — never to sell personal data.",
+								"You can block cookies in your browser settings. Analytics only loads when PUBLIC_GA_ID or PUBLIC_PLAUSIBLE_DOMAIN is configured at deploy time.",
+							],
+						},
+						{
+							h2: "Data retention and international transfers",
+							paragraphs: [
+								"Support emails are retained only as long as needed to resolve your request or meet legal obligations, then deleted or anonymized.",
+								"Checkout data is processed by our payment provider. narakacheats.org does not store full card numbers. International visitors are covered by the same policy.",
+							],
+						},
+						{
+							h2: "Children and California / EU rights",
+							paragraphs: [
+								"Naraka Cheats is not directed at children under 13. We do not knowingly collect data from minors.",
+								"EU/UK users may request access, correction, or deletion under GDPR. California residents may exercise CCPA rights by emailing support@narakacheats.org.",
 							],
 						},
 					],
@@ -26245,22 +28817,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Digital leverans",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Kontakt-e-post, Zadeyo-orderreferenser och grundläggande säkerhetsdata för webbplatsen.",
-								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. NEAC-underhåll.",
+								"Naraka Cheats licenses deliver digitally after payment confirmation. Because access begins immediately, refunds are limited to cases outlined below.",
+								"Submit refund requests within 24 hours of purchase with your order ID and reason.",
 							],
 						},
 						{
 							h2: "Återbetalningsgodkännande",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Supportssvar, orderlösning och juridisk efterlevnad vid behov.",
-								"Kontrollera Updates ruster NEAC-patchar. Ingen cheat garanterar permanent undetected status.",
+								"Duplicate charges, failed delivery despite confirmed payment, or technical activation failures verified by support may qualify for review.",
+								"Refund decisions are final. Chargebacks without contacting support first may result in license revocation. See also <a href=\"/terms/\">Terms of Use</a>.",
 							],
 						},
 						{
 							h2: "Hur du begär",
 							paragraphs: [
-								"support@narakacheats.org för support och juridik.",
-								"E-post: support@narakacheats.org",
+								"Email support@narakacheats.org with subject \"Refund Request\", your order ID, purchase date, and issue summary — or use the <a href=\"/support/\">Support</a>.",
+								"Approved refunds process back to the original payment method when possible. Pricing details live on <a href=\"/pricing/\">Butik</a>.",
+							],
+						},
+						{
+							h2: "Chargebacks and EU consumer rights",
+							paragraphs: [
+								"Contact support before opening a payment dispute. Unresolved chargebacks may result in immediate license revocation.",
+								"EU consumers may have statutory withdrawal rights for digital goods — contact us within 14 days if applicable; delivered license keys may limit eligibility.",
+							],
+						},
+						{
+							h2: "Partial refunds and processing time",
+							paragraphs: [
+								"Partial refunds are not offered for partially used license periods unless required by law.",
+								"Approved refunds typically post within 5–10 business days depending on your bank or card issuer.",
 							],
 						},
 					],
@@ -26280,22 +28866,36 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "Godkännande av villkor",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Kontakt-e-post, Zadeyo-orderreferenser och grundläggande säkerhetsdata för webbplatsen.",
-								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. NEAC-underhåll.",
+								"By purchasing or using Naraka Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Naraka on Windows PC only.",
+								"Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.",
 							],
 						},
 						{
 							h2: "Riskvarning",
 							paragraphs: [
-								"Naraka Cheats kombinerar ESP wallhack, radar hack och Naraka Aimbot som undetected paket för Naraka på Windows PC. Supportssvar, orderlösning och juridisk efterlevnad vid behov.",
-								"Att använda cheats kan bryta mot 24 Entertainment terms — du tar all ban-risk.",
+								"Using cheats in Naraka may violate 24 Entertainment terms and result in account penalties. Naraka Cheats provides maintenance but does not guarantee undetected status or account safety.",
+								"You assume all risk. We are not liable for bans, data loss, or damages arising from product use. See also <a href=\"/naraka-cheats/\">Naraka Cheats-översikt</a>.",
 							],
 						},
 						{
 							h2: "Policyändringar",
 							paragraphs: [
-								"support@narakacheats.org för support och juridik.",
-								"E-post: support@narakacheats.org",
+								"We may update these terms by posting revisions on this page. Continued use after changes constitutes acceptance.",
+								"Contact support@narakacheats.org for questions. Related policies: <a href=\"/privacy-policy/\">Privacy</a> and <a href=\"/refund-policy/\">Återbetalningspolicy</a>.",
+							],
+						},
+						{
+							h2: "Age requirement and acceptable use",
+							paragraphs: [
+								"You must be at least 18 years old (or the age of majority in your jurisdiction) to purchase a license.",
+								"Licenses are for personal use on your own Windows PC. Reselling keys, sharing accounts, or attacking our infrastructure violates these terms.",
+							],
+						},
+						{
+							h2: "Limitation of liability and disputes",
+							paragraphs: [
+								"Naraka Cheats is provided \"as is.\" Our total liability is limited to the amount you paid for the license in the prior 30 days.",
+								"Disputes should first be emailed to support@narakacheats.org. Governing law follows the jurisdiction of our payment processor unless local law requires otherwise.",
 							],
 						},
 					],

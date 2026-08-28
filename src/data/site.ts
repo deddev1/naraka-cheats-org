@@ -103,7 +103,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is {brand}?',
 		answer:
-			'{brand} is an undetected {primaryKeyword} package for Naraka on Windows PC. It includes ESP wallhack, 2D radar, and aimbot controls, with {antiCheat} maintenance and setup support.',
+			'{brand} is an undetected {primaryKeyword} package for Naraka on Windows PC. It includes ESP wallhack, 2D radar, and aimbot controls, with {antiCheat} maintenance and setup support. Read the <a href="/features/">Features</a> breakdown, <a href="/pricing/">Pricing</a> plans, and <a href="/setup/">Setup guide</a> before you buy.',
 		slug: 'what-are-naraka-cheats',
 		seoTitle: 'What is {brand}? | FAQ',
 		seoDescription:
@@ -121,7 +121,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Does this work in battle royale rounds and ranked matches?',
 		answer:
-			'Yes. ESP, radar, and aimbot are built for {game} match flow — reading enemy heroes, spotting loot, and staying aware near POIs and combat zones.',
+			'Yes. ESP, radar, and aimbot are built for {game} match flow — reading enemy heroes, spotting loot, and staying aware near POIs and combat zones. Use conservative overlay settings in ranked and confirm <a href="/updates/">Updates</a> after patches before long sessions.',
 		slug: 'solo-farmer-and-raider-sessions',
 		seoTitle: 'Raid Session and PvP Support | FAQ',
 		seoDescription:
@@ -130,7 +130,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is included — ESP, wallhack, radar, or Aimbot?',
 		answer:
-			'{brand} bundles ESP wallhack, hero markers, 2D radar cues, and configurable Aimbot in one license. See Features for the full list.',
+			'{brand} bundles ESP wallhack, hero markers, 2D radar cues, and configurable Aimbot in one license. See Features for the full list. Deep dives live on the <a href="/naraka-esp/">ESP</a>, <a href="/naraka-radar-hack/">radar</a>, and <a href="/naraka-aimbot/">aimbot</a> pages.',
 		slug: 'esp-wallhack-radar-or-aimbot',
 		seoTitle: 'What Is Included: ESP, Wallhack, Radar, Aimbot | FAQ',
 		seoDescription:
@@ -139,7 +139,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'How are licenses delivered?',
 		answer:
-			'After payment is confirmed, {brand} license details are delivered digitally through checkout. Timing can vary by payment method and order review. Keep your order confirmation ready if you contact support.',
+			'After payment is confirmed, {brand} license details are delivered digitally through checkout. Timing can vary by payment method and order review. Keep your order confirmation ready if you contact support. Follow the <a href="/setup/">Setup guide</a> immediately after delivery and email {email} if activation fails within 24 hours.',
 		slug: 'how-are-licenses-delivered',
 		seoTitle: 'How Are {brand} Licenses Delivered? | FAQ',
 		seoDescription:
@@ -148,7 +148,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Where do I check updates after a Naraka or {antiCheat} patch?',
 		answer:
-			'Maintenance notes are posted on the Status page when a Naraka or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live.',
+			'Maintenance notes are posted on the Status page when a Naraka or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live. Bookmark <a href="/updates/">Updates</a> and check it before ranked queues after every major patch.',
 		slug: 'where-to-check-updates',
 		seoTitle: 'Where to Check {game} / {antiCheat} Updates | FAQ',
 		seoDescription:
@@ -157,7 +157,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email {email}. Include your order details, package length, and a clear description of the setup issue so replies can be faster.',
+			'Use the Support page or email {email}. Include your order details, package length, and a clear description of the setup issue so replies can be faster. Attach loader error text and your Windows version (10 or 11) — see the <a href="/support/">Support page</a> checklist before you write.',
 		slug: 'how-to-contact-support',
 		seoTitle: 'How to Contact {brand} Support | FAQ',
 		seoDescription:
@@ -166,7 +166,7 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'How much do {primaryKeyword} cost in 2026?',
 		answer:
-			'{brand} is $35 per month or $150 lifetime USD on Windows PC. Both plans include ESP wallhack, 2D radar, soft aim, and {antiCheat} maintenance rebuilds. See Pricing for the latest plan details before checkout.',
+			'{brand} is $35 per month or $150 lifetime USD on Windows PC. Both plans include ESP wallhack, 2D radar, soft aim, and {antiCheat} maintenance rebuilds. See Pricing for the latest plan details, feature list, and refund policy before checkout.',
 		slug: 'how-much-do-naraka-cheats-cost',
 		seoTitle: 'How Much Do {game} Hacks Cost? | FAQ',
 		seoDescription:
@@ -188,7 +188,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is a {game} wallhack?',
 		answer:
-			'A {game} wallhack is an ESP overlay that shows enemy heroes and weapons through walls. {brand} includes distance readouts, grapple and ult cues, and toggleable categories.',
+			'A {game} wallhack is an ESP overlay that shows enemy heroes and weapons through walls. {brand} includes distance readouts, grapple and ult cues, and toggleable categories. Pair wallhack visibility with our <a href="/naraka-radar-hack/">2D radar</a> for off-screen flanks and read the <a href="/naraka-esp/">ESP guide</a> for category-level controls before ranked queues.',
 		slug: 'what-is-a-naraka-wallhack',
 		seoTitle: 'What Is a {game} Wallhack? | FAQ',
 		seoDescription:
@@ -197,7 +197,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Does {brand} include a radar hack?',
 		answer:
-			'Yes. {brand} includes 2D radar overlays that highlight nearby threats outside your view — useful for flanks and combat zones.',
+			'Yes. {brand} includes 2D radar overlays that highlight nearby threats outside your view — useful for flanks and combat zones. Radar ships in the same license as ESP wallhack and soft aim; compare controls on the <a href="/naraka-radar-hack/">radar page</a> and <a href="/features/">Features</a> list before checkout.',
 		slug: 'does-naraka-cheats-include-radar-hack',
 		seoTitle: 'Does {brand} Include a Radar Hack? | FAQ',
 		seoDescription:
@@ -206,7 +206,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'How does {antiCheat} affect {primaryKeyword}?',
 		answer:
-			'{antiCheat} monitors {game} on Windows PC. {brand} posts maintenance notes after patches that may need a rebuild. Check Status before you queue.',
+			'{antiCheat} monitors {game} on Windows PC. {brand} posts maintenance notes after patches that may need a rebuild. Check Status before you queue. There is no permanent bypass — responsible play means loading the latest build from <a href="/updates/">Updates</a> and following the <a href="/setup/">Setup guide</a> after NEAC security changes.',
 		slug: 'neac-anti-cheat-and-naraka-cheats',
 		seoTitle: 'How {antiCheat} Affects {brand} | FAQ',
 		seoDescription:
@@ -215,7 +215,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Can I buy undetected {game} cheats for Windows PC?',
 		answer:
-			'Yes — {brand} sells monthly and lifetime licenses for Windows PC with ESP, radar, and aimbot in one stack. Compare plans on Store before checkout.',
+			'Yes — {brand} sells monthly and lifetime licenses for Windows PC with ESP, radar, and aimbot in one stack. Compare plans on Store before checkout. Both tiers include NEAC maintenance rebuilds while your license is active — read <a href="/pricing/">Pricing</a> and <a href="/undetected-naraka-cheats/">undetected status</a> notes first.',
 		slug: 'buy-undetected-naraka-cheats-windows-pc',
 		seoTitle: 'Buy Undetected {game} Hacks for Windows PC | FAQ',
 		seoDescription:
@@ -260,7 +260,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Do {primaryKeyword} work on Windows 11?',
 		answer:
-			'Yes. {brand} supports Windows 10 and Windows 11 on PC. Use a clean install path from the Setup guide, keep {antiCheat} status green on the Updates page, and avoid running outdated builds after major patches.',
+			'Yes. {brand} supports Windows 10 and Windows 11 on PC. Use a clean install path from the Setup guide, keep {antiCheat} status green on the Updates page, and avoid running outdated builds after major patches. Defender exclusions and overlay conflicts are covered in <a href="/setup/">Setup</a> troubleshooting.',
 		slug: 'naraka-cheats-windows-11',
 		seoTitle: 'Do {game} Hacks Work on Windows 11? | FAQ',
 		seoDescription:
@@ -269,7 +269,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is {game} soft aim?',
 		answer:
-			'{game} soft aim gently guides aim toward targets inside a set FOV instead of snapping instantly. {brand} lets you adjust smoothing, bone priority, and per-weapon-type profiles so assist feels controlled in Quick Match and Ranked.',
+			'{game} soft aim gently guides aim toward targets inside a set FOV instead of snapping instantly. {brand} lets you adjust smoothing, bone priority, and per-weapon-type profiles so assist feels controlled in Quick Match and Ranked. Full control docs live on the <a href="/naraka-aimbot/">Aimbot page</a> and <a href="/features/">Features</a> list.',
 		slug: 'what-is-naraka-soft-aim',
 		seoTitle: 'What Is {game} Soft Aim? | FAQ',
 		seoDescription:
@@ -305,7 +305,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is a {game} mod menu?',
 		answer:
-			'A {game} mod menu is an in-game overlay to toggle ESP wallhack, radar, aimbot, and visual settings without alt-tabbing. {brand} ships a lightweight mod menu for Windows PC — see Features for the full toggle list.',
+			'A {game} mod menu is an in-game overlay to toggle ESP wallhack, radar, aimbot, and visual settings without alt-tabbing. {brand} ships a lightweight mod menu for Windows PC — see Features for the full toggle list and the <a href="/setup/">Setup guide</a> for first-launch hotkeys.',
 		slug: 'what-is-naraka-mod-menu',
 		seoTitle: 'What Is a {game} Mod Menu? | FAQ',
 		seoDescription:
@@ -332,7 +332,7 @@ export const seoFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'Does {brand} include triggerbot?',
 		answer:
-			'{brand} focuses on ESP wallhack, 2D radar, and soft aim profiles. Triggerbot is not advertised as a standalone module — review the Features page for the current toggle list before checkout.',
+			'{brand} focuses on ESP wallhack, 2D radar, and soft aim profiles. Triggerbot is not advertised as a standalone module — review the Features page for the current toggle list before checkout. Most players pair ESP and radar awareness with soft aim rather than instant snap settings.',
 		slug: 'does-naraka-cheats-include-triggerbot',
 		seoTitle: 'Does {brand} Include Triggerbot? | FAQ',
 		seoDescription:
