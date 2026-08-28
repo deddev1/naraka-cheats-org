@@ -1,7 +1,7 @@
 ---
-import LocaleSuggestApp from './react/LocaleSuggestApp';
 import { locales, defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { localizedSlugs, type PageId } from '../data/i18n/routing';
+import { getT } from '../i18n/server';
 
 interface Props {
 	currentLocale: LocaleCode;
@@ -14,23 +14,39 @@ if (currentLocale !== defaultLocale) {
 	return null;
 }
 
+const t = getT(currentLocale);
 const localeMetas = locales.map((l) => ({
 	code: l.code,
 	name: l.name,
 	nativeName: l.nativeName,
 	region: l.region,
 }));
-
 const pageSlugs = localizedSlugs[pageId] ?? {};
+
+const config = JSON.stringify({
+	defaultLocale,
+	locales: localeMetas,
+	pageSlugs,
+	leadTemplate: t('common.localeSuggestLead'),
+	versionTemplate: t('common.localeVersion'),
+	ariaLabel: t('common.languageSuggestion'),
+	dismissLabel: t('common.dismiss'),
+});
 ---
 
-<LocaleSuggestApp
-	client:idle
-	locale={currentLocale}
-	locales={localeMetas}
-	pageSlugs={pageSlugs}
-	defaultLocale={defaultLocale}
-/>
+<div
+	id="locale-suggest-root"
+	class="locale-suggest"
+	role="region"
+	hidden
+	data-config={config}
+></div>
+
+<script>
+	import { initLocaleSuggest } from '../scripts/locale-suggest';
+	initLocaleSuggest();
+	document.addEventListener('astro:page-load', initLocaleSuggest);
+</script>
 
 <style is:global>
 	.locale-suggest {
@@ -44,6 +60,10 @@ const pageSlugs = localizedSlugs[pageId] ?? {};
 		font-size: 0.82rem;
 		color: var(--ink-muted);
 		text-align: center;
+	}
+
+	.locale-suggest[hidden] {
+		display: none !important;
 	}
 
 	.locale-suggest__text {

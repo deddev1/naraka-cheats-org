@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import react from '@astrojs/react';
 import tailwindcss from '@tailwindcss/vite';
 import { brandStudioPlugin } from './scripts/brand-studio/vite-plugin.mjs';
 
@@ -22,7 +21,7 @@ export default defineConfig({
 		port: 5173,
 		allowedHosts: true,
 	},
-	integrations: [react()],
+	integrations: [],
 	build: {
 		// 'auto' keeps small styles inline but emits the large Tailwind bundle as a
 		// cached external file — 'always' inflated HTML to ~160KB and tanked the
