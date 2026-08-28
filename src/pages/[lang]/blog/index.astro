@@ -1,4 +1,5 @@
 ---
+import RedirectLayout from '../../../layouts/RedirectLayout.astro';
 import { defaultLocale, isLocaleCode, localeCodes } from '../../../data/i18n/locales';
 
 export function getStaticPaths() {
@@ -7,9 +8,19 @@ export function getStaticPaths() {
 		.map((lang) => ({ params: { lang } }));
 }
 
-if (!isLocaleCode(Astro.params.lang ?? '')) {
-	return Astro.redirect('/blog/', 301);
-}
-
-return Astro.redirect('/blog/', 301);
+const lang = Astro.params.lang ?? '';
+const fromPath = `/${lang}/blog/`;
 ---
+
+{
+	isLocaleCode(lang) ? (
+		<RedirectLayout
+			target="/blog/"
+			from={fromPath}
+			title="Redirecting to Naraka Cheats blog"
+			description="English-only blog — redirecting to the Naraka Cheats blog."
+		/>
+	) : (
+		<RedirectLayout target="/blog/" from={fromPath} />
+	)
+}
