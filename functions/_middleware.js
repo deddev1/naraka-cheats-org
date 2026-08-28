@@ -4,10 +4,8 @@ const CANONICAL_ORIGIN = 'https://narakacheats.org';
 const APEX_HOST = 'narakacheats.org';
 const WWW_HOST = 'www.narakacheats.org';
 
-/** Legacy domains → canonical apex (301). */
+/** Legacy domains → canonical apex (301). Do NOT list the live apex here. */
 const LEGACY_HOSTS = new Set([
-	'narakacheats.org',
-	'www.narakacheats.org',
 	'rustcheats.co',
 	'www.rustcheats.co',
 	'bestrustcheats.com',
@@ -222,11 +220,17 @@ export async function onRequest(context) {
 	const url = new URL(context.request.url);
 	const host = url.hostname.toLowerCase();
 	const proto = getClientProtocol(context.request);
+	const isLocalOrPreview =
+		host === 'localhost' ||
+		host === '127.0.0.1' ||
+		host.endsWith('.workers.dev') ||
+		host.endsWith('.pages.dev') ||
+		host.endsWith('.trycloudflare.com');
 
 	const isLegacyHost = LEGACY_HOSTS.has(host);
 	const isProductionHost = host === APEX_HOST || host === WWW_HOST || isLegacyHost;
-	const needsHostRedirect = host === WWW_HOST || isLegacyHost;
-	const needsHttpsRedirect = isProductionHost && proto === 'http';
+	const needsHostRedirect = !isLocalOrPreview && (host === WWW_HOST || isLegacyHost);
+	const needsHttpsRedirect = !isLocalOrPreview && host === APEX_HOST && proto === 'http';
 
 	if (needsHostRedirect || needsHttpsRedirect) {
 		const mappedPath = PATH_REDIRECTS[url.pathname] ?? url.pathname;

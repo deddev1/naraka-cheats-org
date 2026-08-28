@@ -9,6 +9,7 @@ import {
 	CANONICAL_HOST,
 	CANONICAL_ORIGIN,
 	LEGACY_HOSTS,
+	isLocalOrPreviewHost,
 	rewriteLegacyOriginsInSitemapXml,
 } from './lib/canonical-origin.js';
 
@@ -52,11 +53,14 @@ function redirectResponse(target: string, status = 301): Response {
 
 function canonicalHostRedirect(request: Request, url: URL): Response | null {
 	const host = (request.headers.get('host') || url.hostname).split(':')[0].toLowerCase();
+	if (isLocalOrPreviewHost(host)) return null;
+
 	const isLegacy = LEGACY_HOST_SET.has(host);
-	const isWww = host === WWW_HOST || url.hostname === WWW_HOST;
+	const isWww = host === WWW_HOST;
+	const isCanonical = host === CANONICAL_HOST;
 	const isHttp = isInsecureRequest(request, url);
 
-	if (!isLegacy && !isWww && !isHttp) return null;
+	if (!isLegacy && !isWww && !(isHttp && isCanonical)) return null;
 
 	const mappedPath = resolvePathRedirect(url.pathname) ?? url.pathname;
 	const target = new URL(mappedPath + url.search, CANONICAL_ORIGIN);
@@ -69,7 +73,7 @@ async function fetchSitemapAsset(env: Env, pathname: string): Promise<Response> 
 	const response = await env.ASSETS.fetch(assetRequest);
 	const upstreamType = response.headers.get('Content-Type') || '';
 
-	if (!response.ok || upstreamType.includes('text/html')) {
+	if (!response.ok || (upstreamType.includes('text/html') && !upstreamType.includes('xml'))) {
 		const headers = new Headers();
 		headers.set('Content-Type', 'text/plain; charset=utf-8');
 		applySecurityHeaders(headers, { html: false });
