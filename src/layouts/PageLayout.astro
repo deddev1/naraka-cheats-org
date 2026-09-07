@@ -12,7 +12,6 @@ import {
 	heroWidth,
 	heroHeight,
 	contentSrcSet,
-	galleryTileSizes,
 } from '../lib/responsive-images';
 import { defaultLocale } from '../data/i18n/locales';
 import { siteConfig } from '../data/site';
@@ -22,6 +21,7 @@ import RelatedPages from '../components/RelatedPages.astro';
 import CategoryRow from '../components/CategoryRow.astro';
 import TrustStrip from '../components/TrustStrip.astro';
 import ExternalResources from '../components/ExternalResources.astro';
+import ImageCarousel from '../components/ImageCarousel.astro';
 
 type GalleryInput = string | { src: string; alt: string };
 
@@ -213,30 +213,12 @@ const useHomeHero =
 							<p class="gallery-block__eyebrow">{t('common.gallery')}</p>
 							<h2 id="page-gallery-title">{resolvedGalleryTitle}</h2>
 						</header>
-						<div class="gallery-block__grid">
-							{normalizedGallery.map((image) => (
-								<figure
-									class="gallery-block__item"
-									itemscope
-									itemtype="https://schema.org/ImageObject"
-								>
-									<link itemprop="url" href={image.url} />
-									<meta itemprop="contentUrl" content={image.url} />
-									<img
-										src={image.src}
-										srcset={contentSrcSet(image.src)}
-										sizes={galleryTileSizes}
-										alt={image.alt}
-										itemprop="contentUrl"
-										width="800"
-										height="500"
-										loading="lazy"
-										decoding="async"
-									/>
-									<meta itemprop="name" content={image.alt} />
-								</figure>
-							))}
-						</div>
+						<ImageCarousel
+							images={normalizedGallery}
+							prevLabel={t('common.prevImage')}
+							nextLabel={t('common.nextImage')}
+							class="gallery-block__carousel"
+						/>
 					</section>
 				)
 			}
@@ -699,34 +681,13 @@ const useHomeHero =
 		color: var(--magenta-soft);
 	}
 
-	.gallery-block__grid {
-		display: grid;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		gap: 0.65rem;
-	}
-
-	.gallery-block__item {
-		margin: 0;
-		overflow: hidden;
-		border: 1px solid var(--line);
-		border-radius: var(--radius-md);
-		background: var(--bg-elevated);
-		aspect-ratio: 16 / 10;
-	}
-
-	.gallery-block__item img {
+	.gallery-block__carousel {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
 	}
 
 	@media (max-width: 800px) {
 		.article :global(.price-grid) {
 			grid-template-columns: 1fr;
-		}
-
-		.gallery-block__grid {
-			grid-template-columns: 1fr 1fr;
 		}
 	}
 
@@ -787,9 +748,4 @@ const useHomeHero =
 		}
 	}
 
-	@media (max-width: 640px) {
-		.gallery-block__grid {
-			grid-template-columns: 1fr;
-		}
-	}
 </style>

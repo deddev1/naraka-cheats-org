@@ -1,0 +1,257 @@
+---
+import { contentSrcSet, galleryTileSizes } from '../lib/responsive-images';
+
+export type CarouselImage = {
+	src: string;
+	alt: string;
+	url?: string;
+};
+
+interface Props {
+	images: ReadonlyArray<CarouselImage>;
+	prevLabel: string;
+	nextLabel: string;
+	sizes?: string;
+	id?: string;
+	class?: string;
+}
+
+const {
+	images,
+	prevLabel,
+	nextLabel,
+	sizes = galleryTileSizes,
+	id,
+	class: className,
+} = Astro.props;
+
+const carouselId = id ?? `image-carousel-${Math.random().toString(36).slice(2, 9)}`;
+const hasNav = images.length > 1;
+---
+
+{
+	images.length > 0 && (
+		<div class:list={['image-carousel', className]} data-image-carousel id={carouselId} tabindex="0">
+			<div class="image-carousel__viewport">
+				{images.map((image, index) => (
+					<figure
+						class:list={['image-carousel__slide', index === 0 && 'is-active']}
+						data-slide-index={index}
+						itemscope
+						itemtype="https://schema.org/ImageObject"
+						aria-hidden={index !== 0 ? 'true' : undefined}
+					>
+						{image.url && <link itemprop="url" href={image.url} />}
+						{image.url && <meta itemprop="contentUrl" content={image.url} />}
+						<img
+							src={image.src}
+							srcset={contentSrcSet(image.src)}
+							sizes={sizes}
+							alt={image.alt}
+							itemprop="contentUrl"
+							width="800"
+							height="500"
+							loading={index === 0 ? 'eager' : 'lazy'}
+							decoding="async"
+						/>
+						<meta itemprop="name" content={image.alt} />
+					</figure>
+				))}
+
+				{hasNav && (
+					<>
+						<button
+							type="button"
+							class="image-carousel__btn image-carousel__btn--prev"
+							aria-label={prevLabel}
+							data-carousel-prev
+						>
+							<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+								<path
+									d="M14.5 5.5 8 12l6.5 6.5"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+						<button
+							type="button"
+							class="image-carousel__btn image-carousel__btn--next"
+							aria-label={nextLabel}
+							data-carousel-next
+						>
+							<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+								<path
+									d="M9.5 5.5 16 12l-6.5 6.5"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</>
+				)}
+			</div>
+
+			{hasNav && (
+				<p class="image-carousel__counter" data-carousel-counter aria-live="polite">
+					1 / {images.length}
+				</p>
+			)}
+		</div>
+	)
+}
+
+<script>
+	function initImageCarousels() {
+		document.querySelectorAll('[data-image-carousel]').forEach((root) => {
+			if (root.dataset.imageCarouselInit === 'true') return;
+			root.dataset.imageCarouselInit = 'true';
+
+			const slides = [...root.querySelectorAll('.image-carousel__slide')];
+			const prevBtn = root.querySelector('[data-carousel-prev]');
+			const nextBtn = root.querySelector('[data-carousel-next]');
+			const counter = root.querySelector('[data-carousel-counter]');
+			if (slides.length <= 1) return;
+
+			let index = slides.findIndex((slide) => slide.classList.contains('is-active'));
+			if (index < 0) index = 0;
+
+			const showSlide = (nextIndex: number) => {
+				const wrapped =
+					((nextIndex % slides.length) + slides.length) % slides.length;
+				slides.forEach((slide, i) => {
+					const active = i === wrapped;
+					slide.classList.toggle('is-active', active);
+					if (active) slide.removeAttribute('aria-hidden');
+					else slide.setAttribute('aria-hidden', 'true');
+				});
+				index = wrapped;
+				if (counter) counter.textContent = `${index + 1} / ${slides.length}`;
+			};
+
+			prevBtn?.addEventListener('click', () => showSlide(index - 1));
+			nextBtn?.addEventListener('click', () => showSlide(index + 1));
+
+			root.addEventListener('keydown', (event) => {
+				if (event.key === 'ArrowLeft') {
+					event.preventDefault();
+					showSlide(index - 1);
+				}
+				if (event.key === 'ArrowRight') {
+					event.preventDefault();
+					showSlide(index + 1);
+				}
+			});
+		});
+	}
+
+	initImageCarousels();
+	document.addEventListener('astro:page-load', initImageCarousels);
+</script>
+
+<style>
+	.image-carousel {
+		display: grid;
+		gap: 0.55rem;
+	}
+
+	.image-carousel__viewport {
+		position: relative;
+		overflow: hidden;
+		border: 1px solid var(--line);
+		border-radius: var(--radius-md);
+		background: var(--bg-elevated);
+		aspect-ratio: 16 / 10;
+	}
+
+	.image-carousel__slide {
+		position: absolute;
+		inset: 0;
+		margin: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.25s ease;
+	}
+
+	.image-carousel__slide.is-active {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.image-carousel__slide img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.image-carousel__btn {
+		position: absolute;
+		top: 50%;
+		z-index: 2;
+		display: grid;
+		place-items: center;
+		width: 2.35rem;
+		height: 2.35rem;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--bg) 72%, transparent);
+		color: #fff;
+		cursor: pointer;
+		transform: translateY(-50%);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28);
+		transition:
+			background 0.15s ease,
+			transform 0.15s ease,
+			opacity 0.15s ease;
+	}
+
+	.image-carousel__btn:hover,
+	.image-carousel__btn:focus-visible {
+		background: color-mix(in srgb, var(--magenta) 78%, var(--bg));
+		transform: translateY(-50%) scale(1.04);
+	}
+
+	.image-carousel__btn--prev {
+		left: 0.55rem;
+	}
+
+	.image-carousel__btn--next {
+		right: 0.55rem;
+	}
+
+	.image-carousel__counter {
+		margin: 0;
+		font-size: 0.8125rem;
+		font-weight: 600;
+		color: var(--ink-faint);
+		text-align: center;
+	}
+
+	@media (max-width: 640px) {
+		.image-carousel__btn {
+			width: var(--touch-min, 2.75rem);
+			height: var(--touch-min, 2.75rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.image-carousel__slide {
+			transition: none;
+		}
+
+		.image-carousel__btn,
+		.image-carousel__btn:hover,
+		.image-carousel__btn:focus-visible {
+			transition: none;
+			transform: translateY(-50%);
+		}
+	}
+</style>

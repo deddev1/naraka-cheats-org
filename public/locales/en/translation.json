@@ -91,6 +91,8 @@
     "localeSuggestLead": "{{nativeName}} ({{region}}) — ",
     "breadcrumb": "Breadcrumb",
     "gallery": "Gallery",
+    "prevImage": "Previous image",
+    "nextImage": "Next image",
     "inGameLook": "In-game look",
     "allQuestions": "All questions",
     "openAnyQuestion": "Open any question for the full answer.",
