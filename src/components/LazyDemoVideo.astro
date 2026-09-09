@@ -1,7 +1,9 @@
 ---
 interface Props {
-	/** Video URL (WebM/MP4) — not fetched until the user presses play */
+	/** WebM URL — lazy-loaded on play */
 	src: string;
+	/** MP4 fallback for Safari / older browsers */
+	srcMp4?: string;
 	poster: string;
 	playLabel: string;
 	pauseLabel: string;
@@ -14,6 +16,7 @@ interface Props {
 
 const {
 	src,
+	srcMp4,
 	poster,
 	playLabel,
 	pauseLabel,
@@ -26,7 +29,12 @@ const videoId = `demo-video-${Math.random().toString(36).slice(2, 9)}`;
 ---
 
 <figure class="lazy-demo-video">
-	<div class="lazy-demo-video__frame" data-lazy-video data-src={src}>
+	<div
+		class="lazy-demo-video__frame"
+		data-lazy-video
+		data-src={src}
+		{...(srcMp4 ? { 'data-src-mp4': srcMp4 } : {})}
+	>
 		<video
 			id={videoId}
 			class="lazy-demo-video__el"
@@ -35,7 +43,6 @@ const videoId = `demo-video-${Math.random().toString(36).slice(2, 9)}`;
 			poster={poster}
 			tabindex="-1"
 		>
-			<track kind="captions" />
 		</video>
 		<button
 			type="button"
@@ -107,6 +114,7 @@ const videoId = `demo-video-${Math.random().toString(36).slice(2, 9)}`;
 			const muteBtn = root.querySelector('.lazy-demo-video__mute');
 			const progressInput = root.querySelector('.lazy-demo-video__progress');
 			const src = root.dataset.src;
+			const srcMp4 = root.dataset.srcMp4;
 			if (!video || !toggle || !src) return;
 
 			const playIcon = root.querySelector('.lazy-demo-video__icon--play');
@@ -145,10 +153,20 @@ const videoId = `demo-video-${Math.random().toString(36).slice(2, 9)}`;
 			};
 
 			const ensureSrc = () => {
-				if (!video.getAttribute('src')) {
-					video.setAttribute('src', src);
-					video.load();
+				if (video.dataset.srcLoaded === 'true') return;
+				video.replaceChildren();
+				const webm = document.createElement('source');
+				webm.src = src;
+				webm.type = 'video/webm';
+				video.appendChild(webm);
+				if (srcMp4) {
+					const mp4 = document.createElement('source');
+					mp4.src = srcMp4;
+					mp4.type = 'video/mp4';
+					video.appendChild(mp4);
 				}
+				video.dataset.srcLoaded = 'true';
+				video.load();
 			};
 
 			const playVideo = async () => {

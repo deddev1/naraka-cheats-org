@@ -113,6 +113,7 @@ export const siteConfig = {
 	defaultOgImage: brand.defaultOgImage,
 	heroImage: brand.heroImage,
 	demoVideoUrl: brand.demoVideoUrl,
+	demoVideoUrlMp4: brand.demoVideoUrlMp4,
 	demoVideoPoster: brand.demoVideoPoster,
 	twitterSite: brand.social.twitterSite,
 	socialSameAs: [...brand.social.sameAs],

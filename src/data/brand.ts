@@ -39,8 +39,9 @@ export const brand = {
 	logoAlt: 'Naraka Cheats logo',
 	defaultOgImage: '/images/naraka-cheats-hero-1199w.webp',
 	heroImage: '/images/naraka-cheats-hero-1199w.webp',
-	/** Product demo clip — lazy-loaded on homepage; fetched only after play */
-	demoVideoUrl: 'https://narakacheats.net/videos/hero.webm',
+	/** Product demo clip — lazy-loaded on homepage; self-hosted for same-origin playback */
+	demoVideoUrl: '/videos/hero.webm',
+	demoVideoUrlMp4: '/videos/hero.mp4',
 	demoVideoPoster: '/images/naraka-screenshot-06.webp',
 
 	plans: [
